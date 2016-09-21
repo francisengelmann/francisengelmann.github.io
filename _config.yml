@@ -1,0 +1,64 @@
+title:            Home
+description:      Francis Engelmann's Website
+# Your site's domain goes here. Leave localhost server or blank when working locally.
+url:              http://127.0.0.1:4000
+disqus_shortname: francisengelmann
+
+# Owner/author information
+owner:
+  name:           Francis Engelmann
+  avatar:         francis_bw.png
+  bio:            I'm from a tiny town in little Luxembourg! Currenlty I am a PhD student at RWTH Aachen with Prof. Bastian Leibe.
+  email:          engelmann@vision.rwth-aachen.de
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  #twitter: francisengelman
+  # linkedin: 
+  google_scholar: -xOsXi8AAAAJ
+  github: francisengelmann
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+ # - title: Curriculum
+ #   url: /cv/
+  - title: Publications
+    url: /publications/
+  - title: Code
+    url: /code/
+  - title: Academic activities
+    url: /academic_activities/
+  - title: Contact
+    url: /contact/
+ 
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/Luxembourg
+future:      true
+#pygments:    true
+highlighter: rouge
+markdown:    kramdown
+encoding: utf-8
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+  coderay:
+    coderay_line_numbers:
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
