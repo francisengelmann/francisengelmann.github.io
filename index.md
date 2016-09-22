@@ -7,10 +7,9 @@ image:
   feature: andros.png
 ---
 
-<section>
 <ul>
 <li>Check out the <a href="http://www.vision.rwth-aachen.de/page/shape_priors"><font color="red"><strong>project page</strong></font></a> of our GCPR'16 submission.</li>
-</section>
+</ul>
 
 
 
