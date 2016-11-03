@@ -27,13 +27,13 @@ links:
  # - title: Curriculum
  #   url: /cv/
   - title: Publications
-    url: /publications/
+    url: publications/
   - title: Code
-    url: /code/
+    url: code/
   - title: Projects
-    url: /projects/
+    url: projects/
   - title: Contact
-    url: /contact/
+    url: contact/
  
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Luxembourg
