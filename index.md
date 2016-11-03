@@ -8,7 +8,9 @@ image:
 ---
 
 <ul>
-<li>Check out the <a href="http://www.vision.rwth-aachen.de/page/shape_priors"><font color="red"><strong>project page</strong></font></a> of our GCPR'16 submission.</li>
+<li>Released code for VIZ vizualization toolkit</li>
+
+<li>Check out the <a href="http://www.vision.rwth-aachen.de/page/shape_priors"><font color="black"><strong>project page</strong></font></a> of our GCPR'16 submission.</li>
 </ul>
 
 
