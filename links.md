@@ -1,23 +1,11 @@
 ---
 layout: cv
-permalink: /contact/
-title: How to reach me
+permalink: /links/
+title: Links
 tags: [about]
 modified: 8-7-2014
 comments: false
 ---
 
-### E-Mail  
-engelmann_at_vision.rwth-aachen.de
-  
-### Address 
-Francis Engelmann, Room 127  
-RWTH Aachen University  
-Computer Vision Group  
-Mies-von-der-Rohe-Str 18  
-D-52074 Aachen  
-Germany  
-  
-### Phone and Fax  
-Tel: +49 241 80 20760  
-Fax: +49 241 80 22731  
+### C++
+C++11: unordered_map vs map: http://kariddi.blogspot.de/2012/07/c11-unorderedmap-vs-map.html
