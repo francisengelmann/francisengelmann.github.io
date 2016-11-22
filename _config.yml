@@ -8,7 +8,8 @@ disqus_shortname: francisengelmann
 owner:
   name:           Francis Engelmann
   avatar:         francis_bw.png
-  bio:            I'm from a tiny town in little Luxembourg! Currenlty I am a PhD student at RWTH Aachen with Prof. Bastian Leibe.
+  bio:            Ph.D. student at RWTH Aachen with Prof. Bastian Leibe.
+      
   email:          engelmann@vision.rwth-aachen.de
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   #twitter: francisengelman
@@ -28,14 +29,14 @@ links:
  #   url: /cv/
   - title: Publications
     url: /publications/
-  - title: Code
-    url: /code/
-  - title: Academic activities
-    url: /academic_activities/
   - title: Links
     url: /links/
+ # - title: Code
+ #   url: code/
+  - title: Projects
+    url: projects/
   - title: Contact
-    url: /contact/
+    url: contact/
  
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Luxembourg
