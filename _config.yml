@@ -29,12 +29,13 @@ links:
  #   url: /cv/
   - title: Publications
     url: /publications/
-  - title: Links
-    url: /links/
+
  # - title: Code
  #   url: code/
   - title: Projects
     url: projects/
+  #- title: Links
+  #  url: /links/
   - title: Contact
     url: contact/
  
