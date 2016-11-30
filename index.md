@@ -1,11 +1,14 @@
 ---
 layout: home2
-title: Latest news
+title: Latest News
 description: "Francis Engelmann's website"
 tags: [Jekyll, theme, responsive, blog, template]
 image:
   feature: andros.png
 ---
+
+* Released [code](code/) for VIZ vizualization toolkit.
+* Check out the [project page](http://www.vision.rwth-aachen.de/page/shape_priors) of our GCPR'16 submission.
 
 <ul>
 <li>Released <a href="code/"><strong>code</strong></a> for VIZ vizualization toolkit.</li>
