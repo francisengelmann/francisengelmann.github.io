@@ -1,5 +1,4 @@
 ---
-layout: page
 permalink: /code/
 title: My Code
 tags: [code]
