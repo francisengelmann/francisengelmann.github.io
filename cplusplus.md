@@ -15,7 +15,7 @@ But, it does it more efficently, and by that I mean faster!
 
 Why's that? Consider the following example:
 
-```
+```c++
 std::vector<std::string> vs;
 vs.push_back("this is not a string");
 ```
@@ -25,7 +25,7 @@ vs.push_back(st::string("this is not a string"));
 
 This involves a call to the string constructor (and later to the destructor) and then again another call to a constructor when we add the new string object to the vector.
 
-```
+```c++
 vs.emplace_black("this is not a string")
 ```
 
