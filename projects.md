@@ -16,4 +16,5 @@ Implementation of [*J. Amanatides, A. Woo, A Fast Voxel Traversal Algorithm for 
 
 [[Code]](https://github.com/francisengelmann/fast_voxel_traversal) 
 
-### Fabscan [FabScan website](https://hci.rwth-aachen.de/fabscan)!
+### Fabscan - 3D Laser Scanner
+[FabScan website](https://hci.rwth-aachen.de/fabscan)!
