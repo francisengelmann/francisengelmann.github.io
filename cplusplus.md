@@ -25,7 +25,8 @@ vs.push_back(st::string("this is not a string"));
 
 This involves a call to the string constructor (and later to the destructor) and then again another call to a constructor when we add the new string object to the vector.
 
-```C++
+On the other side
+```c++
 vs.emplace_black("this is not a string");
 ```
 
