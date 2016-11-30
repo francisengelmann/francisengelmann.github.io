@@ -5,7 +5,7 @@ title: C++ Nuggets
 tags: [about]
 comments: true
 ---
-This page is (or better: will become) a collection of small C++ snippets I found useful and worthy to share!
+This page is (or better: will become) a collection of C++ features I found useful and worthy to share!
 
 ### emplace() instead of push()
 If you ever browsed throught the list of functions at cplusplus.com (the best online reference I know of) you might have seen that c++11 adds the 'emplace()' function to most of the stl containers. What is that and why is it useful?
