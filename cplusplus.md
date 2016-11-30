@@ -7,7 +7,7 @@ comments: true
 ---
 This page is (or better: will become) a collection of C++ features I found useful and worthy to share!
 
-### emplace() instead of push()
+### Use emplace() instead of push()
 If you ever browsed throught the list of functions at cplusplus.com (the best online reference I know of) you might have seen that c++11 adds the 'emplace()' function to most of the stl containers. What is that and why is it useful?
 
 First of all, it produces in the same result as push() (e.g. push_back() for vectors).
