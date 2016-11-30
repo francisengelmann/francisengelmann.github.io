@@ -3,7 +3,7 @@ layout: cv
 permalink: /cplusplus/
 title: C++ Nuggets
 tags: [about]
-comments: true
+comments: false
 ---
 This page is (or better: will become) a collection of C++ features I found useful and worthy to share!
 
