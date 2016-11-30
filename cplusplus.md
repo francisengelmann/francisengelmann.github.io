@@ -31,7 +31,7 @@ On the other side, we have:
 vs.emplace_black("this is not a string");
 ```
 
-skips all the constructors/destructors in between an immediatly forwards the data into the vector, so that the string constractor is called only once. Much faster, so good. 
+skips all the intermediate constructors/destructors and immediatly forwards the data into the vector, so that the string constructor is called only once. Much faster, so good. 
 
-Aslo here is a nice video of Scott Meyer at "NDC'14" talking about Effective Modern C++:
+Also here is a nice video of Scott Meyer at "NDC'14" talking about Effective Modern C++:
 https://vimeo.com/97318797
