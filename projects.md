@@ -13,7 +13,6 @@ This is a collection of visualization methods (bundled in a lib) based on VTK wh
 ### Fast Voxel Traversal
 
 Implementation of [*J. Amanatides, A. Woo, A Fast Voxel Traversal Algorithm for Ray Tracing, Eurographics'87*]
-
 [[Code]](https://github.com/francisengelmann/fast_voxel_traversal) 
 
 ### FabScan - 3D Laser Scanner
