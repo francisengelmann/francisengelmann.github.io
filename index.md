@@ -1,5 +1,5 @@
 ---
-layout: home2
+layout: home
 title: Latest News
 description: "Francis Engelmann's website"
 tags: [Jekyll, theme, responsive, blog, template]
