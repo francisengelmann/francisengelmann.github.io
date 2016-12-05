@@ -1,9 +1,8 @@
 ---
-layout: cv
+layout: page
 permalink: /contact/
 title: How to reach me
 tags: [about]
-modified: 8-7-2014
 comments: false
 ---
 
