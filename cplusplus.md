@@ -1,8 +1,8 @@
 ---
-layout: cv
+layout: page
 permalink: /cplusplus/
 title: C++ Nuggets
-tags: [about]
+tags: [c++]
 comments: false
 ---
 This page is (or better: will become) a collection of C++ features I found useful and worthy to share!
