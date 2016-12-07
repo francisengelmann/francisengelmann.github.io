@@ -28,11 +28,11 @@ links:
   - title: Publications
     url: /publications/
   - title: Projects
-    url: projects/
+    url: /projects/
   - title: C++
-    url: cplusplus/
+    url: /cplusplus/
   - title: Contact
-    url: contact/
+    url: /contact/
  
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Luxembourg
