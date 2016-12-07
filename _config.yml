@@ -1,7 +1,7 @@
 title:            Home
 description:      Francis Engelmann's Website
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              https://francisengelmann.github.io/
+url:              https://francisengelmann.github.io
 disqus_shortname: francisengelmann
 
 # Owner/author information
