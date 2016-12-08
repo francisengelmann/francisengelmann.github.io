@@ -28,10 +28,11 @@ This involves a call to the string constructor (and later to the destructor) and
 On the other side, we have:
 
 ```c++
-vs.emplace_black("this is not a string");
+vs.emplace_back("this is not a string");
 ```
 
-skips all the intermediate constructors/destructors and immediatly forwards the data into the vector, so that the string constructor is called only once. Much faster, so good. 
+skips all the intermediate constructors/destructors and immediatly forwards the data into the vector, so that the string constructor is called only once. Much faster, so good.
 
-Also here is a nice video of Scott Meyer at "NDC'14" talking about Effective Modern C++:
-https://vimeo.com/97318797
+Also here is a nice video of Scott Meyer at "NDC'14" talking about Modern Effective Modern C++:
+
+[![Scott Meyers](http://img.youtube.com/vi/IqVZG6jWXvs/0.jpg)](https://vimeo.com/97318797 "Scott Meyers - Modern Effective C++")
