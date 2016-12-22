@@ -13,7 +13,7 @@ engelmann@vision.rwth-aachen.de
 Francis Engelmann, Room 127  
 RWTH Aachen University  
 Computer Vision Group  
-Mies-von-der-Rohe Str. 18  
+Mies-van-der-Rohe Str. 15  
 D-52074 Aachen  
 Germany  
 
