@@ -1,5 +1,5 @@
 ### pwdd
-
+Copy result of ```pwd``` to clipboard
 ```alias pwdd="pwd | tr -d '\n' | xclip -selection clipboard"```
 
 ### Virtualenv with python3
