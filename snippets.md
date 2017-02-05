@@ -5,3 +5,7 @@ Copy result of ```pwd``` to clipboard
 ### Virtualenv with python3
 
 ```virtualenv -p python3 envname``` 
+
+### Matplotlib backend (mac)
+```vim ~/.matplotlib/matplotlibrc```
+```> backend : TKAgg```
