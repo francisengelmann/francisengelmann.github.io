@@ -10,3 +10,6 @@ Copies result of ```pwd``` immediatly into clipboard:
 ### Matplotlib backend (mac)
 ```vim ~/.matplotlib/matplotlibrc```
 ```> backend : TKAgg```
+
+### Copy only certain files from remote machine while preserving dir tree
+```rsync -av --include='*/' --include='log.txt' --exclude='*' ./ user@remote_host:/home/user/```
