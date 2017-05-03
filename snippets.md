@@ -18,6 +18,8 @@ Copies result of ```pwd``` immediatly into clipboard:
 ### Vim path completen
 While in __INSERT__ mode: <kbd>ctrl</kbd>-<kbd>X</kbd>, <kbd>ctrl</kbd>-<kbd>F</kbd>
 
-### Virtualenvwrapper
-- Create new ```mkvirtualenv --python=/usr/bin/python3 nameOfEnvironment```
-- Work on existing ```workon nameOfEnvironment```
+### Virtualenvwrapper and TF
+- ```mkvirtualenv --python=/usr/bin/python3 tf```
+- ```workon tf```
+- ```pip3 install --upgrade pip```
+- ```pip3 insatll --upgrade tensorflow-gpu```
