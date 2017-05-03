@@ -17,3 +17,7 @@ Copies result of ```pwd``` immediatly into clipboard:
 
 ### Vim path completen
 While in __INSERT__ mode: <kbd>ctrl</kbd>-<kbd>X</kbd>, <kbd>ctrl</kbd>-<kbd>F</kbd>
+
+### Virtualenvwrapper
+- Create new ```mkvirtualenv --python=/usr/bin/python3 nameOfEnvironment```
+- Work on existing ```workon nameOfEnvironment```
