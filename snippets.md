@@ -16,4 +16,4 @@ Copies result of ```pwd``` immediatly into clipboard:
 ```rsync -av --include='*/' --include='log.txt' --exclude='*' ./ user@remote_host:/home/user/```
 
 ### Vim path completen
-While in insert mode: CTRL-X, CTRL-F
+While in insert mode: <kbd>CTRL</kbd>-<kbd>X</kbd>, <kbd>CTRL</kbd>-<kbd>F</kbd>
