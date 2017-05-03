@@ -5,7 +5,8 @@ Copies result of ```pwd``` immediatly into clipboard:
 
 ### Virtualenv with python3
 
-```virtualenv -p python3 envname``` 
+```virtualenv -p python3 envname``` (obsolete)
+Check this: http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/
 
 ### Matplotlib backend (mac)
 ```vim ~/.matplotlib/matplotlibrc```
