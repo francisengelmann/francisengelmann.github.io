@@ -24,3 +24,5 @@ While in __INSERT__ mode: <kbd>ctrl</kbd>-<kbd>X</kbd>, <kbd>ctrl</kbd>-<kbd>F</
 - ```pip3 install --upgrade pip```
 - ```pip3 insatll --upgrade tensorflow-gpu```
 - ```pip3 install --upgrade jupyter```
+
+Source: https://hackercodex.com/guide/mac-development-configuration/
