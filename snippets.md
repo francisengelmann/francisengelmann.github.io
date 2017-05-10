@@ -26,3 +26,6 @@ While in __INSERT__ mode: <kbd>ctrl</kbd>-<kbd>X</kbd>, <kbd>ctrl</kbd>-<kbd>F</
 - ```pip3 install --upgrade jupyter```
 
 Source: https://hackercodex.com/guide/mac-development-configuration/
+
+### Python
+https://docs.python.org/3/tutorial/modules.html
