@@ -27,5 +27,9 @@ While in __INSERT__ mode: <kbd>ctrl</kbd>-<kbd>X</kbd>, <kbd>ctrl</kbd>-<kbd>F</
 
 Source: https://hackercodex.com/guide/mac-development-configuration/
 
-### Python
+### Python 3
 https://docs.python.org/3/tutorial/modules.html
+
+```import importlib
+importlib.reload(utils)
+utils.bla()```
