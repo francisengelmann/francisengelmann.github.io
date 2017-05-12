@@ -35,3 +35,6 @@ import importlib
 importlib.reload(utils)
 utils.bla()
 ```
+
+### Nvidia
+Continuously monitor nvida gpu: ```watch -n 1 nvidia-smi```
