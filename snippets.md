@@ -38,3 +38,9 @@ utils.bla()
 
 ### Nvidia
 Continuously monitor nvida gpu: ```watch -n 1 nvidia-smi```
+
+### h5py
+- dir like structure
+- The h5py package is a Pythonic interface to the HDF5 binary data format.
+
+
