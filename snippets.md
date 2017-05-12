@@ -43,4 +43,7 @@ Continuously monitor nvida gpu: ```watch -n 1 nvidia-smi```
 - dir like structure
 - The h5py package is a Pythonic interface to the HDF5 binary data format.
 
+### Timing
+Print detailed execution timings```%%time```
+
 
