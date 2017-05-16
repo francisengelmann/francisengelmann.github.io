@@ -46,4 +46,5 @@ Continuously monitor nvida gpu: ```watch -n 1 nvidia-smi```
 ### Timing
 Print detailed execution timings```%%time```
 
-
+### Jupyter Notebook
+https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
