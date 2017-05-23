@@ -48,3 +48,5 @@ Print detailed execution timings```%%time```
 
 ### Jupyter Notebook
 https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
+
+tensorboard --logdir=path
