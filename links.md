@@ -12,3 +12,4 @@
 * http://karpathy.github.io/
 * http://colah.github.io/
 * http://r2rt.com/
+* http://cs231n.github.io/
