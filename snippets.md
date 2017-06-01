@@ -50,3 +50,5 @@ Print detailed execution timings```%%time```
 https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
 
 tensorboard --logdir=path
+
+/home/engelmann/Programming/gmonitor/compiled
