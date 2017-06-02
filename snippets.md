@@ -51,4 +51,7 @@ https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
 
 tensorboard --logdir=path
 
-/home/engelmann/Programming/gmonitor/compiled
+```gmonitor``` similar to ```watch -n0,1 nvidia-smi```
+
+### tmux
+https://gist.github.com/MohamedAlaa/2961058
