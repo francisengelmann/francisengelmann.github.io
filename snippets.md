@@ -63,3 +63,5 @@ Start new jupyter session: ```jupyter notbeook --no-browser --port=1337```
 From local, connect to remote: ```ssh -N -f -L :8080:localhost:1337 tyskie```
 In local browser: ```http://localhost:8080/```
 
+### gh
+print history from current dir
