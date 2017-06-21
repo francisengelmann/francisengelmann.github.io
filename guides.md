@@ -1,12 +1,18 @@
 # Guides
-This is a collection of short guides to setup or use various software:
-## Git
+This is a collection of short guides to setup and use software I find useful.
+At this point all articles are drafts.
+
+## Git (Draft)
 A visual introduction explaining the three different areas and the commit graph.
+
+### Three git stages
 
 Git differs between three different states. A file is always in exactly one of these states:
 - Working area: Currently editing the file. Changes on these files have to be added to the staging area first before commiting.
 - Staging area: All files in this area will be part of the next commit. Imagin this stage as a temporary state for files to accumulate until the next commit.
 - Commite area: All files in here were already commited and being tracked by the repository.
+
+[Put figure with three rounded rectangles to illustrate stages.]
 
 Commands to shift files between different areas:
 - From working to staging: `git add`
@@ -15,7 +21,16 @@ Commands to shift files between different areas:
 - From staging to commit: `git commit`
 - From commit to staging: ???
 
-## PyCharm
+[Add commands to the figure]
+
+### The git graph
+Each commit corresponds to exactly one  
+
+## PyCharm (Draft)
 ### Code-Completion
 * Select correct virtualenv: ```File/Settings.../Project[...]/Proj.Interpreter/```
 * Also in settings: ```Editor/General/Code Completion```
+### Virtual environments
+* Set a default virtual environment
+### Running code
+* Find a better way to run the current file
