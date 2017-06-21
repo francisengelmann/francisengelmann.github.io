@@ -9,11 +9,11 @@ Git differs between three different states. A file is always in exactly one of t
 - Commite area: All files in here were already commited and being tracked by the repository.
 
 Commands to shift files between different areas:
-From working to staging: `git add`
-From staging to working: `git rm --cached`
+- From working to staging: `git add`
+- From staging to working: `git rm --cached`
 
-From staging to commit: `git commit`
-From commit to staging: ???
+- From staging to commit: `git commit`
+- From commit to staging: ???
 
 ## PyCharm
 ### Code-Completion
