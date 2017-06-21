@@ -23,8 +23,13 @@ Commands to shift files between different areas:
 
 [Add commands to the figure]
 
-### The git graph
-Each commit corresponds to exactly one  
+### The git-graph
+Each commit corresponds to exactly one node in the git-graph.
+With `git checkout` you can quickly jump between the different nodes in the graph.
+Here you have to be careful: depending on how you manipulate the graph you can end up with nodes that are no longer reachable!
+[Put in example figure]
+
+Branches are exactly what the name says: just another branch in the git-graph. Nothing new to learn here except for the commands.
 
 ## PyCharm (Draft)
 ### Code-Completion
