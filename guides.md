@@ -43,7 +43,9 @@ Branches are exactly what the name says: just another branch in the git-graph. N
 
 ## SLURM
 ### Basic commands
-sbatch <script.sh>    - add new job
-squeue                - list all jobs, running [R] and wainting []
-scancel
-scontrol show job <id>
+|Command                | Description                                     |
+|-----------------------|-------------------------------------------------|
+|sbatch <script.sh>     | add new job                                     |
+|squeue                 | list all jobs, running [R] and pending [PD]     |
+|scancel                | cancel job |
+|scontrol show job <id> | show more details |
