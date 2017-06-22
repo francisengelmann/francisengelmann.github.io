@@ -1,6 +1,6 @@
 ## SLURM
 
-![Enjoy Slurm - it's highly addictive] (http://hpc-uit.readthedocs.io/en/latest/_images/slurm.jpg)
+![test](http://hpc-uit.readthedocs.io/en/latest/_images/slurm.jpg)
 
 
 
