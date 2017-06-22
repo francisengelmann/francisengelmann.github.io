@@ -3,7 +3,7 @@
 ### Basic SLURM commands
 |Command                | Description                                     |
 |-----------------------|-------------------------------------------------|
-|sbatch <script.sh>         | Add new job into the queue                      |
+|sbatch <run_script.sh>         | Add new job into the queue                      |
 |squeue                     | List all jobs, running [R] and pending [PD]     |
 |scancel <job-id>           | Cancel job |
 |scontrol show job <job-id> | show more details |
@@ -12,13 +12,14 @@
 - To see a real-time status of running and pending jobs, type this:  
 ```watch -n0.3 squeue```
 - To start a new job, type this:  
-```sbatch script.sh```
+```sbatch run_script.sh```
 - Slurm runs scheduled jobs in the backround, so it will not display its output to stdout. 
   Luckily it writes all outputs into a log file. 
   To observe this log file while your process is running type this:  
 ```tail -f slurm-<job-id>.out```  
+
 ### Example config
-This is an example config:
+This is an example `run_script.py`:
 ```
 #!/bin/bash
 #SBATCH --time=0-12:00:00
