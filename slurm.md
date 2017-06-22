@@ -1,10 +1,8 @@
-## SLURM
+## Slurm
 
-![test](http://hpc-uit.readthedocs.io/en/latest/_images/slurm.jpg)
+![slurm](http://hpc-uit.readthedocs.io/en/latest/_images/slurm.jpg)
 
-
-
-### Basic SLURM commands
+### Basic Slurm Commands
 |Command                | Description                                     |
 |-----------------------|-------------------------------------------------|
 |sbatch <run_script.sh>         | Add new job into the queue                      |
@@ -12,7 +10,7 @@
 |scancel <job-id>           | Cancel job |
 |scontrol show job <job-id> | show more details |
 
-### Practical tips
+### Practical Tips
 - To see a real-time status of running and pending jobs, type this:  
 ```watch -n0.3 squeue```
 - To start a new job, type this:  
@@ -22,7 +20,7 @@
   To observe this log file while your process is running type this:  
 ```tail -f slurm-<job-id>.out```  
 
-### Example config
+### Example Run Script
 This is an example `run_script.sh`:
 ```
 #!/bin/bash
