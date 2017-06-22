@@ -13,7 +13,7 @@
   Luckily it writes all outputs into a log file. 
   To observe this log file while your process is running type this:  
 ```tail -f slurm-<job-id>.out```  
-- To see a real-time status of running and pending jobs, type thos:
+- To see a real-time status of running and pending jobs, type this:  
 ```watch -n0.3 squeue```
 
 ### Example config
