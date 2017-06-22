@@ -39,3 +39,11 @@ Branches are exactly what the name says: just another branch in the git-graph. N
 * Set a default virtual environment
 ### Running code
 * Find a better way to run the current file
+
+
+## SLURM
+### Basic commands
+sbatch <script.sh>    - add new job
+squeue                - list all jobs, running [R] and wainting []
+scancel
+scontrol show job <id>
