@@ -19,7 +19,7 @@
 ```tail -f slurm-<job-id>.out```  
 
 ### Example config
-This is an example `run_script.py`:
+This is an example `run_script.sh`:
 ```
 #!/bin/bash
 #SBATCH --time=0-12:00:00
