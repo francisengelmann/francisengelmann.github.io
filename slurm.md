@@ -1,5 +1,9 @@
 ## SLURM
 
+![Enjoy Slurm - it's highly addictive] (http://hpc-uit.readthedocs.io/en/latest/_images/slurm.jpg)
+
+
+
 ### Basic SLURM commands
 |Command                | Description                                     |
 |-----------------------|-------------------------------------------------|
