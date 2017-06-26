@@ -8,7 +8,7 @@ comments: false
 
 * Anton Kasyanov, Francis Engelmann, Jörg Stückler, Bastian Leibe  
   __Keyframe-Based Visual-Inertial Online SLAM with Relocalization__  
-  IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2017/
+  IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2017.
 
 * Francis Engelmann, Jörg Stückler, Bastian Leibe  
   __SAMP: Shape and Motion Priors for 4D Vehicle Reconstruction__  
