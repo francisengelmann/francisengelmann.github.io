@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /publications/
-title: My Publications
+title: Publications
 tags: [publications]
-comments: false
+comments: true
 ---
 
 * Anton Kasyanov, Francis Engelmann, Jörg Stückler, Bastian Leibe
