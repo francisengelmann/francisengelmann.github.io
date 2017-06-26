@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 tags: [publications]
-comments: true
+comments: false
 ---
 
 * Anton Kasyanov, Francis Engelmann, Jörg Stückler, Bastian Leibe  
