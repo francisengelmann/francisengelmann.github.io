@@ -79,7 +79,6 @@ tensorboard --logdir=path
 ```gmonitor``` similar to ```watch -n0,1 nvidia-smi```
 
 ### tmux
-https://gist.github.com/MohamedAlaa/2961058
 
 ###
 Create new tmux session on remote: ```tmux new -s tf```
@@ -87,6 +86,11 @@ Reconnect: ```tmux a -t tf```
 Start new jupyter session: ```jupyter notbeook --no-browser --port=1337```
 From local, connect to remote: ```ssh -N -f -L :8080:localhost:1337 tyskie```
 In local browser: ```http://localhost:8080/```
+
+#### Links
+- http://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily
+- https://gist.github.com/MohamedAlaa/2961058
+
 
 ### gh
 print history from current dir
