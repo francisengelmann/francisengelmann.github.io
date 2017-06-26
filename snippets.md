@@ -27,6 +27,27 @@ While in __INSERT__ mode: <kbd>ctrl</kbd>-<kbd>X</kbd>, <kbd>ctrl</kbd>-<kbd>F</
 
 Source: https://hackercodex.com/guide/mac-development-configuration/
 
+### Installing tensorflow from source
+git clone git@github.com:tensorflow/tensorflow.git  
+cd tensorflow  
+git branch -av  
+git checkout r1.2  (or whatever version you like)
+pip3 install --upgrade {numpy,dev,pip,wheel}
+
+### Same thing following this guide:
+http://blog.xiangjiang.live/compile-tensorflow-from-source-with-swig-and-bazel-for-local-user/
+
+#### Installing bazel
+wget https://github.com/bazelbuild/bazel/releases/download/0.5.1/bazel-0.5.1-dist.zip  
+unzip bazel-0.5.1-dist.zip -d bazel-0.5.1ls  
+
+Needs JDK 1.8  
+Download: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html  
+Install by unzipping.
+
+It then crashes, fix is here:
+https://github.com/bazelbuild/bazel/issues/1308
+
 ### Python 3
 https://docs.python.org/3/tutorial/modules.html
 
