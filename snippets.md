@@ -81,11 +81,11 @@ tensorboard --logdir=path
 ### tmux
 
 ###
-Create new tmux session on remote: ```tmux new -s tf```
-Reconnect: ```tmux a -t tf```
-Start new jupyter session: ```jupyter notbeook --no-browser --port=1337```
-From local, connect to remote: ```ssh -N -f -L :8080:localhost:1337 tyskie```
-In local browser: ```http://localhost:8080/```
+Create new tmux session on remote: ```tmux new -s tf```  
+Reconnect: ```tmux a -t tf```  
+Start new jupyter session: ```jupyter notbeook --no-browser --port=1337```  
+From local, connect to remote: ```ssh -N -f -L :8080:localhost:1337 tyskie```  
+In local browser: ```http://localhost:8080/```  
 
 #### Links
 - http://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily
