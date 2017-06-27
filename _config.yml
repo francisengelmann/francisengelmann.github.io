@@ -8,7 +8,7 @@ disqus_shortname: francisengelmann
 owner:
   name:           Francis Engelmann
   avatar:         francis_bw.png
-  bio:            Ph.D. student at Computer Vision Group RWTH Aachen University.
+  bio:            Ph.D. Student at Computer Vision Group RWTH Aachen University.
       
   email:          engelmann@vision.rwth-aachen.de
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
@@ -30,7 +30,7 @@ links:
   - title: Projects
     url: /projects/
   - title: Guides
-    url: /guides/
+    url: /guides/overview/
   - title: Contact
     url: /contact/
  
@@ -39,7 +39,7 @@ timezone:    Europe/Luxembourg
 future:      true
 #pygments:    true
 highlighter: rouge
-markdown:    kramdown
+markdown:    redcarpet
 encoding: utf-8
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks

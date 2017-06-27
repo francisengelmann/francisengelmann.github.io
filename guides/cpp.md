@@ -5,6 +5,7 @@ title: C++ Nuggets
 tags: [c++]
 comments: false
 ---
+
 This page is (or better: will become) a collection of C++ features I find useful and worthy to share!
 
 ### Use emplace() instead of push()

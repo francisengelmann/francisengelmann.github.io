@@ -1,10 +1,11 @@
 ---
 layout: page
-permalink: /guides/guide_git/
+permalink: /guides/git/
 title: Git
 tags: [git]
 comments: false
 ---
+
 Git - the ultimative version control system.
 (Actually it is the only one I ever bothered to grasp.)
 This guide is probably best suited for people that already use git in their daily coding-life
@@ -48,3 +49,35 @@ same as
 git pull
 
 git push 
+
+
+### Old
+## Git (Draft)
+
+A visual introduction explaining the three different areas and the commit graph.
+
+### Three git stages
+
+Git differs between three different states. A file is always in exactly one of these states:
+- Working area: Currently editing the file. Changes on these files have to be added to the staging area first before commiting.
+- Staging area: All files in this area will be part of the next commit. Imagin this stage as a temporary state for files to accumulate until the next commit.
+- Commite area: All files in here were already commited and being tracked by the repository.
+
+[Put figure with three rounded rectangles to illustrate stages.]
+
+Commands to shift files between different areas:
+- From working to staging: `git add`
+- From staging to working: `git rm --cached`
+
+- From staging to commit: `git commit`
+- From commit to staging: ???
+
+[Add commands to the figure]
+
+### The git-graph
+Each commit corresponds to exactly one node in the git-graph.
+With `git checkout` you can quickly jump between the different nodes in the graph.
+Here you have to be careful: depending on how you manipulate the graph you can end up with nodes that are no longer reachable!
+[Put in example figure]
+
+Branches are exactly what the name says: just another branch in the git-graph. Nothing new to learn here except for the commands.

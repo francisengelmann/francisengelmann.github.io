@@ -13,4 +13,4 @@ image:
 * Our GCPR'16 submission was accepted.
 
 
-[snippets](https://github.com/francisengelmann/francisengelmann.github.io/blob/master/snippets.md)
+[Snippets](https://github.com/francisengelmann/francisengelmann.github.io/blob/master/snippets.md)

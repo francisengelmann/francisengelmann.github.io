@@ -1,4 +1,10 @@
-## Slurm
+---
+layout: page
+permalink: /guides/slurm/
+title: Slurm
+tags: [slurm]
+comments: false
+---
 
 ![slurm](http://hpc-uit.readthedocs.io/en/latest/_images/slurm.jpg)
 
