@@ -35,11 +35,11 @@ links:
     url: /contact/
  
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Europe/Luxembourg
-future:      true
+timezone: Europe/Luxembourg
+future:   true
 #pygments:    true
 #highlighter: rouge
-markdown:    kramdown
+markdown: kramdown
 encoding: utf-8
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
