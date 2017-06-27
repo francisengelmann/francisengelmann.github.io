@@ -39,7 +39,7 @@ timezone:    Europe/Luxembourg
 future:      true
 #pygments:    true
 highlighter: rouge
-markdown:    redcarpet
+#markdown:    redcarpet
 encoding: utf-8
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
@@ -52,12 +52,12 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
 
-  coderay:
-    coderay_line_numbers: 1
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 2
-    coderay_bold_every: 10
-    coderay_css: class
+  syntax_highlighter_opts:
+    line_numbers: 1
+    line_numbers_start: 1
+    tab_width: 2
+    bold_every: 10
+    css: class
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
