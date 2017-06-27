@@ -38,26 +38,26 @@ links:
 timezone:    Europe/Luxembourg
 future:      true
 #pygments:    true
-highlighter: rouge
-#markdown:    redcarpet
+#highlighter: rouge
+markdown:    kramdown
 encoding: utf-8
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
+#kramdown:
+#  auto_ids: true
+#  footnote_nr: 1
+#  entity_output: as_char
+#  toc_levels: 1..6
+#  enable_coderay: false
 
-  syntax_highlighter_opts:
-    line_numbers: 1
-    line_numbers_start: 1
-    tab_width: 2
-    bold_every: 10
-    css: class
+#  syntax_highlighter_opts:
+#    line_numbers: 1
+#    line_numbers_start: 1
+#    tab_width: 2
+#    bold_every: 10
+#    css: class
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
