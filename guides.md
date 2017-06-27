@@ -35,6 +35,12 @@ Branches are exactly what the name says: just another branch in the git-graph. N
 ### Code-Completion
 * Select correct virtualenv: ```File/Settings.../Project[...]/Proj.Interpreter/```
 * Also in settings: ```Editor/General/Code Completion```
+
+
+### Views
+<key>Alt</key> <key>1</key>-<key>7</key>
+View/Tool Windows...
+
 ### Virtual environments
 * Set a default virtual environment
 ### Running code
