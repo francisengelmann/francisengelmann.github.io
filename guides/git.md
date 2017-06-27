@@ -15,6 +15,10 @@ This guide tries to explain the basics of git in two a very simple steps.
 Let's get started.
 
 ### Number 1: The three areas of git
+
+![slurm]({{ site.url }}/guides/images/git_three_areas.png)
+
+
 1. Working directory
 2. Staging area
 3. Repository
