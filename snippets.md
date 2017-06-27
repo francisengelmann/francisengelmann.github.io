@@ -90,3 +90,6 @@ In local browser: ```http://localhost:8080/```
 
 ### gh
 print history from current dir
+
+### rsync
+rsync -av source destination
