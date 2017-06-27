@@ -35,6 +35,14 @@ Branches are exactly what the name says: just another branch in the git-graph. N
 ### Code-Completion
 * Select correct virtualenv: ```File/Settings.../Project[...]/Proj.Interpreter/```
 * Also in settings: ```Editor/General/Code Completion```
+
+### Add module path
+https://stackoverflow.com/questions/17198319/how-to-configure-custom-pythonpath-with-vm-and-pycharm
+
+### Views
+<key>Alt</key> <key>1</key>-<key>7</key>
+View/Tool Windows...
+
 ### Virtual environments
 * Set a default virtual environment
 ### Running code
