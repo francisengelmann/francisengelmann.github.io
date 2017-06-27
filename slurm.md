@@ -27,7 +27,12 @@ This is an example `run_script.sh`:
 #SBATCH --time=0-12:00:00
 #SBATCH -c1
 #SBATCH --gres=gpu:1
-#SBATCH --mail-type=ALL
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-type=END
 #SBATCH --mail-user=some_user@gmail.com
 python train.py --log_dir log_0018 --batch_size 64
 ```
+There are multiple mail-types: {FAIL,BEGIN,END,ALL}
+
+### References
+[1] Slurm Quickstart https://slurm.schedmd.com/quickstart.html
