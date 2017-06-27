@@ -12,10 +12,6 @@ Copies result of ```pwd``` immediatly into clipboard:
 ```vim ~/.matplotlib/matplotlibrc```
 ```> backend : TKAgg```
 
-### PyCharm
-alt 1-7
-View/Tool Windows...
-
 ### Copy only certain files from remote machine while preserving dir tree
 ```rsync -av --include='*/' --include='log.txt' --exclude='*' ./ user@remote_host:/home/user/```
 
