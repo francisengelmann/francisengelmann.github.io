@@ -85,3 +85,6 @@ Here you have to be careful: depending on how you manipulate the graph you can e
 [Put in example figure]
 
 Branches are exactly what the name says: just another branch in the git-graph. Nothing new to learn here except for the commands.
+
+### References
+Inspiration for this guide came from the Udacity course "How to use Git and GitHub".
