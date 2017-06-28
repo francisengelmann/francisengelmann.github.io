@@ -18,7 +18,8 @@ https://stackoverflow.com/questions/17198319/how-to-configure-custom-pythonpath-
 View/Tool Windows...
 
 ### Virtual environments
-* Set a default virtual environment
+* Set a default virtual environment. This is necessary for code completeion to work:   
+File/Default Settings.../Project Interpreter
 
 ### Running code
 * Find a better way to run the current file
