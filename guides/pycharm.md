@@ -21,8 +21,5 @@ View/Tool Windows...
 * Set a default virtual environment. This is necessary for code completeion to work:   
 File/Default Settings.../Project Interpreter
 
-### Running code
-* Find a better way to run the current file
-
 ### Run code on remote machine
 This only works in the professional edition of PyCharm which comes for free if you register as a student.
