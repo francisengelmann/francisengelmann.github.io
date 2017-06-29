@@ -54,6 +54,10 @@ git pull
 
 git push 
 
+### Commands
+
+`git remote add <name> <git-url>` : add remove repository  
+`git remote -v` : list all remotes  
 
 ### Old
 ## Git (Draft)
