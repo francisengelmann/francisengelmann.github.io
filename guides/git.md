@@ -58,6 +58,7 @@ git push
 
 `git remote add <name> <git-url>` : add remove repository  
 `git remote -v` : list all remotes  
+`git push -u <remote> <local-branch>` : push to specified remote
 
 ### Old
 ## Git (Draft)
