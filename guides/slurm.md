@@ -12,7 +12,7 @@ comments: false
 
 | Command | Description |
 | --- | --- |
-| sbatch <run_script.sh>     | Add new job into the queue. |
+| sbatch *<run_script.sh>*     | Add new job into the queue. |
 | squeue                     | List all jobs, running [R] and pending [PD]. |
 | scancel <job_id>           | Cancel job. |
 | scontrol show job <job_id> | Show more details. |
