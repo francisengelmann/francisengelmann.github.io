@@ -83,8 +83,9 @@ Start new jupyter session: ```jupyter notbeook --no-browser --port=1337```
 From local, connect to remote: ```ssh -N -f -L :8080:localhost:1337 tyskie```  
 In local browser: ```http://localhost:8080/```  
 
-#### Links
-- http://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily
+#### tmux Links
+- Cheatsheet: http://www.dayid.org/comp/tm.html
+- Split windows etc: http://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily
 - https://gist.github.com/MohamedAlaa/2961058
 
 
