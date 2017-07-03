@@ -6,6 +6,7 @@
 * Batch Normalization in TF http://r2rt.com/implementing-batch-normalization-in-tensorflow.html
 * TF-Slim https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/slim
 * TF-Learn http://tflearn.org/
+* Debugging TF: https://wookayin.github.io/tensorflow-talk-debugging/#63
 
 #### General
 * http://distill.pub/
