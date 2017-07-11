@@ -15,6 +15,9 @@ Sometimes you need to change the PYTON_PATH to add your own modules.
 For code completion to work, this path needs to be set.
 ```File/Settings/Project Structure/Add Content Root```
 
+### Show back and forward buttons to navigate code
+Enable ```View/Toolbar```
+
 ### Views
 <key>Alt</key> <key>1</key>-<key>7</key>
 View/Tool Windows...
