@@ -30,6 +30,7 @@ The staging area is a nifty little concept that allows us to specify exactly whi
 #### How to show the difference between these areas?
 - git diff
 - git diff --staged
+- git featch, git diff origin/master
 
 #### How to move changes from one area to another
 Working dir --> Staging area: git add <file>
