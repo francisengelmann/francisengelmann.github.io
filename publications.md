@@ -6,9 +6,9 @@ tags: [publications]
 comments: false
 ---
 
-* Francis Engelmann, Theodora Kontogianni, Alexander Hermans, Bastian Leibe  
-  __Exploring Spatial Context for 3D Semantic Segmentation of Point Clouds__
-  Workshop on 3D Reconstruction meets Semantics at
+* Francis Engelmann, Theodora Kontogianni, Alexander Hermans, Bastian Leibe 
+  __Exploring Spatial Context for 3D Semantic Segmentation of Point Clouds__ 
+  Workshop on 3D Reconstruction meets Semantics at  
   International Conference on Computer Vision (ICCV), 2017.
 
 * Anton Kasyanov, Francis Engelmann, Jörg Stückler, Bastian Leibe  
