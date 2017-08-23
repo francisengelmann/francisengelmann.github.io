@@ -25,7 +25,7 @@ comments: false
 
 * Aljoša Ošep, Alexander Hermans, Francis Engelmann, Dirk Klostermann, Markus Mathias, Bastian Leibe  
   __Multi-Scale Object Candidates for Generic Object Tracking in Street Scenes__  
-  IEEE International Conference on Robotics and Automation (ICRA), 2015.
+  IEEE International Conference on Robotics and Automation (ICRA), 2016.
 
 Browse my <a href="https://scholar.google.com/citations?user=-xOsXi8AAAAJ" target="_blank">Google Scholar profile</a>.
 
