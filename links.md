@@ -22,8 +22,8 @@
 #### Memory Networks
 
 #### Graph Networks
-http://geometricdeeplearning.com/
-https://research.googleblog.com/2017/04/predicting-properties-of-molecules-with.html
+http://geometricdeeplearning.com/  
+https://research.googleblog.com/2017/04/predicting-properties-of-molecules-with.html  
 
 #### Reinforcement Learning (RL)
-http://karpathy.github.io/2016/05/31/rl/
+http://karpathy.github.io/2016/05/31/rl/  
