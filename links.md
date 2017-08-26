@@ -14,3 +14,16 @@
 * http://colah.github.io/
 * http://r2rt.com/
 * http://cs231n.github.io/
+
+#### Conferences
+* ICML
+* KDD
+
+#### Memory Networks
+
+#### Graph Networks
+http://geometricdeeplearning.com/
+https://research.googleblog.com/2017/04/predicting-properties-of-molecules-with.html
+
+#### Reinforcement Learning (RL)
+http://karpathy.github.io/2016/05/31/rl/
