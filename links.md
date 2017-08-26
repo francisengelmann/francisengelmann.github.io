@@ -26,4 +26,7 @@ http://geometricdeeplearning.com/
 https://research.googleblog.com/2017/04/predicting-properties-of-molecules-with.html  
 
 #### Reinforcement Learning (RL)
-http://karpathy.github.io/2016/05/31/rl/  
+http://karpathy.github.io/2016/05/31/rl/
+Richard Sutton Book: http://ufal.mff.cuni.cz/~straka/courses/npfl114/2016/sutton-bookdraft2016sep.pdf
+David Silver Course: http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html
+Berkeley DRL: https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX
