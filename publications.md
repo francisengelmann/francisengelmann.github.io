@@ -9,7 +9,7 @@ comments: false
 * Francis Engelmann, Theodora Kontogianni, Alexander Hermans, Bastian Leibe  
   __Exploring Spatial Context for 3D Semantic Segmentation of Point Clouds__  
   Workshop on 3D Reconstruction meets Semantics at  
-  International Conference on Computer Vision (ICCV), 2017.
+  IEEE International Conference on Computer Vision (ICCV), 2017.
 
 * Anton Kasyanov, Francis Engelmann, Jörg Stückler, Bastian Leibe  
   __Keyframe-Based Visual-Inertial Online SLAM with Relocalization__  
@@ -17,7 +17,7 @@ comments: false
 
 * Francis Engelmann, Jörg Stückler, Bastian Leibe  
   __SAMP: Shape and Motion Priors for 4D Vehicle Reconstruction__  
-  Winter Conference on Applications of Computer Vision (WACV), 2017.
+  IEEE Winter Conference on Applications of Computer Vision (WACV), 2017.
 
 * Francis Engelmann, Jörg Stückler, Bastian Leibe  
   __Joint Object Pose Estimation and Shape Reconstruction in Urban Street Scenes Using 3D Shape Priors__  
