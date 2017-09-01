@@ -27,6 +27,7 @@ https://research.googleblog.com/2017/04/predicting-properties-of-molecules-with.
 GN on molecules: https://arxiv.org/abs/1509.09292  
 IEEE Bronstein publication: https://arxiv.org/abs/1611.08097  
 TF implementation on GN: http://tkipf.github.io/#two  
+http://www.inference.vc/how-powerful-are-graph-convolutions-review-of-kipf-welling-2016-2/
 
 #### Reinforcement Learning (RL)
 http://karpathy.github.io/2016/05/31/rl/  
