@@ -94,3 +94,6 @@ print history from current dir
 
 ### rsync
 rsync -av source destination
+
+* ls -d : only list directories
+* scp -r ./asd*asd : when : present in name
