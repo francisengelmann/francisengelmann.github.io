@@ -36,5 +36,5 @@ David Silver Course: http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html
 Berkeley DRL: https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX
 
 # Cool stuff
-http://setosa.io/ev/eigenvectors-and-eigenvalues/
-https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/eigenvalues-and-eigenvectors/
+http://setosa.io/ev/eigenvectors-and-eigenvalues/  
+https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/eigenvalues-and-eigenvectors/  
