@@ -26,7 +26,7 @@ http://geometricdeeplearning.com/
 https://research.googleblog.com/2017/04/predicting-properties-of-molecules-with.html  
 GN on molecules: https://arxiv.org/abs/1509.09292  
 IEEE Bronstein publication: https://arxiv.org/abs/1611.08097  
-TF implementation on GN: http://tkipf.github.io/#two  
+Kipf, TF implementation on GN: http://tkipf.github.io/graph-convolutional-networks/  
 http://www.inference.vc/how-powerful-are-graph-convolutions-review-of-kipf-welling-2016-2/
 
 #### Reinforcement Learning (RL)
