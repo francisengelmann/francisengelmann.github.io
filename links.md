@@ -40,4 +40,5 @@ http://setosa.io/ev/eigenvectors-and-eigenvalues/
 https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/eigenvalues-and-eigenvectors/
 
 # Practical Deep Learning
+http://rishy.github.io/ml/2017/01/05/how-to-train-your-dnn/  
 https://arxiv.org/pdf/1206.5533v2.pdf  
