@@ -43,3 +43,6 @@ https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-s
 http://rishy.github.io/ml/2017/01/05/how-to-train-your-dnn/  
 https://arxiv.org/pdf/1206.5533v2.pdf  
 https://medium.com/@karpathy/yes-you-should-understand-backprop-e2f06eab496b
+
+# Tensorflow
+Dataset API: https://kratzert.github.io/2017/09/11/speeding-up-tensorflows-input-pipeline.html
