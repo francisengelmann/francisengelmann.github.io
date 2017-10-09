@@ -46,3 +46,4 @@ https://medium.com/@karpathy/yes-you-should-understand-backprop-e2f06eab496b
 
 # Tensorflow
 Dataset API: https://kratzert.github.io/2017/09/11/speeding-up-tensorflows-input-pipeline.html
+https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/5_DataManagement/tensorflow_dataset_api.py
