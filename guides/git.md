@@ -61,6 +61,10 @@ git push
 `git remote -v` : list all remotes  
 `git push -u <remote> <local-branch>` : push to specified remote
 
+## Tools
+`git mergetool` - Convenient GUI tool to merge files.
+
+
 ### Old
 ## Git (Draft)
 
