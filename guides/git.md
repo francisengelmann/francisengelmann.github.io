@@ -62,8 +62,8 @@ git push
 `git push -u <remote> <local-branch>` : push to specified remote
 
 ## Tools
-`git mergetool` - Convenient GUI tool to merge files.
-
+`git mergetool` - merge files  
+`git difftool` - show difference between files 
 
 ### Old
 ## Git (Draft)
