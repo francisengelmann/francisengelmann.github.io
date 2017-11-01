@@ -97,3 +97,7 @@ rsync -av source destination
 
 * ls -d : only list directories
 * scp -r ./asd*asd : when : present in name
+
+### VKT, python3 wrappers in virtualenv on mac using homebrew
+* ``brew install vtk --with-python3 --without-python`` Install vtk with python3 bindings (and without python2, will complain itherwise)
+* 
