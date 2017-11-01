@@ -99,5 +99,9 @@ rsync -av source destination
 * scp -r ./asd*asd : when : present in name
 
 ### VKT, python3 wrappers in virtualenv on mac using homebrew
-* ``brew install vtk --with-python3 --without-python`` Install vtk with python3 bindings (and without python2, will complain itherwise)
-* 
+* ``brew install vtk --with-python3 --without-python`` Install vtk with python3 bindings (and without python2, will complain otherwise)
+* Next you need to copy or link the vtk site-packages into your virtualenv.
+Homebrew installs it here: ``/usr/local/Cellar/vtk/8.0.1/lib/python3.6/site-packages/vtk``
+So all you need to do in order to access vtk form your virtualenv is to link or copy vtk into your virtualenv site-package folder located here: 
+``/Users/foo/.virtualenvs/tf_py3/lib/python3.6/site-packages/vtk``
+
