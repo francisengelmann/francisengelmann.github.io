@@ -105,3 +105,6 @@ Homebrew installs it here: ``/usr/local/Cellar/vtk/8.0.1/lib/python3.6/site-pack
 So all you need to do in order to access vtk form your virtualenv is to link or copy vtk into your virtualenv site-package folder located here: 
 ``/Users/foo/.virtualenvs/tf_py3/lib/python3.6/site-packages/vtk``
 
+### Advanced shell options
+Enable with ``shopt -s extglob``.
+This let's you do cool things like listing everything *not* matching a pattern e.g. ``ls !(*.npy)``
