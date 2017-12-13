@@ -47,13 +47,12 @@ Staging area --> Repository:  git commit -m "<commit message>"
 - Ok this is number 3 although I promised to keep it down to two. In fact, this section does not introduce any new concepts.
 It's really just the three areas and the git tree.
 
-git fetch
-git merge master origin/master
 
-same as
-git pull
-
-git push 
+`git pull` - is a shortcut for:   
+`git fetch` - gathers all remote commits and branches into the local repository
+`git merge master origin/master`  - merge local master with the remote one
+ 
+`git push` 
 
 ### Commands
 
