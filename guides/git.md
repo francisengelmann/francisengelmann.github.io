@@ -48,33 +48,33 @@ Staging area --> Repository:  git commit -m "<commit message>"
 It's really just the three areas and the git tree.
 
 
-`git pull` - is a shortcut for:   
-`git fetch` - gathers all remote commits and branches into the local repository
-`git merge master origin/master`  - merge local master with the remote one
+`git pull` - is a shortcut for:    
+`git fetch` - gathers all remote commits and branches into the local repository  
+`git merge master origin/master`  - merge local master with the remote one  
  
 `git push` 
 
 ### Commands
 
 `git remote add <name> <git-url>` : add remove repository  
-`git remote -v` : list all remotes  
-`git push -u <remote> <local-branch>` : push to specified remote
+`git remote -v` : list all remotes    
+`git push -u <remote> <local-branch>` : push to specified remote  
 
 ## Tools
 `git mergetool` - merge files  
-`git difftool` - show difference between files 
+`git difftool` - show difference between files  
 
 ### Old
 ## Git (Draft)
 
-A visual introduction explaining the three different areas and the commit graph.
+A visual introduction explaining the three different areas and the commit graph.  
 
 ### Three git stages
 
 Git differs between three different states. A file is always in exactly one of these states:
-- Working area: Currently editing the file. Changes on these files have to be added to the staging area first before commiting.
-- Staging area: All files in this area will be part of the next commit. Imagin this stage as a temporary state for files to accumulate until the next commit.
-- Commite area: All files in here were already commited and being tracked by the repository.
+- Working area: Currently editing the file. Changes on these files have to be added to the staging area first before commiting.  
+- Staging area: All files in this area will be part of the next commit. Imagin this stage as a temporary state for files to accumulate until the next commit.  
+- Commite area: All files in here were already commited and being tracked by the repository.  
 
 [Put figure with three rounded rectangles to illustrate stages.]
 
