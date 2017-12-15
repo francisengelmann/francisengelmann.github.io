@@ -1,3 +1,5 @@
+kill $(ps aux | grep 'train_segment' | awk '{print $2}')
+
 ### pwdd
 Copies result of ```pwd``` immediatly into clipboard:
 
