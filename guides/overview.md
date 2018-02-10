@@ -16,5 +16,4 @@ At this point the articles are still mostly drafts.
 [[link]]({{ site.url }}/guides/git/)
 
 ## Slurm
-
 [[link]]({{ site.url }}/guides/slurm/)
