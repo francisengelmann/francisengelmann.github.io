@@ -20,10 +20,12 @@ comments: false
 * Francis Engelmann, Jörg Stückler, Bastian Leibe  
   __SAMP: Shape and Motion Priors for 4D Vehicle Reconstruction__  
   IEEE Winter Conference on Applications of Computer Vision (WACV), 2017.
-
+  [[Paper]](https://www.vision.rwth-aachen.de/media/papers/EngelmannWACV17_x8euNDK.pdf)
+  
 * Francis Engelmann, Jörg Stückler, Bastian Leibe  
   __Joint Object Pose Estimation and Shape Reconstruction in Urban Street Scenes Using 3D Shape Priors__  
   German Conference on Pattern Recognition (GCPR), 2016 (Oral Presentation).
+  [[Paper]](http://web-info8.informatik.rwth-aachen.de/media/papers/EngelmannGCPR16.pdf)
 
 * Aljoša Ošep, Alexander Hermans, Francis Engelmann, Dirk Klostermann, Markus Mathias, Bastian Leibe  
   __Multi-Scale Object Candidates for Generic Object Tracking in Street Scenes__  
