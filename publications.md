@@ -10,10 +10,12 @@ comments: false
   __Exploring Spatial Context for 3D Semantic Segmentation of Point Clouds__  
   Workshop on 3D Reconstruction meets Semantics at  
   IEEE International Conference on Computer Vision (ICCV), 2017.
+  [[Paper]](https://arxiv.org/pdf/1802.01500v1.pdf)
 
 * Anton Kasyanov, Francis Engelmann, Jörg Stückler, Bastian Leibe  
   __Keyframe-Based Visual-Inertial Online SLAM with Relocalization__  
-  IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2017. [[Paper]](https://arxiv.org/pdf/1702.02175.pdf)
+  IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2017.
+  [[Paper]](https://arxiv.org/pdf/1702.02175.pdf)
 
 * Francis Engelmann, Jörg Stückler, Bastian Leibe  
   __SAMP: Shape and Motion Priors for 4D Vehicle Reconstruction__  
