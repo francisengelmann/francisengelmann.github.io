@@ -30,6 +30,7 @@ The staging area is a nifty little concept that allows us to specify exactly whi
 #### How to show the difference between these areas?
 - git diff  
 - git diff --staged
+- git featch, git diff origin/master
 
 #### How to move changes from one area to another
 Working dir --> Staging area: git add <file>  
@@ -46,26 +47,34 @@ Staging area --> Repository:  git commit -m "<commit message>"
 - Ok this is number 3 although I promised to keep it down to two. In fact, this section does not introduce any new concepts.
 It's really just the three areas and the git tree.
 
-git fetch
-git merge master origin/master
 
-same as
-git pull
+`git pull` - is a shortcut for:    
+`git fetch` - gathers all remote commits and branches into the local repository  
+`git merge master origin/master`  - merge local master with the remote one  
+ 
+`git push` 
 
-git push 
+### Commands
 
+`git remote add <name> <git-url>` : add remove repository  
+`git remote -v` : list all remotes    
+`git push -u <remote> <local-branch>` : push to specified remote  
+
+## Tools
+`git mergetool` - merge files  
+`git difftool` - show difference between files  
 
 ### Old
 ## Git (Draft)
 
-A visual introduction explaining the three different areas and the commit graph.
+A visual introduction explaining the three different areas and the commit graph.  
 
 ### Three git stages
 
 Git differs between three different states. A file is always in exactly one of these states:
-- Working area: Currently editing the file. Changes on these files have to be added to the staging area first before commiting.
-- Staging area: All files in this area will be part of the next commit. Imagin this stage as a temporary state for files to accumulate until the next commit.
-- Commite area: All files in here were already commited and being tracked by the repository.
+- Working area: Currently editing the file. Changes on these files have to be added to the staging area first before commiting.  
+- Staging area: All files in this area will be part of the next commit. Imagin this stage as a temporary state for files to accumulate until the next commit.  
+- Commite area: All files in here were already commited and being tracked by the repository.  
 
 [Put figure with three rounded rectangles to illustrate stages.]
 
@@ -85,3 +94,6 @@ Here you have to be careful: depending on how you manipulate the graph you can e
 [Put in example figure]
 
 Branches are exactly what the name says: just another branch in the git-graph. Nothing new to learn here except for the commands.
+
+### References
+Inspiration for this guide came from the Udacity course "How to use Git and GitHub".

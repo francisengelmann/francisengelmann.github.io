@@ -1,3 +1,5 @@
+kill $(ps aux | grep 'train_segment' | awk '{print $2}')
+
 ### pwdd
 Copies result of ```pwd``` immediatly into clipboard:
 
@@ -83,8 +85,9 @@ Start new jupyter session: ```jupyter notbeook --no-browser --port=1337```
 From local, connect to remote: ```ssh -N -f -L :8080:localhost:1337 tyskie```  
 In local browser: ```http://localhost:8080/```  
 
-#### Links
-- http://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily
+#### tmux Links
+- Cheatsheet: http://www.dayid.org/comp/tm.html
+- Split windows etc: http://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily
 - https://gist.github.com/MohamedAlaa/2961058
 
 
@@ -93,3 +96,17 @@ print history from current dir
 
 ### rsync
 rsync -av source destination
+
+* ls -d : only list directories
+* scp -r ./asd*asd : when : present in name
+
+### VKT, python3 wrappers in virtualenv on mac using homebrew
+* ``brew install vtk --with-python3 --without-python`` Install vtk with python3 bindings (and without python2, will complain otherwise)
+* Next you need to copy or link the vtk site-packages into your virtualenv.
+Homebrew installs it here: ``/usr/local/Cellar/vtk/8.0.1/lib/python3.6/site-packages/vtk``
+So all you need to do in order to access vtk form your virtualenv is to link or copy vtk into your virtualenv site-package folder located here: 
+``/Users/foo/.virtualenvs/tf_py3/lib/python3.6/site-packages/vtk``
+
+### Extended shell options
+Enable with ``shopt -s extglob``.  
+This let's you do cool things like listing everything *not* matching a given pattern e.g. ``ls !(*.npy)``
