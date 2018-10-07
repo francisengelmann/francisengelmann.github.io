@@ -28,11 +28,11 @@ I hope the repository is clear. In general we "commit" changes from the working 
 The staging area is a nifty little concept that allows us to specify exactly which changes we want to add to a particular commit.
 
 #### How to show the difference between these areas?
-- git diff
+- git diff  
 - git diff --staged
 
 #### How to move changes from one area to another
-Working dir --> Staging area: git add <file>
+Working dir --> Staging area: git add <file>  
 Staging area --> Repository:  git commit -m "<commit message>"
 
 ### Number 2: The Git Tree
@@ -70,10 +70,10 @@ Git differs between three different states. A file is always in exactly one of t
 [Put figure with three rounded rectangles to illustrate stages.]
 
 Commands to shift files between different areas:
-- From working to staging: `git add`
+- From working to staging: `git add`  
 - From staging to working: `git rm --cached`
 
-- From staging to commit: `git commit`
+- From staging to commit: `git commit`  
 - From commit to staging: ???
 
 [Add commands to the figure]
