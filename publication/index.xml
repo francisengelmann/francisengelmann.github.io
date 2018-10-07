@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications on Academic</title>
+    <title>Publications on Francis Engelmann</title>
     <link>https://francisengelmann.github.io/publication/</link>
-    <description>Recent content in Publications on Academic</description>
+    <description>Recent content in Publications on Francis Engelmann</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
@@ -11,6 +11,51 @@
     
 	<atom:link href="https://francisengelmann.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>&#43;</title>
+      <link>https://francisengelmann.github.io/publication/eccvw18_engelmann/</link>
+      <pubDate>Sun, 07 Oct 2018 21:23:00 +0200</pubDate>
+      
+      <guid>https://francisengelmann.github.io/publication/eccvw18_engelmann/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iccvw17_engelmann</title>
+      <link>https://francisengelmann.github.io/publication/iccvw17_engelmann/</link>
+      <pubDate>Sat, 07 Oct 2017 21:22:50 +0200</pubDate>
+      
+      <guid>https://francisengelmann.github.io/publication/iccvw17_engelmann/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iros17_kasyanov</title>
+      <link>https://francisengelmann.github.io/publication/iros17_kasyanov/</link>
+      <pubDate>Sat, 07 Oct 2017 21:22:29 +0200</pubDate>
+      
+      <guid>https://francisengelmann.github.io/publication/iros17_kasyanov/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wacv17_engelmann</title>
+      <link>https://francisengelmann.github.io/publication/wacv17_engelmann/</link>
+      <pubDate>Sat, 07 Oct 2017 21:22:19 +0200</pubDate>
+      
+      <guid>https://francisengelmann.github.io/publication/wacv17_engelmann/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gcpr15_engelmann</title>
+      <link>https://francisengelmann.github.io/publication/gcpr16_engelmann/</link>
+      <pubDate>Fri, 07 Oct 2016 21:14:27 +0200</pubDate>
+      
+      <guid>https://francisengelmann.github.io/publication/gcpr16_engelmann/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

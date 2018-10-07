@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publication_types on Academic</title>
+    <title>Publication_types on Francis Engelmann</title>
     <link>https://francisengelmann.github.io/publication_types/</link>
-    <description>Recent content in Publication_types on Academic</description>
+    <description>Recent content in Publication_types on Francis Engelmann</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 07 Oct 2018 21:23:00 +0200</lastBuildDate>
     
 	<atom:link href="https://francisengelmann.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1</title>
+      <link>https://francisengelmann.github.io/publication_types/1/</link>
+      <pubDate>Sun, 07 Oct 2018 21:23:00 +0200</pubDate>
+      
+      <guid>https://francisengelmann.github.io/publication_types/1/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
