@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Francis Engelmann</title>
+    <link>https://francisengelmann.github.io/project/</link>
+    <description>Recent content in Projects on Francis Engelmann</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 17 Oct 2018 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://francisengelmann.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>3D Semantic Segmentation</title>
+      <link>https://francisengelmann.github.io/project/3d_sem_seg/</link>
+      <pubDate>Wed, 17 Oct 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://francisengelmann.github.io/project/3d_sem_seg/</guid>
+      <description>https://www.vision.rwth-aachen.de/page/3dsemseg</description>
+    </item>
+    
+    <item>
+      <title>3D Shape Priors</title>
+      <link>https://francisengelmann.github.io/project/3d_shape_priors/</link>
+      <pubDate>Tue, 16 Oct 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://francisengelmann.github.io/project/3d_shape_priors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtual Kitti 3D</title>
+      <link>https://francisengelmann.github.io/project/vkitti3d/</link>
+      <pubDate>Sun, 14 Oct 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://francisengelmann.github.io/project/vkitti3d/</guid>
+      <description>https://github.com/VisualComputingInstitute/vkitti3D-dataset</description>
+    </item>
+    
+    <item>
+      <title>Python Viz 3D</title>
+      <link>https://francisengelmann.github.io/project/viz3d/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://francisengelmann.github.io/project/viz3d/</guid>
+      <description>content</description>
+    </item>
+    
+  </channel>
+</rss>

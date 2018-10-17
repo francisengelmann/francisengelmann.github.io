@@ -4,6 +4,22 @@
     
     <url>
     
+      <loc>https://francisengelmann.github.io/project/3d_sem_seg/</loc>
+      <lastmod>2018-10-17T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://francisengelmann.github.io/project/3d_shape_priors/</loc>
+      <lastmod>2018-10-16T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://francisengelmann.github.io/project/vkitti3d/</loc>
       <lastmod>2018-10-14T00:00:00+02:00</lastmod>
     </url>
@@ -28,7 +44,7 @@
     
     <url>
     
-      <loc>https://francisengelmann.github.io/project/gcn/</loc>
+      <loc>https://francisengelmann.github.io/project_small/gcn/</loc>
       <lastmod>2017-11-10T00:00:00+01:00</lastmod>
     </url>
     
@@ -84,7 +100,7 @@
     
     <url>
     
-      <loc>https://francisengelmann.github.io/project/fast_voxel_traversal/</loc>
+      <loc>https://francisengelmann.github.io/project_small/fast_voxel_traversal/</loc>
       <lastmod>2016-12-22T00:00:00+01:00</lastmod>
     </url>
     
@@ -92,7 +108,7 @@
     
     <url>
     
-      <loc>https://francisengelmann.github.io/project/sound/</loc>
+      <loc>https://francisengelmann.github.io/project_small/sound/</loc>
       <lastmod>2016-11-16T00:00:00+01:00</lastmod>
     </url>
     
@@ -100,7 +116,7 @@
     
     <url>
     
-      <loc>https://francisengelmann.github.io/project/mcmc/</loc>
+      <loc>https://francisengelmann.github.io/project_small/mcmc/</loc>
       <lastmod>2016-11-11T00:00:00+01:00</lastmod>
     </url>
     
@@ -142,8 +158,17 @@
     
     <url>
     
+      <loc>https://francisengelmann.github.io/project_small/</loc>
+      <lastmod>2017-11-10T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://francisengelmann.github.io/project/</loc>
-      <lastmod>2018-10-14T00:00:00+02:00</lastmod>
+      <lastmod>2018-10-17T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
