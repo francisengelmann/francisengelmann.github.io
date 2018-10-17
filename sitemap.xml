@@ -4,8 +4,32 @@
     
     <url>
     
+      <loc>https://francisengelmann.github.io/project/vkitti3d/</loc>
+      <lastmod>2018-10-14T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://francisengelmann.github.io/project/viz3d/</loc>
+      <lastmod>2018-10-13T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://francisengelmann.github.io/publication/eccvw18_engelmann/</loc>
       <lastmod>2018-10-07T21:23:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://francisengelmann.github.io/project/gcn/</loc>
+      <lastmod>2017-11-10T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -60,6 +84,30 @@
     
     <url>
     
+      <loc>https://francisengelmann.github.io/project/fast_voxel_traversal/</loc>
+      <lastmod>2016-12-22T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://francisengelmann.github.io/project/sound/</loc>
+      <lastmod>2016-11-16T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://francisengelmann.github.io/project/mcmc/</loc>
+      <lastmod>2016-11-11T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://francisengelmann.github.io/publication/gcpr16_engelmann/</loc>
       <lastmod>2016-10-07T21:14:27+02:00</lastmod>
     </url>
@@ -87,6 +135,15 @@
     
       <loc>https://francisengelmann.github.io/</loc>
       <lastmod>2017-10-15T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://francisengelmann.github.io/project/</loc>
+      <lastmod>2018-10-14T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     

@@ -11,11 +11,40 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Virtual Kitti 3D</title>
+      <link>https://francisengelmann.github.io/project/vkitti3d/</link>
+      <pubDate>Sun, 14 Oct 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://francisengelmann.github.io/project/vkitti3d/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/VisualComputingInstitute/vkitti3D-dataset&#34; target=&#34;_blank&#34;&gt;https://github.com/VisualComputingInstitute/vkitti3D-dataset&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python Viz 3D</title>
+      <link>https://francisengelmann.github.io/project/viz3d/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://francisengelmann.github.io/project/viz3d/</guid>
+      <description>&lt;p&gt;content&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>&#43;</title>
       <link>https://francisengelmann.github.io/publication/eccvw18_engelmann/</link>
       <pubDate>Sun, 07 Oct 2018 21:23:00 +0200</pubDate>
       
       <guid>https://francisengelmann.github.io/publication/eccvw18_engelmann/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graph Conv Nets</title>
+      <link>https://francisengelmann.github.io/project/gcn/</link>
+      <pubDate>Fri, 10 Nov 2017 00:00:00 +0100</pubDate>
+      
+      <guid>https://francisengelmann.github.io/project/gcn/</guid>
       <description></description>
     </item>
     
@@ -44,6 +73,34 @@
       
       <guid>https://francisengelmann.github.io/publication/wacv17_engelmann/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Fast Voxel Traversel</title>
+      <link>https://francisengelmann.github.io/project/fast_voxel_traversal/</link>
+      <pubDate>Thu, 22 Dec 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://francisengelmann.github.io/project/fast_voxel_traversal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sound</title>
+      <link>https://francisengelmann.github.io/project/sound/</link>
+      <pubDate>Wed, 16 Nov 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://francisengelmann.github.io/project/sound/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MCMC-MH</title>
+      <link>https://francisengelmann.github.io/project/mcmc/</link>
+      <pubDate>Fri, 11 Nov 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://francisengelmann.github.io/project/mcmc/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/VisualComputingInstitute/vkitti3D-dataset&#34; target=&#34;_blank&#34;&gt;https://github.com/VisualComputingInstitute/vkitti3D-dataset&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
