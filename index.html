@@ -31,6 +31,7 @@
       img.p-teaser {width: 160px;}
       img.profile {
         width: 160px;
+        height: 160px;
         border: 1px solid #ddd;
         padding: 5px;
         box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.5);
@@ -42,12 +43,14 @@
 
   <body>
     <main class="container">
-      <div class="mt-5 mb-5">
-          <img src="profile.jpg" align="left" alt="profile" class="rounded-circle profile mr-3" />
-          <div>
+      <div class="mt-5 mb-5 text-center">
+          <img src="profile.jpg" alt="profile" class="rounded-circle profile mr-3 mb-sm-5 float-sm-left" />
+          <!--<div style="min-height: 160px;" class="d-block d-sm-none"></div>-->
+          <div class="border text-center text-sm-left">
             <h1>Francis Engelmann</h1>
             <p>
-            PhD Student in Computer Vision, Machine Learning and 3D Scene Understanding<br /> with the
+            PhD Student in Computer Vision, Machine Learning and 3D Scene Understanding
+            <br class="d-none d-md-block"> with the
             <a target="_blank" href="https://www.vision.rwth-aachen.de/">Computer Vision Group</a>
             of
             <a target="_blank" href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ">Prof. Dr. Bastian Leibe</a>
@@ -70,7 +73,7 @@
       <ul class="list-unstyled">
 
         <li class="media">
-          <img src="teaser_3D-MPA.png" class="mr-4 p-teaser" />
+          <img src="teaser_3D-MPA.png" class="align-self-center mr-4 p-teaser" />
           <div class="media-body">
             <p>
               <span class="p-title">3D-MPA: Multi Proposal Aggregation for 3D Semantic Instance Segmentation</span></br>
@@ -95,7 +98,7 @@
         </li>
 
         <li class="media my-4">
-          <img src="teaser_DCM-Net.png" class="mr-4 p-teaser" />
+          <img src="teaser_DCM-Net.png" class="align-self-center mr-4 p-teaser" />
           <div class="media-body">
             <p>
               <span class="p-title">DualConvMesh-Net: Joint Geodesic and Euclidean Convolutions on 3D Meshes</span></br>
@@ -123,7 +126,7 @@
         </li>
 
         <li class="media my-4">
-          <img src="teaser_DPC.png" class="mr-4 p-teaser" />
+          <img src="teaser_DPC.png" class="align-self-center mr-4 p-teaser" />
           <div class="media-body">
             <p>
               <span class="p-title">Dilated Point Convolutions: On the Receptive Field Size of Point Convolutions on 3D Point Clouds</span></br>
@@ -149,7 +152,7 @@
         </li>
 
         <li class="media my-4">
-          <img src="teaser_3D-BEVIS.png" class="mr-4 p-teaser" />
+          <img src="teaser_3D-BEVIS.png" class="align-self-center mr-4 p-teaser" />
           <div class="media-body">
             <p>
               <span class="p-title">3D-BEVIS: Bird’s-Eye-View Instance Segmentation</span></br>
@@ -174,7 +177,7 @@
         </li>
 
         <li class="media my-4">
-          <img src="teaser_KWYND.png" class="mr-4 p-teaser" />
+          <img src="teaser_KWYND.png" class="align-self-center mr-4 p-teaser" />
           <div class="media-body">
             <p>
               <span class="p-title">Know What Your Neighbors Do: 3D Semantic Segmentation of Point Clouds</span></br>
@@ -198,7 +201,7 @@
         </li>
 
         <li class="media my-4">
-          <img src="teaser_Exploring.png" class="mr-4 p-teaser" />
+          <img src="teaser_Exploring.png" class="align-self-center mr-4 p-teaser" />
           <div class="media-body">
             <p>
               <span class="p-title">Exploring Spatial Context for 3D Semantic Segmentation of Point Clouds</span></br>
@@ -228,7 +231,7 @@
         </li>
 
         <li class="media my-4">
-          <img src="teaser_vislam.png" class="mr-4 p-teaser" />
+          <img src="teaser_vislam.png" class="align-self-center mr-4 p-teaser" />
           <div class="media-body">
             <p>
               <span class="p-title">Keyframe-Based Visual-Inertial Online SLAM with Relocalization</span></br>
@@ -252,7 +255,7 @@
         </li>
 
         <li class="media my-4">
-          <img src="teaser_SAMP.png" class="mr-4 p-teaser" />
+          <img src="teaser_SAMP.png" class="align-self-center mr-4 p-teaser" />
           <div class="media-body">
             <p>
               <span class="p-title">SAMP: Shape and Motion Priors for 4D Vehicle Reconstruction</span></br>
@@ -280,7 +283,8 @@
         </li>
 
         <li class="media my-4">
-          <img src="teaser_GCPR.png" class="mr-4 p-teaser" />
+          <img src="teaser_GCPR.png" class="align-self-center mr-4 p-teaser" />
+          <br />
           <div class="media-body">
             <p>
               <span class="p-title">Joint Object Pose Estimation and Shape Reconstruction in Urban Street Scenes Using 3D Shape Priors</span></br>
