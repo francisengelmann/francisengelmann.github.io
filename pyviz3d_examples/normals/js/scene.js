@@ -1,7 +1,10 @@
 import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r112/build/three.module.js';
 import {GUI} from 'https://threejsfundamentals.org/3rdparty/dat.gui.module.js';
 import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r112/examples/jsm/controls/OrbitControls.js';
+import {OBJLoader} from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/examples/jsm/loaders/OBJLoader.js';
 
+let num_objects_curr = 0;
+let num_objects = 100;
 
 function onDoubleClick(event) {
 	//console.log(event);
@@ -24,12 +27,18 @@ function get_lines(properties){
     fetch(binary_filename)
     .then(response => response.arrayBuffer())
     .then(buffer => {
-        positions = new Float32Array(buffer, 0, 3 * num_lines);
+        positions = new Float32Array(buffer, 0, 3 * num_lines * 2);
+        let colors_uint8 = new Uint8Array(buffer, (3 * num_lines * 2) * 4, 3 * num_lines * 2);
+        let colors_float32 = Float32Array.from(colors_uint8);
+        for(let i=0; i<colors_float32.length; i++) {
+         	colors_float32[i] /= 255.0;
+        }
         geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
-    }).then(render);
+        geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors_float32, 3));
 
-    geometry.setAttribute( 'position', new THREE.Float32BufferAttribute( positions, 3 ));
-	var material = new THREE.LineBasicMaterial({color: 0xff7700});
+    }).then(step_progress_bar).then(render);
+
+	var material = new THREE.LineBasicMaterial({color: 0xFFFFFF, vertexColors: true});
 	return new THREE.LineSegments( geometry, material );
 
 }
@@ -41,6 +50,57 @@ function get_cube(){
 	cube_material.wireframeLinewidth = 5;
 	let cube = new THREE.Mesh(cube_geometry, cube_material);
 	return cube
+}
+
+function add_progress_bar(){
+    let gProgressElement = document.createElement("div");
+    const html_code = '<div class="progress">\n' +
+		'<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%" id="progress_bar"></div>\n' +
+		'</div>';
+    gProgressElement.innerHTML = html_code;
+    gProgressElement.id = "progress_bar_id"
+    gProgressElement.style.left = "20%";
+    gProgressElement.style.right = "20%";
+    gProgressElement.style.position = "fixed";
+    gProgressElement.style.top = "50%";
+    document.body.appendChild(gProgressElement);
+}
+
+function step_progress_bar(){
+	num_objects_curr += 1.0
+	let progress_int = parseInt(num_objects_curr / num_objects * 100.0)
+	let width_string = String(progress_int)+'%';
+	document.getElementById('progress_bar').style.width = width_string;
+	document.getElementById('progress_bar').innerText = width_string;
+
+	if (progress_int==100) {
+		document.getElementById( 'progress_bar_id' ).innerHTML = "";
+	}
+}
+
+function add_watermark(){
+	let watermark = document.createElement("div");
+    const html_code = '<a href="https://francisengelmann.github.io/pyviz3d/" target="_blank"><b>PyViz3D</b></a>';
+    watermark.innerHTML = html_code;
+    watermark.id = "watermark"
+    watermark.style.right = "5px";
+    watermark.style.position = "fixed";
+    watermark.style.bottom = "5px";
+    watermark.style.color = "#999";
+    watermark.style.fontSize = "7ox";
+    document.body.appendChild(watermark);
+}
+
+function set_camera_properties(properties){
+	camera.position.set(properties['position'][0],
+						properties['position'][1],
+						properties['position'][2]);
+	controls.target = new THREE.Vector3(properties['look_at'][0],
+	 	                                properties['look_at'][1],
+	 						    		properties['look_at'][2]);
+	camera.updateProjectionMatrix();
+	controls.update()
+
 }
 
 function get_points(properties){
@@ -66,32 +126,80 @@ function get_points(properties){
 			geometry.setAttribute('normal', new THREE.Float32BufferAttribute(normals, 3));
 			geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors_float32, 3));
 		})
+		.then(step_progress_bar)
         .then(render);
 
 	 // var loader = new THREE.TextureLoader();
 	 // var texture = loader.load( 'disc.png' );
-	 // let material = new THREE.PointsMaterial({
-     //     size: properties['point_size'],
-	 //     map: texture,
-	 //     alphaTest: 0.5,
-     //     vertexColors: THREE.VertexColors,
-     //     sizeAttenuation: true});
+
+	// let material = new THREE.PointsMaterial({
+    //      size: properties['point_size'],
+	//      map: texture,
+	//      alphaTest: 0.5,
+    //      vertexColors: THREE.VertexColors,
+    //      sizeAttenuation: true});
 
 
-	 var uniforms = {
-        pointSize:    { value: properties['point_size'] },
+	 let uniforms = {
+        pointSize: { value: properties['point_size'] },
+		alpha: {value: properties['alpha']},
+		shading_type: {value: properties['shading_type']},
      };
 
-	 var material = new THREE.ShaderMaterial( {
+	 let material = new THREE.ShaderMaterial( {
 		uniforms:       uniforms,
         vertexShader:   document.getElementById( 'vertexshader' ).textContent,
         fragmentShader: document.getElementById( 'fragmentshader' ).textContent,
-        transparent:    true
+        transparent:    true});
 
-    } );
-
-	var points = new THREE.Points(geometry, material);
+	let points = new THREE.Points(geometry, material);
 	return points
+}
+
+function get_obj(properties){
+	var container = new THREE.Object3D();
+	function loadModel(object) {
+		object.traverse(
+		function(child) {
+			if (child.isMesh) {
+				console
+				let r = properties['color'][0]
+				let g = properties['color'][1]
+				let b = properties['color'][2]
+				let colorString = "rgb("+r+","+g+", "+b+")"
+				child.material.color.set(new THREE.Color(colorString));
+				console.log('setting colors ' + r + " " + g + " " + b)
+			}
+		});
+		object.translateX(properties['translation'][0])
+		object.translateY(properties['translation'][1])
+		object.translateZ(properties['translation'][2])
+
+		object.rotateX(properties['rotation'][0])
+		object.rotateY(properties['rotation'][1])
+		object.rotateZ(properties['rotation'][2])
+
+		// object.scale.x(properties['scale'][0])
+		// object.scale.y(properties['scale'][1])
+		// object.scale.z(properties['scale'][2])
+		object.scale.set(properties['scale'][0], properties['scale'][1], properties['scale'][2])
+		// properties['scale'][0], properties['scale'][1], properties['scale'][2]
+
+		container.add(object)
+		//container.scale.set(new THREE.Vector3(1,1,1))
+		step_progress_bar();
+		render();
+	}
+
+	const loader = new OBJLoader();
+	loader.load(properties['filename'], loadModel,
+				function (xhr){ // called when loading is in progresses
+					console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+				},
+				function (error){ // called when loading has errors
+					console.log( 'An error happened' );
+				});
+	return container
 }
 
 function get_ground(){
@@ -104,14 +212,24 @@ function get_ground(){
 }
 
 function init_gui(objects){
-	//let fol = gui.addFolder(`Objects`)
 
-	for (const [key, value] of Object.entries(objects)){
-		//console.log(key)
-		gui.add(value, 'visible').name(key).onChange(render);
+	let menuMap = new Map();
 
+	for (const [name, value] of Object.entries(objects)){
+		let splits = name.split(';')
+		if (splits.length > 1) {
+			let folder_name = splits[0];
+			if (!menuMap.has(folder_name)) {
+				menuMap.set(folder_name, gui.addFolder(folder_name));
+			}
+			let fol = menuMap.get(folder_name);
+			fol.add(value, 'visible').name(splits[1]).onChange(render);
+			fol.open();
+
+		} else {
+			gui.add(value, 'visible').name(name).onChange(render);
+		}
 	}
-	//fol.open = true
 }
 
 function render() {
@@ -120,17 +238,15 @@ function render() {
 
 function init(){
 	scene.background = new THREE.Color(0xffffff);
-	camera.position.set(5, 5, 5);
-	camera.lookAt(0, 0 , 0);
 	controls.update()
 	renderer.setSize(window.innerWidth, window.innerHeight);
 
 	let hemiLight = new THREE.HemisphereLight( 0xffffff, 0x444444 );
-	hemiLight.position.set( 0, 20, 0 );
-	scene.add(hemiLight);
+	hemiLight.position.set(0, 20, 0);
+	//scene.add(hemiLight);
 
 	let dirLight = new THREE.DirectionalLight( 0xffffff );
-	dirLight.position.set( -10, 10, - 10 );
+	dirLight.position.set(-10, 10, - 10);
 	dirLight.castShadow = true;
 	dirLight.shadow.camera.top = 2;
 	dirLight.shadow.camera.bottom = - 2;
@@ -138,15 +254,45 @@ function init(){
 	dirLight.shadow.camera.right = 2;
 	dirLight.shadow.camera.near = 0.1;
 	dirLight.shadow.camera.far = 40;
-	scene.add(dirLight);
+	//scene.add(dirLight);
+
+	let intensity = 0.5;
+	let color = 0xffffff;
+	const spotLight1 = new THREE.SpotLight(color, intensity);
+	spotLight1.position.set(100, 1000, 0);
+	scene.add(spotLight1);
+	const spotLight2 = new THREE.SpotLight(color, intensity/3.0);
+	spotLight2.position.set(100, -1000, 0);
+	scene.add(spotLight2);
+	const spotLight3 = new THREE.SpotLight(color, intensity);
+	spotLight3.position.set(0, 100, 1000);
+	scene.add(spotLight3);
+	const spotLight4 = new THREE.SpotLight(color, intensity/3.0);
+	spotLight4.position.set(0, 100, -1000);
+	scene.add(spotLight4);
+	const spotLight5 = new THREE.SpotLight(color, intensity);
+	spotLight5.position.set(1000, 0, 100);
+	scene.add(spotLight5);
+	const spotLight6 = new THREE.SpotLight(color, intensity/3.0);
+	spotLight6.position.set(-1000, 0, 100);
+	scene.add(spotLight6);
 
 	raycaster = new THREE.Raycaster();
-	let threshold = 1.0;
-	raycaster.params.Points.threshold = threshold;
+	raycaster.params.Points.threshold = 1.0;
 }
 
 function create_threejs_objects(properties){
+
+	num_objects_curr = 0.0;
+	num_objects = parseFloat(Object.entries(properties).length);
+
 	for (const [object_name, object_properties] of Object.entries(properties)) {
+		if (String(object_properties['type']).localeCompare('camera') == 0){
+			set_camera_properties(object_properties);
+    		render();
+    		step_progress_bar();
+    		continue;
+		}
 		if (String(object_properties['type']).localeCompare('points') == 0){
 			threejs_objects[object_name] = get_points(object_properties);
     		render();
@@ -155,7 +301,10 @@ function create_threejs_objects(properties){
 			threejs_objects[object_name] = get_lines(object_properties);
     		render();
 		}
-		threejs_objects[object_name].visible = object_properties['visible']
+		if (String(object_properties['type']).localeCompare('obj') == 0){
+			threejs_objects[object_name] = get_obj(object_properties);
+		}
+		threejs_objects[object_name].visible = object_properties['visible'];
 		threejs_objects[object_name].frustumCulled = false;
 	}
 	// Add axis helper
@@ -166,20 +315,29 @@ function create_threejs_objects(properties){
 function add_threejs_objects_to_scene(threejs_objects){
 	for (const [key, value] of Object.entries(threejs_objects)) {
 		scene.add(value);
+		console.log('Adding '+key)
 	}
+}
+
+function onWindowResize(){
+    const innerWidth = window.innerWidth
+    const innerHeight = window.innerHeight;
+    renderer.setSize(innerWidth, innerHeight);
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    render();
 }
 
 const scene = new THREE.Scene();
 const renderer = new THREE.WebGLRenderer({antialias: true});
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.01, 1000);
+var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.01, 1000);
 camera.up.set(0, 0, 1);
 
+window.addEventListener('resize', onWindowResize, false);
 
 //Orbit Control
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.addEventListener("change", render);
-window.addEventListener("resize", render)
-
 controls.enableKeys = true;
 controls.enablePan = true; // enable dragging
 
@@ -187,27 +345,25 @@ let raycaster;
 let intersection = null;
 let mouse = new THREE.Vector2();
 
-const gui = new GUI();
-
-//let container = document.getElementById('render_container');
-//document.body.appendChild(container);
-//container.appendChild(renderer.domElement);
+const gui = new GUI({autoPlace: true, width: 120});
 
 document.getElementById('render_container').appendChild(renderer.domElement)
 
-//let domElement = document.body.appendChild(renderer.domElement);
-//domElement.addEventListener("dblclick", onDoubleClick);
 
-// dict(?) containing all objects of the scene
+// dict containing all objects of the scene
 let threejs_objects = {};
 
+//add_watermark();
 init();
 
 // Load nodes.json and perform one after the other the following commands:
 fetch('nodes.json')
+	.then(response => {add_progress_bar(); return response;})
     .then(response => {return response.json();})
-    //.then(json_response => {console.log(json_response); return json_response})
+    .then(json_response => {console.log(json_response); return json_response})
     .then(json_response => create_threejs_objects(json_response))
     .then(() => add_threejs_objects_to_scene(threejs_objects))
     .then(() => init_gui(threejs_objects))
-    .then(render);
+	.then(() => console.log('done'))
+	.then(render)
+	.then(() => console.log('hiding progress bar'));
