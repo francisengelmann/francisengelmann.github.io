@@ -26,6 +26,14 @@
       span.p-conference {font-style: italic;}
       .p-bibtex {font-size: 12px; margin-bottom: 0px; max-width: 650px; text-align: left;}
       img.p-teaser {width: 160px;}
+      img.p-project {
+        width: 320px;
+        border-radius: 12px;
+        border: 1px solid #ddd;
+      }
+      span.project {
+        text-align: justify;
+      }
       img.profile {
         width: 160px;
         height: 160px;
@@ -598,22 +606,25 @@
 
       <ul class="list-unstyled">
 
-        <li class="media"><div class="media-body"><p>
+        <!-- <li class="media"><div class="media-body"><p>
           <span>Mix3D Online 3D Segmentation Segmentation Tool</span><br />
           <a class="mr-3" target="_blank" href="./mix3d/index.html"><i class="fa fa-file-code-o"></i> Link</a>
+        </p></div></li> -->
+
+        <li class="media"><div class="media-body"><p>
+          <a href="mask3d/index.html"><img src="project_mask3d.jpg" class="mr-4 p-project float-sm-left mb-sm-1" /></a>
+          <span class="project" style="text-align: justify;">This is the online demo of <a href="https://jonasschult.github.io/Mask3D/">Mask3D<a/> our state-of-the-art 3D semantic instance segmentation method.
+          You can upload your own 3D scan or reconstruction (.ply) and segment the scene into the semantic classes of ScanNet, including ScanNet 200. </span><br />
+          <a class="mr-3" target="_blank" href="mask3d/index.html"><i class="fa fa-file-code-o"></i> Link</a>
         </p></div></li>
 
         <li class="media"><div class="media-body"><p>
-          <span>Mask3D Online 3D Instance Segmentation Tool</span><br />
-          <a class="mr-3" target="_blank" href="./mask3d/index.html"><i class="fa fa-file-code-o"></i> Link</a>
-        </p></div></li>
-
-        <li class="media"><div class="media-body"><p>
-          <span>PyViz3D: A simple web-based visualizer for 3D point clouds and other primitives.</span><br />
+          <a href="https://github.com/francisengelmann/PyViz3D"><img src="project_pyviz3d.png" class="mr-4 p-project float-sm-left mb-sm-1" /></a>
+          <span>PyViz3D is a simple web-based visualizer for 3D point clouds and other primitives such as meshes, polylines, bounding boxes and labels. It is useful for quick protyping and remote development.</span><br />
           <a class="mr-3" target="_blank" href="https://github.com/francisengelmann/PyViz3D"><i class="fa fa-file-code-o"></i> Code</a>
           <a class="mr-3" target="_blank" href="https://francisengelmann.github.io/PyViz3D/"><i class="fa fa-cube"></i> Documentation</a>
         </p></div></li>
-
+        <br />
         <li class="media"><div class="media-body"><p>
           <span>Virtual KITTI 3D: Extension of the Virtual Kitti dataset including 3D cloud representations and refined semantic labels.</span><br />
           <a class="mr-3" target="_blank" href="https://github.com/VisualComputingInstitute/vkitti3D-dataset"><i class="fa fa-file-code-o"></i> Code</a>
