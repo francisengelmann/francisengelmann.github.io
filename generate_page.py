@@ -7,21 +7,20 @@ def get_template(filename):
     return f.read()
 
 
-def parse_date(date_str):
-  month = date_str.split(' ')[0]
-  year = date_str.split(' ')[1]
-  return month[:3] + ' ' + year
-
-def get_news(yaml_file="news.yaml"):
+def get_news(yaml_file="data/news.yaml"):
   with open(yaml_file, 'r', encoding='utf-8') as f:
       entries = yaml.safe_load(f)
+
+  def parse_date(date_str):
+    month = date_str.split(' ')[0]
+    year = date_str.split(' ')[1]
+    return month[:3] + ' ' + year
 
   result = """
     <div class="container mt-5 mb-5">
       <h3>News</h3>
       <table class="table-borderless">
   """
-      # <ul class="list-unstyled">
     
   for i, entry in enumerate(entries):
     date = entry.get('date', '')
@@ -52,34 +51,119 @@ def get_news(yaml_file="news.yaml"):
   return result
 
 
+def get_publications(yaml_file="data/publications.yaml"):
 
+  with open(yaml_file, 'r', encoding='utf-8') as f:
+      entries = yaml.safe_load(f)
+  with open('data/conferences.yaml', 'r', encoding='utf-8') as f:
+      conferences = yaml.safe_load(f)
+  with open('data/authors.yaml', 'r', encoding='utf-8') as f:
+    authors_dict = yaml.safe_load(f)
 
-    # <li>
-    # <b class="mr-4 float-sm-left  mb-sm-1 p-teaser" style="display: inline-block; min-width: 120px; ">October 2024</b>
-    # We have 2 papers accepted at <a href="https://wacv2025.thecvf.com/">WACV'25</a>.
-    # </li>
-    
-
-
-    # <li style='margin-bottom: 5px'>
-    #     <b class="mr-4 p-teaser float-sm-left mb-sm-1" style='min-width: 80px'>June 2025</b>
-    #     <a href="https://super-dec.github.io/">SuperDec</a> is an <b>🏆 Oral</b> (top 2.3%) at <a href="https://iccv.thecvf.com/">ICCV'25</a> in Hawaii 🌸,
-    #     amazing work with <a target="_blank" href="https://elisabettafedele.github.io/" target="_blank">Elisabetta Fedele</a> and <a href="https://boysun045.github.io/boysun-website/" target="_blank">Boyang Sun</a>.
-    #   </li>
-
-
-
-def get_publications():
   result = """
-  <div class="container mt-5 mb-5">
+    <div class="container mt-5 mb-5">
       <h3>Publications</h3>
-      <ul>
-          <li>Engelmann, F., et al. "3D Object Detection and Pose Estimation from Semantic Keypoints." CVPR 2024.</li>
-          <li>Engelmann, F., et al. "Efficient and Robust 3D Object Detection with Hierarchical Voxel Transformers." ICRA 2024.</li>
-      </ul>
-  </div>
+      <ul class="list-unstyled">
   """
+
+  def get_award(award):
+    result = ''
+    if award:
+      awards = award.split(',')
+      result = f'<span class="p-award badge badge-success mb-2">{awards[0]}</span>'
+      if len(awards) > 1:
+        result += f' <span class="mb-2">({awards[1].strip()})</span>'
+      result += '<br />'
+    return result
+
+  def get_bibtex(title, authors, conference_abbrev, conference, year):
+    first_author_lastname = authors.split(',')[0].strip().split(' ')[-1]
+    title_first_word = title.split(' ')[0]
+    bibtex_short = f'{first_author_lastname}{year}{title_first_word}'.replace('*', '').replace(':', '')
+    bibtex = f"""@inproceedings{{{bibtex_short},
+  title={{{title}}},
+  author={{{authors}}},
+  booktitle={{{conference} ({conference_abbrev})}},
+  year={{{year}}}
+}}"""
+    return bibtex_short, bibtex
+
+  def format_authors(author_list, authors_dict):
+    formatted = []
+    for author in author_list:
+        author = author.strip()
+        shared = False
+        if author[-1] == '*':
+            shared = True
+            author = author[:-1]
+        website = authors_dict.get(author)
+        if author == 'Francis Engelmann':
+           formatted.append(f'<b>{author}</b>')
+        elif website:
+            formatted.append(f'<a href="{website}" target="_blank">{author}</a>')
+        else:
+            formatted.append(author)
+        if shared:
+            formatted[-1] += '<sup>*</sup>'
+    return ', '.join(formatted)
+
+  def get_paper(paper):
+    if paper:
+      return f'<a class="mr-3" target="_blank" href="{paper}"><i class="fas fa-file-pdf"></i> Paper</a>'
+    else:
+      return ''
+
+  def get_project(project):
+    if project:
+      return f'<a class="mr-3" target="_blank" href="{project}"><i class="fas fa-cube"></i> Project</a>'
+    else:
+      return ''
+
+  def get_code(code):
+    if code:
+      return f'<a class="mr-3" target="_blank" href="{code}"><i class="far fa-file-code"></i> Code</a><br />'
+    else:
+      return ''
+
+  for i, entry in  enumerate(entries):
+    title = entry.get('title', '')
+    authors = entry.get('authors', '')
+    authors_list = authors.split(',')
+    conference_abbrev = entry.get('conference', '')
+    conference  = conferences.get(conference_abbrev, conference_abbrev)
+    year = entry.get('year', '')
+    paper = entry.get('paper', '')
+    project = entry.get('project', '')
+    code = entry.get('code', '')
+    award = entry.get('award', '')
+    teaser = entry.get('teaser', '')
+
+    bibtex_short, bibtex = get_bibtex(title, authors, conference_abbrev, conference, year)
+
+    result += f"""
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="{teaser}" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">{title}</span></br>
+          <span class="p-authors">{format_authors(authors_list, authors_dict)}</span></br>
+        <span class="p-conference">{conference} ({conference_abbrev}), {year}.</span></br>
+          {get_award(award)}
+          {get_paper(paper)}
+          <a class="mr-3" data-toggle="collapse" href="#{bibtex_short}" role="button" aria-expanded="false" aria-controls="{bibtex_short}"><i class="far fa-file-alt"></i> BibTeX</a>
+          {get_project(project)}
+          {get_code(code)}
+          <div class="collapse" id="{bibtex_short}">
+            <div class="card card-body"><pre class="p-bibtex">{bibtex}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    """
+
+  result += "</ul></div>"
   return result
+
 
 def get_projects():
   result = """
@@ -95,10 +179,6 @@ def get_projects():
 
 
 def generate_page(filename):
-  news = get_news()
-  publications = get_publications()
-  projects = get_projects()
-
   html_content = f"""
   <!doctype html>
   <html lang="en">
@@ -107,9 +187,8 @@ def generate_page(filename):
     </head>
     <body>
       {get_template("templates/bio.html")}
-              {news}
-              {publications}
-              {projects}
+      {get_news()}
+      {get_publications()}
       {get_template("templates/footer.html")}
     </body>
   </html>"""

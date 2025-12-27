@@ -1,0 +1,331 @@
+- title: "SpaceControl: Introducing Test-Time Spatial Control to 3D Generative Modeling"
+  authors: "Elisabetta Fedele*, Francis Engelmann*, Ian Huang, Or Litany, Marc Pollefeys, Leonidas Guibas"
+  conference: "Preprint"
+  year: 2025
+  paper: "https://www.arxiv.org/abs/2512.05343"
+  project: "https://spacecontrol3d.github.io/"
+  code: "https://github.com/spacecontrol3d/spacecontrol"
+  teaser: "teasers/teaser_supergen.png"
+
+- title: "HouseLayout3D: A Benchmark and Training-free Baseline for 3D Layout Estimation in the Wild"
+  authors: "Valentin Bieri, Marie-Julie Rakotosaona, Keisuke Tateno, Francis Engelmann, Leonidas Guibas"
+  conference: "NeurIPS"
+  year: 2025
+  paper: "https://arxiv.org/abs/2512.02450"
+  project: "https://houselayout3d.github.io"
+  code: "https://github.com/HouseLayout3D/houselayout3d"
+  dataset: "https://huggingface.co/datasets/bieriv/HouseLayout3D"
+  teaser: "teasers/teaser_houselayout3d.jpg"
+
+- title: "VIPScene: Video Perception Models for 3D Scene Generation"
+  authors: "Rui Huang, Guangyao Zhai, Zuria Bauer, Marc Pollefeys, Federico Tombari, Leonidas Guibas, Gao Huang, Francis Engelmann"
+  conference: "NeurIPS"
+  year: 2025
+  paper: "https://arxiv.org/abs/2506.20601"
+  project: "https://vipscene.github.io/"
+  code: "https://github.com/star9988rr/VIPScene"
+  teaser: "teasers/teaser_vipscene.png"
+
+- title: "SuperDec: 3D Scene Decomposition with Superquadric Primitives"
+  authors: "Elisabetta Fedele, Boyang Sun, Leonidas Guibas, Marc Pollefeys, Francis Engelmann"
+  conference: "ICCV"
+  year: 2025
+  paper: "https://arxiv.org/abs/2504.00992"
+  project: "https://super-dec.github.io/"
+  code: "https://github.com/elisabettafedele/superdec"
+  award: "Oral Presentation, top 2.3% of accepted papers"
+  teaser: "https://super-dec.github.io/static/figures/compressed/teaser/room0_1_bg.jpeg"
+
+- title: "HoMeR: Learning In-the-Wild Mobile Manipulation via Hybrid Imitation and WHole-Body Control"
+  authors: "Priya Sundaresan, Rhea Malhotra, Phillip Miao, Jingyun Yang, Jimmy Wu, Hengyuan Hu, Rika Antonova, Francis Engelmann, Dorsa Sadigh, Jeannette Bohg"
+  conference: "Preprint"
+  year: 2025
+  paper: "https://arxiv.org/abs/2506.01185"
+  project: "https://homer-manip.github.io/"
+  code: "https://github.com/priyasundaresan/homer"
+  teaser: "teasers/teaser_homer.png"
+
+- title: "SLAG: Scalable Language-Augmented Gaussian Splatting"
+  authors: "Laszlo Szilagyi, Francis Engelmann, Jeannette Bohg"
+  conference: "RA-L"
+  year: 2025
+  paper: "https://arxiv.org/abs/2505.08124"
+  project: "https://slag-project.github.io/"
+  teaser: "teasers/teaser_slag.png"
+
+- title: "OpenFunGraph: Open-Vocabulary Functional 3D Scene Graphs for Real-World Indoor Spaces"
+  authors: "Chenyangguang Zhang*, Alexandros Delitzas*, Fangjinhua Wang, Ruida Zhang, Xiangyang Ji, Marc Pollefeys, Francis Engelmann"
+  conference: "CVPR"
+  year: 2025
+  paper: "http://arxiv.org/abs/2503.19199"
+  project: "https://openfungraph.github.io/"
+  award: "Highlight, top 13% of accepted papers"
+  teaser: "teasers/teaser_fungraph3d.jpg"
+
+- title: "ARKit LabelMaker: A New Scale for Indoor 3D Scene Understanding"
+  authors: "Guangda Ji, Silvan Weder, Francis Engelmann, Marc Pollefeys, Hermann Blum"
+  conference: "CVPR"
+  year: 2025
+  paper: "https://arxiv.org/abs/2410.13924"
+  project: "https://labelmaker.org/"
+  teaser: "teasers/teaser_arkitlabelmaker.jpg"
+
+- title: "Search3D: Hierarchical Open-Vocabulary 3D Segmentation"
+  authors: "Ayca Takmaz, Alexandros Delitzas, Robert Sumner, Francis Engelmann*, Johanna Wald*, Federico Tombari"
+  conference: "RA-L"
+  year: 2025
+  paper: "https://arxiv.org/abs/2409.18431"
+  project: "https://search3d-segmentation.github.io/"
+  teaser: "teasers/teaser_search3d.jpg"
+
+- title: "OpenCity3D: What do Vision-Language Models know about Urban Environments?"
+  authors: "Valentin Bieri, Marco Zamboni, Nicolas S. Blumer, Qingxuan Chen, Francis Engelmann"
+  conference: "WACV"
+  year: 2025
+  paper: "https://arxiv.org/abs/2503.16776"
+  project: "https://opencity3d.github.io/"
+  teaser: "teasers/teaser_opencity3d.jpg"
+
+- title: "P2P-Bridge: Diffusion Bridges for 3D Point Cloud Denoising"
+  authors: "Mathias Vogel, Keisuke Tateno, Marc Pollefeys, Federico Tombari, Marie-Julie Rakotosaona, Francis Engelmann"
+  conference: "ECCV"
+  year: 2024
+  paper: "https://arxiv.org/abs/2408.16325"
+  project: "https://p2p-bridge.github.io"
+  code: "https://github.com/matvogel/P2P-Bridge"
+  teaser: "teasers/teaser_p2pbridge.png"
+
+- title: "Segment3D: Learning Fine-Grained Class-Agnostic 3D Segmentation without Manual Labels"
+  authors: "Rui Huang, Songyou Peng, Ayca Takmaz, Federico Tombari, Marc Pollefeys, Shiji Song, Gao Huang, Francis Engelmann"
+  conference: "ECCV"
+  year: 2024
+  paper: "https://arxiv.org/abs/2312.17232"
+  project: "https://segment3d.github.io"
+  demo: "https://mix3d-demo.nekrasov.dev/segment3d/"
+  teaser: "teasers/teaser_segment3d.jpg"
+  code: "https://github.com/LeapLabTHU/Segment3D"
+
+- title: "SceneGraphLoc: Cross-Modal Coarse Visual Localization on 3D Scene Graphs"
+  authors: "Yang Miao, Francis Engelmann, Olga Vysotska, Federico Tombari, Marc Pollefeys, Dániel Béla Baráth"
+  conference: "ECCV"
+  year: 2024
+  paper: "https://arxiv.org/abs/2404.00469"
+  project: "https://scenegraphloc.github.io"
+  code: "https://github.com/y9miao/VLSG"
+  teaser: "teasers/teaser_scenegraphloc.jpg"
+
+- title: "FiT3D: Improving 2D Feature Representations by 3D-Aware Fine-Tuning"
+  authors: "Yuanwen Yue, Anurag Das, Francis Engelmann, Siyu Tang, Jan Eric Lenssen"
+  conference: "ECCV"
+  year: 2024
+  paper: "https://arxiv.org/abs/2407.20229"
+  project: "https://ywyue.github.io/FiT3D/"
+  code: "https://github.com/ywyue/FiT3D"
+  teaser: "teasers/teaser_fit3d.jpg"
+
+- title: "SceneFun3D: Fine-Grained Functionality and Affordance Understanding in 3D Scenes"
+  authors: "Alexandros Delitzas, Ayca Takmaz, Federico Tombari, Robert Sumner, Marc Pollefeys, Francis Engelmann"
+  conference: "CVPR"
+  year: 2024
+  paper: "https://openaccess.thecvf.com/content/CVPR2024/html/Delitzas_SceneFun3D_Fine-Grained_Functionality_and_Affordance_Understanding_in_3D_Scenes_CVPR_2024_paper.html"
+  project: "https://scenefun3d.github.io"
+  award: "Oral Presentation, top 3.3% of accepted papers"
+  teaser: "teasers/teaser_scenefun3d.jpg"
+
+- title: "Spot-Compose: A Framework for Open-Vocabulary Object Retrieval and Drawer Manipulation in Point Clouds"
+  authors: "Oliver Lemke, Zuria Bauer, René Zurbrügg, Marc Pollefeys, Francis Engelmann*, Hermann Blum*"
+  conference: "ICRAW"
+  year: 2024
+  paper: "https://arxiv.org/abs/2404.12440"
+  project: "https://spot-compose.github.io"
+  award: "Best Paper Award, ICRA MOMA.v2 workshop"
+  teaser: "teasers/teaser_spot-compose.jpg"
+
+- title: "ICGNet: A Unified Approach for Instance-Centric Grasping"
+  authors: "René Zurbrügg, Yifan Liu, Francis Engelmann, Suryansh Kumar, Marco Hutter, Vaishakh Patil, Fisher Yu"
+  conference: "ICRA"
+  year: 2024
+  paper: "https://arxiv.org/abs/2401.09939"
+  project: "https://icgraspnet.github.io"
+  teaser: "teasers/teaser_icgnet.jpg"
+
+- title: "OpenMask3D: Open-Vocabulary 3D Instance Segmentation"
+  authors: "Ayca Takmaz, Elisabetta Fedele, Robert Sumner, Marc Pollefeys, Federico Tombari, Francis Engelmann"
+  conference: "NeurIPS"
+  year: 2023
+  paper: "https://arxiv.org/abs/2306.13631"
+  project: "https://openmask3d.github.io"
+  code: "https://github.com/OpenMask3D/openmask3d"
+  teaser: "teasers/teaser_openmask3d.jpg"
+
+- title: "LabelMaker: Automatic Semantic Label Generation from RGB-D Trajectories"
+  authors: "Silvan Weder, Hermann Blum, Francis Engelmann, Marc Pollefeys"
+  conference: "3DV"
+  year: 2024
+  paper: "LabelMaker.pdf"
+  project: "https://labelmaker3d.github.io"
+  code: "https://github.com/cvg/LabelMaker/"
+  award: "Spotlight Presentation"
+  teaser: "teasers/teaser_labelmaker.jpg"
+
+- title: "OpenNeRF: Open-Set 3D Neural Scene Segmentation with Pixel-Wise Features and Rendered Novel Views"
+  authors: "Francis Engelmann, Fabian Manhardt, Michael Niemeyer, Keisuke Tateno, Marc Pollefeys, Federico Tombari"
+  conference: "ICLR"
+  year: 2024
+  paper: "https://francisengelmann.github.io/OpenSet3DSegmentation.pdf"
+  project: "https://opennerf.github.io"
+  code: "https://github.com/opennerf/opennerf"
+  demo: "https://francisengelmann.github.io/opennerf/"
+  teaser: "teasers/teaser_openreno.jpg"
+
+- title: "AGILE3D: Attention Guided Interactive Multi-object 3D Segmentation"
+  authors: "Yuanwen Yue, Sabarinath Mahadevan, Jonas Schult, Francis Engelmann, Bastian Leibe, Konrad Schindler, Theodora Kontogianni"
+  conference: "ICLR"
+  year: 2024
+  paper: "https://arxiv.org/abs/2306.00977"
+  project: "https://ywyue.github.io/AGILE3D/"
+  code: "https://github.com/ywyue/AGILE3D"
+  teaser: "teasers/teaser_agile3d.jpg"
+
+- title: "3D Segmentation of Humans in Point Clouds with Synthetic Data"
+  authors: "Ayca Takmaz, Jonas Schult, Irem Kaftan, Cafer Mertcan Akcay, Bastian Leibe, Robert Sumner, Francis Engelmann, Siyu Tang"
+  conference: "ICCV"
+  year: 2023
+  paper: "https://arxiv.org/abs/2212.00786"
+  project: "https://human-3d.github.io/"
+  code: "https://github.com/jonasschult/Human3D"
+  teaser: "teasers/teaser_human3d.jpg"
+
+- title: "Connecting the Dots: Floorplan Reconstruction Using Two-Level Queries"
+  authors: "Yuanwen Yue, Theodora Kontogianni, Konrad Schindler, Francis Engelmann"
+  conference: "CVPR"
+  year: 2023
+  paper: "https://arxiv.org/abs/2211.15658"
+  project: "https://ywyue.github.io/RoomFormer/"
+  code: "https://github.com/ywyue/RoomFormer"
+  teaser: "teasers/teaser_floorformer.jpg"
+
+- title: "Mask3D: Mask Transformer for 3D Semantic Instance Segmentation"
+  authors: "Jonas Schult, Francis Engelmann, Alexander Hermans, Or Litany, Siyu Tang, Bastian Leibe"
+  conference: "ICRA"
+  year: 2023
+  paper: "https://arxiv.org/abs/2210.03105"
+  project: "https://jonasschult.github.io/Mask3D/"
+  code: "https://github.com/JonasSchult/Mask3D"
+  demo: "https://francisengelmann.github.io/mask3d/index.html"
+  award: "1st Place, ScanNet Challenge"
+  teaser: "teasers/teaser_mask3d.jpg"
+
+- title: "Box2Mask: Weakly Supervised 3D Semantic Instance Segmentation Using Bounding Boxes"
+  authors: "Julian Chibane, Francis Engelmann, Tuan Anh Tran, Gerard Pons-Moll"
+  conference: "ECCV"
+  year: 2022
+  paper: "https://arxiv.org/abs/2206.01203"
+  project: "https://virtualhumans.mpi-inf.mpg.de/box2mask/"
+  code: "https://github.com/jchibane/Box2Mask"
+  award: "Oral Presentation"
+  teaser: "teasers/teaser_box2mask.jpg"
+
+- title: "4D-StOP: Panoptic Segmentation of 4D LiDAR using Spatio-temporal Object Proposal Generation and Aggregation"
+  authors: "Lars Kreuzberg, Idil Esen Zulfikar, Sabarinath Mahadevan, Francis Engelmann, Bastian Leibe"
+  conference: "ECCVW"
+  year: 2022
+  paper: "https://arxiv.org/abs/2209.14858v1"
+  code: "https://github.com/larskreuzberg/4d-stop"
+  teaser: "teasers/teaser_4dStOP.jpg"
+
+- title: "Mix3D: Out-of-Context Data Augmentation for 3D Scenes"
+  authors: "Alexey Nekrasov, Jonas Schult, Or Litany, Bastian Leibe, Francis Engelmann"
+  conference: "3DV"
+  year: 2021
+  paper: "https://arxiv.org/abs/2110.02210"
+  project: "https://francisengelmann.github.io/mask3d/index.html"
+  code: "https://github.com/kumuji/mix3d"
+  demo: "https://francisengelmann.github.io/mask3d/"
+  award: "Oral Presentation, 1st Place ScanNet Challenge"
+  teaser: "teasers/teaser_mix3d.png"
+
+- title: "From Points to Multi-Object 3D Reconstruction"
+  authors: "Francis Engelmann, Konstantinos Rematas, Bastian Leibe, Vittorio Ferrari"
+  conference: "CVPR"
+  year: 2021
+  paper: "https://openaccess.thecvf.com/content/CVPR2021/html/Engelmann_From_Points_to_Multi-Object_3D_Reconstruction_CVPR_2021_paper.html"
+  project: "https://francisengelmann.github.io/points2objects/"
+  code: "https://github.com/tensorflow/graphics/tree/master/tensorflow_graphics/projects/points_to_3Dobjects"
+  teaser: "teasers/teaser_points2objects.png"
+
+- title: "3D-MPA: Multi Proposal Aggregation for 3D Semantic Instance Segmentation"
+  authors: "Francis Engelmann, Martin Bokeloh, Alireza Fathi, Bastian Leibe, Matthias Nießner"
+  conference: "CVPR"
+  year: 2020
+  paper: "https://arxiv.org/pdf/2003.13867.pdf"
+  project: "https://francisengelmann.github.io/3D-MPA/"
+  teaser: "teasers/teaser_3D-MPA.png"
+
+- title: "DualConvMesh-Net: Joint Geodesic and Euclidean Convolutions on 3D Meshes"
+  authors: "Jonas Schult*, Francis Engelmann*, Theodora Kontogianni, Bastian Leibe"
+  conference: "CVPR"
+  year: 2020
+  paper: "https://arxiv.org/pdf/2004.01002.pdf"
+  project: "https://visualcomputinginstitute.github.io/dcm-net/"
+  code: "https://github.com/VisualComputingInstitute/dcm-net"
+  award: "Oral Presentation"
+  teaser: "teasers/teaser_DCM-Net.png"
+
+- title: "Dilated Point Convolutions: On the Receptive Field Size of Point Convolutions on 3D Point Clouds"
+  authors: "Francis Engelmann, Theodora Kontogianni, Bastian Leibe"
+  conference: "ICRA"
+  year: 2020
+  paper: "https://francisengelmann.github.io/DPC/engelmann_icra2020_dpc.pdf"
+  project: "https://francisengelmann.github.io/DPC/"
+  teaser: "teasers/teaser_DPC.png"
+
+- title: "3D-BEVIS: Bird's-Eye-View Instance Segmentation"
+  authors: "Cathrin Elich, Francis Engelmann, Jonas Schult, Theodora Kontogianni, Bastian Leibe"
+  conference: "GCPR"
+  year: 2019
+  paper: "https://arxiv.org/pdf/1904.02199.pdf"
+  award: "Best Master's Thesis Award, YRF DAGM 2019"
+  teaser: "teasers/teaser_3D-BEVIS.png"
+
+- title: "Know What Your Neighbors Do: 3D Semantic Segmentation of Point Clouds"
+  authors: "Francis Engelmann, Theodora Kontogianni, Jonas Schult, Bastian Leibe"
+  conference: "ECCVW"
+  year: 2018
+  paper: "https://www.vision.rwth-aachen.de/media/papers/know-what-your-neighbors-do-3d-semantic-segmentation-of-point-clouds/W63P26.pdf"
+  teaser: "teasers/teaser_KWYND.png"
+
+- title: "Exploring Spatial Context for 3D Semantic Segmentation of Point Clouds"
+  authors: "Francis Engelmann*, Theodora Kontogianni*, Alexander Hermans, Bastian Leibe"
+  conference: "ICCVW"
+  year: 2017
+  paper: "https://www.vision.rwth-aachen.de/media/papers/PID4967025.pdf"
+  project: "https://www.vision.rwth-aachen.de/page/3dsemseg"
+  code: "https://github.com/VisualComputingInstitute/3d-semantic-segmentation"
+  award: "Oral Presentation"
+  teaser: "teasers/teaser_Exploring.png"
+
+- title: "Keyframe-Based Visual-Inertial Online SLAM with Relocalization"
+  authors: "Anton Kasyanov, Francis Engelmann, Jörg Stückler, Bastian Leibe"
+  conference: "IROS"
+  year: 2017
+  paper: "https://arxiv.org/pdf/1702.02175.pdf"
+  teaser: "teasers/teaser_vislam.png"
+
+- title: "SAMP: Shape and Motion Priors for 4D Vehicle Reconstruction"
+  authors: "Francis Engelmann, Jörg Stückler, Bastian Leibe"
+  conference: "WACV"
+  year: 2017
+  paper: "https://www.vision.rwth-aachen.de/media/papers/EngelmannWACV17_x8euNDK.pdf"
+  project: "https://www.vci.rwth-aachen.de/publication/00146/"
+  teaser: "teasers/teaser_SAMP.png"
+
+- title: "Joint Object Pose Estimation and Shape Reconstruction in Urban Street Scenes Using 3D Shape Priors"
+  authors: "Francis Engelmann, Jörg Stückler, Bastian Leibe"
+  conference: "GCPR"
+  year: 2016
+  paper: "https://www.vision.rwth-aachen.de/media/papers/EngelmannGCPR16_SZa4QgP.pdf"
+  project: "https://www.vision.rwth-aachen.de/page/shape_priors"
+  code: "https://github.com/VisualComputingInstitute/ShapePriors_GCPR16"
+  award: "Oral Presentation"
+  teaser: "teasers/teaser_GCPR.png"
