@@ -128,9 +128,9 @@
   text: "I gave an invited talk at the [CVPR 2022 ScanNet workshop in New Orleans](http://www.scan-net.org/cvpr2022workshop/#speakers)."
 
 - date: June 2022
-  text: "Our winning entry on 2D floorplan reconstruction from large-scale point clouds was presented at [CV4AEC](https://cv4aec.github.io/) with [Ekin Celikkan](https://www.linkedin.com/in/ekincelikkan/) and [Theodora Kontogianni](https://theodorakontogianni.github.io/)."
+  text: "Our winning entry on 2D floorplan reconstruction from large-scale point clouds was presented at [CV4AEC](https://cv4aec.github.io/)."
 
-- date: Junew 2022
+- date: June 2022
   text: "Our model Mix3D won first place on the [ScanNet 3D Semantic Segmentaion challenge](http://kaldir.vc.in.tum.de/scannet_benchmark/semantic_label_3d) with [Alexey Nekrasov](https://nekrasov.dev/) and [Jonas Schult](https://jonasschult.github.io/)."
 
 - date: May 2022
