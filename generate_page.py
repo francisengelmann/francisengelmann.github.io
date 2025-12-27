@@ -1,18 +1,31 @@
+import yaml
+import markdown
+import re
+
 def get_template(filename):
   with open(filename, 'r') as f:
     return f.read()
 
-def get_news():
-  result = """
-  <div class="container mt-5 mb-5">
-      <h3>News</h3>
-      <ul>
-          <li><b>June 2024:</b> I will join the University of Lugano (USI) as an assistant professor in September 2024.</li>
-          <li><b>May 2024:</b> Our paper "3D Object Detection and Pose Estimation from Semantic Keypoints" has been accepted at CVPR 2024.</li>
-          <li><b>March 2024:</b> Our paper "Efficient and Robust 3D Object Detection with Hierarchical Voxel Transformers" has been accepted at ICRA 2024.</li>
-      </ul>
-  </div>
+def get_news(yaml_file="news.yaml"):
+  with open(yaml_file, 'r', encoding='utf-8') as f:
+      entries = yaml.safe_load(f)
+
+  result = """<h3 class="mb-3 text-center text-sm-left">News</h3>
+  <ul class="list-unstyled">
   """
+    
+  for entry in entries:
+    date = entry.get('date', '')
+    text = entry.get('text', '')
+    news_html = markdown.Markdown(extensions=['extra']).convert(text)
+    # Handle superscripts for ordinal numbers (e.g., "6th" -> "6<sup>th</sup>")
+    news_html = re.sub(r'(\d+)(st|nd|rd|th)', r'\1<sup>\2</sup>', news_html)
+    result += f"""  <li style='margin-bottom: 5px'>
+    <b class="mr-4 p-teaser float-sm-left mb-sm-1" style='min-width: 80px'>{date}</b>
+    {news_html}
+    </li>
+    """
+  result += "</ul>"
   return result
 
 def get_publications():

@@ -1,0 +1,137 @@
+- date: December 2025
+  text: "The 6th iteration of our [Open-Vocabulary 3D Scene Understanding Workshop](https://opensun3d.github.io/) will be held at [CVPR'26](https://cvpr.thecvf.com/Conferences/2026) in Denver, CO."
+
+- date: October 2025
+  text: "I will serve as area chair (AC) for [CVPR'26](https://cvpr.thecvf.com/Conferences/2026)."
+
+- date: September 2025
+  text: "We have two papers accepted at [NeurIPS 2025](https://neurips.cc/Conferences/2025). Great work with [Valentin Bieri](https://scholar.google.com/citations?user=Xel1HnoAAAAJ&hl=de) and [Rui Huang](https://scholar.google.com/citations?user=ieN4b1QAAAAJ&hl=zh-CN&oi=sra)."
+
+- date: August 2025
+  text: "We have one paper at [BMVC](https://bmvc2025.bmva.org/) and one paper at [SIGGRAPH Asia](https://asia.siggraph.org/2025/)."
+
+- date: July 2025
+  text: "Together with [Jeannette Bohg](https://web.stanford.edu/~bohg/), we received an NVIDIA [Academic grant](https://www.nvidia.com/en-us/industries/higher-education-research/academic-grant-program/) 🚀."
+
+- date: June 2025
+  text: "[SuperDec](https://super-dec.github.io/) is an **🏆 Oral** (top 2.3%) at [ICCV'25](https://iccv.thecvf.com/) in Hawaii 🌸, amazing work with [Elisabetta Fedele](https://elisabettafedele.github.io/) and [Boyang Sun](https://boysun045.github.io/boysun-website/)."
+
+- date: June 2025
+  text: "I will serve as areas chair (AC) for [WACV'26](https://wacv2026.thecvf.com)."
+
+- date: April 2025
+  text: "[SLAG](https://slag-project.github.io/) (Scalable Language-Augmented Gaussian Splatting) was accepted at [RA-L](https://www.ieee-ras.org/publications/ra-l)."
+
+- date: February 2025
+  text: "We have 2 papers accepted at CVPR'25, [OpenFunGraph](https://openfungraph.github.io/) (🏆 **Highlight**) and [ARKitLabelMaker](https://labelmaker.org/)"
+
+- date: January 2025
+  text: "[Search3D](https://search3d-segmentation.github.io/) our approach for hierarchical open-vocabulary 3D scene segmentation was accepted at [RA-L](https://www.ieee-ras.org/publications/ra-l)."
+
+- date: December 2024
+  text: "The 4th iteration of our [Open-Vocabulary 3D Scene Understanding Workshop](https://opensun3d.github.io/) will be held at [CVPR'25](https://cvpr.thecvf.com/Conferences/2025) in Nashville, TN."
+
+- date: October 2024
+  text: "We have 2 papers accepted at [WACV'25](https://wacv2025.thecvf.com/)."
+
+- date: September 2024
+  text: "I moved to Stanford University to work with Leo Guibas and Jeannette Bohg on computer vision for robotics."
+
+- date: September 2024
+  text: "I will serve as areas chair (AC) for [CVPR'25](https://cvpr.thecvf.com/Conferences/2025)."
+
+- date: July 2024
+  text: "We have 4 papers accepted at [ECCV'24](https://eccv.ecva.net) in Milan, among them [Segment3D](https://segment3d.github.io)!"
+
+- date: July 2024
+  text: "I will serve as area chair (AC) for [3DV'25](https://3dvconf.github.io/2025/) and [WACV'25](https://wacv2025.thecvf.com)."
+
+- date: May 2024
+  text: "I was recognized as outstanding reviewer for [CVPR 2024](https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf) (top 2%)."
+
+- date: April 2024
+  text: "The third iteration of our [Open-Vocabulary 3D Scene Understanding Workshop](https://opensun3d.github.io/index_eccv24.html) will be held at [ECCV'24](https://eccv.ecva.net) in Milan."
+
+- date: May 2024
+  text: "Our [Spot-Compose](https://spot-compose.github.io) received a **🏆 Best Paper Award** at the [ICRA'24 MOMA.v2 workshop](https://mobile-manipulation.net/events/moma2024/)."
+
+- date: March 2024
+  text: "I will give a talk at the [CV4AEC Workshop](https://cv4aec.github.io) at [CVPR'24](https://cvpr.thecvf.com) in Seattle."
+
+- date: February 2024
+  text: "[SceneFun3D](https://scenefun3d.github.io) is accepted at [CVPR'24](https://cvpr.thecvf.com) as **🏆 Oral** in Seattle, great work with [Alex Delitzas](https://alexdelitzas.github.io) and [Ayca Takmaz](https://aycatakmaz.github.io)."
+
+- date: January 2024
+  text: "[ICGNet](https://arxiv.org/abs/2401.09939) is accepted at [ICRA'24](https://2024.ieee-icra.org) in Yokohama, great work with [René Zurbrügg](https://vas.mpi-inf.mpg.de/rene-zurbrugg/)."
+
+- date: January 2024
+  text: "[OpenNeRF](https://opennerf.github.io) and [AGILE3D](https://ywyue.github.io/AGILE3D/) are accepted to [ICLR'24](https://iclr.cc/Conferences/2024) in Vienna."
+
+- date: January 2024
+  text: "I gave a talk on [High-Fidelity Open-Vocabulary 3D Scene Understanding](https://www.youtube.com/watch?v=diMHj55fSSA) at the [Mila Robot Learning Seminar](https://www.youtube.com/@MontrealRobotics/videos?view=2&sort=dd&live_view=503&shelf_id=0)."
+
+- date: December 2023
+  text: "The second iteration of our [Open-Vocabulary 3D Scene Understanding Workshop](https://opensun3d.github.io) will be held in conjunction with [CVPR'24](https://cvpr.thecvf.com) in Seattle."
+
+- date: December 2023
+  text: "Our [NeurIPS 2023](https://neurips.cc/Conferences/2023/ProgramCommittee#top-reivewers) paper on open-vocabulary 3D instance segmentation method [OpenMask3D](https://openmask3d.github.io) was featured in the [Computer Vision News](https://www.rsipvision.com/ComputerVisionNews-2023December/2/)."
+
+- date: November 2023
+  text: "I was recognized as top reviewer for [NeurIPS 2023](https://neurips.cc/Conferences/2023/ProgramCommittee#top-reivewers)."
+
+- date: October 2023
+  text: "Our work [LabelMaker](http://labelmaker3d.github.io) was accepted at [3DV'24](https://3dvconf.github.io/2024/) in Davos, Switzerland."
+
+- date: September 2023
+  text: "Our open-set 3D instance segmentation [OpenMask3D](https://openmask3d.github.io/) was accepted at [NeuRIPS'23](https://nips.cc/Conferences/2023) in New Orleans."
+
+- date: September 2023
+  text: "I will give a keynote talk at the ICCV'23 [CVAAD](https://cvaad-workshop.github.io/) workshop."
+
+- date: August 2023
+  text: "I will serve as areas chair (AC) for [WACV'24](https://wacv2024.thecvf.com/)."
+
+- date: July 2023
+  text: "Our work on 3D human segmentation [Human3D](https://human-3d.github.io/) was accepted at [ICCV'23](https://iccv2023.thecvf.com/) in Paris."
+
+- date: June 2023
+  text: "Check out our latest work on open-set 3D scene segmentation [OpenMask3D](https://openmask3d.github.io)."
+
+- date: June 2023
+  text: "I will serve as senior program committee (SPC) for [AAAI 2024](https://aaai.org/Conferences/AAAI-24/)."
+
+- date: March 2023
+  text: "Our workshop [OpenSun3D](https://opensun3d.github.io/) on Open-Vocabulary 3D Scene Understanding will be held in conjunction with [ICCV'23](https://iccv2023.thecvf.com/) in Paris."
+
+- date: February 2023
+  text: "Our paper [RoomFormer](https://ywyue.github.io/RoomFormer/) is accepted at [CVPR'23](https://cvpr2023.thecvf.com/)."
+
+- date: January 2023
+  text: "Our paper [Mask3D](https://jonasschult.github.io/Mask3D/) was accepted at [ICRA'23](https://www.icra2023.org/). Check out the [online demo](http://francisengelmann.github.io/mask3d)."
+
+- date: December 2022
+  text: "I received the [ETH Zurich Career Seed Award](https://ethz.ch/en/research/research-promotion/seed-projects/supported-projects.html)."
+
+- date: August 2022
+  text: "Our [Mask3D](https://jonasschult.github.io/Mask3D/) approach ranks 1st on [ScanNet](https://kaldir.vc.in.tum.de/scannet_benchmark/semantic_instance_3d), [ScanNet200](https://kaldir.vc.in.tum.de/scannet_benchmark/scannet200_semantic_instance_3d) and 2nd on [STPLS3D](https://codalab.lisn.upsaclay.fr/competitions/4646#results)."
+
+- date: August 2022
+  text: "One paper accepted at the ECCV 2022 [AVVision Workshop](https://avvision.xyz/eccv22/)."
+
+- date: July 2022
+  text: "I will serve as senior program committee (SPC) for [AAAI 2023](https://aaai.org/Conferences/AAAI-23/)."
+
+- date: July 2022
+  text: "Our paper [Box2Mask](https://virtualhumans.mpi-inf.mpg.de/box2mask/) on weakly supervised 3D instance segmentation using bounding box annotations is accepted as oral (2.7%) to [ECCV 2022](https://eccv2022.ecva.net/) in Tel Aviv."
+
+- date: June 2022
+  text: "I gave an invited talk at the [CVPR 2022 ScanNet workshop in New Orleans](http://www.scan-net.org/cvpr2022workshop/#speakers)."
+
+- date: June 2022
+  text: "Our winning entry on 2D floorplan reconstruction from large-scale point clouds was presented at [CV4AEC](https://cv4aec.github.io/) with [Ekin Celikkan](https://www.linkedin.com/in/ekincelikkan/) and [Theodora Kontogianni](https://theodorakontogianni.github.io/)."
+
+- date: Junew 2022
+  text: "Our model Mix3D won first place on the [ScanNet 3D Semantic Segmentaion challenge](http://kaldir.vc.in.tum.de/scannet_benchmark/semantic_label_3d) with [Alexey Nekrasov](https://nekrasov.dev/) and [Jonas Schult](https://jonasschult.github.io/)."
+
+- date: May 2022
+  text: "I will co-organize the [HBHA workshop](https://sites.google.com/view/egocentric-hand-body-activity) on human body, hands, and activities from egocentric and multi-view cameras at ECCV 2022."
