@@ -16,7 +16,7 @@
 
     <style>
       html { scroll-behavior: smooth; }
-      body { font-family: 'Lato', Verdana, Helvetica, sans-serif; }
+      body { font-family: 'Lato', Verdana, Helvetica, sans-serif; margin: 0; }
       p {line-height: 25px;}
       main.container {max-width: 1000px;}
       span.p-title {font-size: 19px;}
@@ -39,6 +39,24 @@
         padding: 0px;
         margin-bottom: 100px;
         box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.5);
+      }
+
+      .news-scrollable {
+        max-height: 250px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 10px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        background: #fafafa;
+        padding: 15px;
+        box-shadow: inset 0 -20px 20px -20px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 768px) {
+        .news-scrollable {
+          touch-action: pan-y;
+        }
       }
 
       /* latin-ext */

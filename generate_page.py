@@ -19,26 +19,16 @@ def get_news(yaml_file="data/news.yaml"):
   result = """
     <div class="container mt-5 mb-5">
       <h3>News</h3>
-      <table class="table-borderless">
+      <div class="news-scrollable">
+        <table class="table-borderless">
   """
-    
+
   for i, entry in enumerate(entries):
     date = entry.get('date', '')
     text = entry.get('text', '')
     news_html = markdown.Markdown(extensions=['extra']).convert(text)
     news_html = re.sub(r'(\d+)(st|nd|rd|th)', r'\1<sup>\2</sup>', news_html)
     news_html = re.sub(r'^<p>|</p>$', '', news_html.strip())
-
-    if i == 10:
-      result += """
-      </table>
-      <a data-toggle="collapse" href="#more_news" role="button" aria-expanded="false" style="display: inline-block; margin: auto; margin-top: 10px;">
-      Previous news
-      </a>
-        
-      <div class="collapse" id="more_news">
-      <table class="table-borderless">
-      """   
 
     result += f"""
     <tr>
@@ -47,7 +37,11 @@ def get_news(yaml_file="data/news.yaml"):
     </tr>
     """
 
-  result += "</table></div>"
+  result += """
+        </table>
+      </div>
+    </div>
+  """
   return result
 
 
