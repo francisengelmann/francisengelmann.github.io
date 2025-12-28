@@ -192,4 +192,4 @@ def generate_page(filename):
 
 
 if __name__ == "__main__":
-  generate_page("index2.html")
+  generate_page("index.html")
