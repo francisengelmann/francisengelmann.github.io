@@ -1,0 +1,1325 @@
+
+  <!doctype html>
+  <html lang="en">
+    <head>
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1168479-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-1168479-8');
+    </script>
+
+    <style>
+      html { scroll-behavior: smooth; }
+      body { font-family: 'Lato', Verdana, Helvetica, sans-serif; margin: 0; }
+      p {line-height: 25px;}
+      main.container {max-width: 1000px;}
+      span.p-title {font-size: 19px;}
+      span.p-authors {font-style: normal;}
+      span.p-conference {font-style: italic;}
+      .p-bibtex {font-size: 12px; margin-bottom: 0px; max-width: 650px; text-align: left;}
+      img.p-teaser {width: 160px;}
+      img.p-project {
+        width: 320px;
+        border-radius: 12px;
+        border: 1px solid #ddd;
+      }
+      span.project {
+        text-align: justify;
+      }
+      img.profile {
+        width: 160px;
+        height: 160px;
+        border: 5px solid #FFF;
+        padding: 0px;
+        margin-bottom: 100px;
+        box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.5);
+      }
+
+      .news-scrollable {
+        max-height: 250px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 10px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        background: #fafafa;
+        padding: 15px;
+        box-shadow: inset 0 -20px 20px -20px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 768px) {
+        .news-scrollable {
+          touch-action: pan-y;
+        }
+      }
+
+      /* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+    </style>
+    <title>Francis Engelmann</title>
+
+    </head>
+    <body>
+      
+    <div style="background-color: #F5F5F5; border-bottom: 2px solid #AAA; overflow: auto;">
+      <main class="container">
+      <div class="mt-5 text-center">
+          <img src="profile.jpg" alt="profile" class="rounded-circle profile mr-3 mb-1 float-sm-left" />
+          <div class="text-center text-sm-left">
+            <h2>Francis Engelmann</h2>
+            <p align="justify">
+            I am an assistant professor at the <a href="https://www.usi.ch/en">Università della Svizzera italiana</a> (USI) in Switzerland.
+            Previously, I was a  postdoc at <a href="https://www.stanford.edu">Stanford University</a> with <a href="https://profiles.stanford.edu/leonidas-guibas">Prof. Leonidas Guibas</a> and <a href="https://web.stanford.edu/~bohg/">Prof. Jeannette Bohg</a>.
+            Before that I was a visiting researcher with <a target="_blank"  href="https://federicotombari.github.io/">Federico Tombari</a> at Google Zurich, and postdoctoral research fellow at
+            <a target="_blank" href="https://ethz.ch/en.html">ETH Zurich<a> working with <a href="https://people.inf.ethz.ch/marc.pollefeys/">Prof. Marc Pollefeys</a>.
+            I obtained my PhD
+             in the
+            <a target="_blank" href="https://www.vision.rwth-aachen.de/">Computer Vision Group</a>
+            of
+            <a target="_blank" href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ">Prof. Dr. Bastian Leibe</a>
+            at
+            <a target="_blank" href="https://www.rwth-aachen.de/go/id/a/?lidx=1">RWTH Aachen University</a>
+            and worked at <a target="_blank" href="https://x.company/projects/intrinsic/">Google X</a> with
+            <a target="_blank" href="https://research.google/people/106293/">Martin Bokeloh</a>,
+            Google Research with
+            <a target="_blank" href="http://www.krematas.com/">Kostas Rematas</a>, and Apple in California.
+          </p>
+          <p align="center">
+            <a target="_blank" href="https://scholar.google.com/citations?user=-xOsXi8AAAAJ"><i class="ai ai-google-scholar-square ai-2x"></i></a>
+            &nbsp;
+            <a target="_blank" href="https://github.com/francisengelmann"><i class="fab fa-github" style="font-size:32px"></i></a>
+            &nbsp;
+            <a target="_blank" href="https://www.linkedin.com/in/francis-engelmann-8b4b5467/"><i class="fa-brands fa-linkedin" style="font-size:32px"></i>
+            </a>
+            &nbsp;
+            <a target="_blank" href="https://bsky.app/profile/francisengelmann.bsky.social"><i class="fa-brands fa-bluesky" style="font-size:32px"></i></a>
+            &nbsp;
+            <a target="_blank" href="https://twitter.com/FrancisEngelman"><i class="fab fa-twitter" style="font-size:32px"></i></a>
+            &nbsp;
+            <a target="_blank" href="mailto:engelmann@cs.stanford.edu"><i class="fa fa-envelope" style="font-size:32px"></i></a>
+            </p>
+          </div>
+      </div>
+      </main>
+    </div>
+      
+    <div class="container mt-5 mb-5">
+      <h3>News</h3>
+      <div class="news-scrollable">
+        <table class="table-borderless">
+  
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Dec 2025</b>
+      <td>The 6<sup>th</sup> iteration of our <a href="https://opensun3d.github.io/">Open-Vocabulary 3D Scene Understanding Workshop</a> will be held at <a href="https://cvpr.thecvf.com/Conferences/2026">CVPR'26</a> in Denver, CO.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Oct 2025</b>
+      <td>I will serve as area chair (AC) for <a href="https://cvpr.thecvf.com/Conferences/2026">CVPR'26</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Sep 2025</b>
+      <td>We have two papers accepted at <a href="https://neurips.cc/Conferences/2025">NeurIPS 2025</a>. Great work with <a href="https://scholar.google.com/citations?user=Xel1HnoAAAAJ&amp;hl=de">Valentin Bieri</a> and <a href="https://scholar.google.com/citations?user=ieN4b1QAAAAJ&amp;hl=zh-CN&amp;oi=sra">Rui Huang</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Aug 2025</b>
+      <td>We have one paper at <a href="https://bmvc2025.bmva.org/">BMVC</a> and one paper at <a href="https://asia.siggraph.org/2025/">SIGGRAPH Asia</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jul 2025</b>
+      <td>Together with <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a>, we received an NVIDIA <a href="https://www.nvidia.com/en-us/industries/higher-education-research/academic-grant-program/">Academic grant</a> 🚀.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jun 2025</b>
+      <td><a href="https://super-dec.github.io/">SuperDec</a> is an <strong>🏆 Oral</strong> (top 2.3%) at <a href="https://iccv.thecvf.com/">ICCV'25</a> in Hawaii 🌸, amazing work with <a href="https://elisabettafedele.github.io/">Elisabetta Fedele</a> and <a href="https://boysun045.github.io/boysun-website/">Boyang Sun</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jun 2025</b>
+      <td>I will serve as areas chair (AC) for <a href="https://wacv2026.thecvf.com">WACV'26</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Apr 2025</b>
+      <td><a href="https://slag-project.github.io/">SLAG</a> (Scalable Language-Augmented Gaussian Splatting) was accepted at <a href="https://www.ieee-ras.org/publications/ra-l">RA-L</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Feb 2025</b>
+      <td>We have 2 papers accepted at CVPR'25, <a href="https://openfungraph.github.io/">OpenFunGraph</a> (🏆 <strong>Highlight</strong>) and <a href="https://labelmaker.org/">ARKitLabelMaker</a></td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jan 2025</b>
+      <td><a href="https://search3d-segmentation.github.io/">Search3D</a> our approach for hierarchical open-vocabulary 3D scene segmentation was accepted at <a href="https://www.ieee-ras.org/publications/ra-l">RA-L</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Dec 2024</b>
+      <td>The 4<sup>th</sup> iteration of our <a href="https://opensun3d.github.io/">Open-Vocabulary 3D Scene Understanding Workshop</a> will be held at <a href="https://cvpr.thecvf.com/Conferences/2025">CVPR'25</a> in Nashville, TN.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Oct 2024</b>
+      <td>We have 2 papers accepted at <a href="https://wacv2025.thecvf.com/">WACV'25</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Sep 2024</b>
+      <td>I moved to Stanford University to work with Leo Guibas and Jeannette Bohg on computer vision for robotics.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Sep 2024</b>
+      <td>I will serve as areas chair (AC) for <a href="https://cvpr.thecvf.com/Conferences/2025">CVPR'25</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jul 2024</b>
+      <td>We have 4 papers accepted at <a href="https://eccv.ecva.net">ECCV'24</a> in Milan, among them <a href="https://segment3d.github.io">Segment3D</a>!</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jul 2024</b>
+      <td>I will serve as area chair (AC) for <a href="https://3dvconf.github.io/2025/">3DV'25</a> and <a href="https://wacv2025.thecvf.com">WACV'25</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">May 2024</b>
+      <td>I was recognized as outstanding reviewer for <a href="https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf">CVPR 2024</a> (top 2%).</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Apr 2024</b>
+      <td>The third iteration of our <a href="https://opensun3d.github.io/index_eccv24.html">Open-Vocabulary 3D Scene Understanding Workshop</a> will be held at <a href="https://eccv.ecva.net">ECCV'24</a> in Milan.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">May 2024</b>
+      <td>Our <a href="https://spot-compose.github.io">Spot-Compose</a> received a <strong>🏆 Best Paper Award</strong> at the <a href="https://mobile-manipulation.net/events/moma2024/">ICRA'24 MOMA.v2 workshop</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Mar 2024</b>
+      <td>I will give a talk at the <a href="https://cv4aec.github.io">CV4AEC Workshop</a> at <a href="https://cvpr.thecvf.com">CVPR'24</a> in Seattle.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Feb 2024</b>
+      <td><a href="https://scenefun3d.github.io">SceneFun3D</a> is accepted at <a href="https://cvpr.thecvf.com">CVPR'24</a> as <strong>🏆 Oral</strong> in Seattle, great work with <a href="https://alexdelitzas.github.io">Alex Delitzas</a> and <a href="https://aycatakmaz.github.io">Ayca Takmaz</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jan 2024</b>
+      <td><a href="https://arxiv.org/abs/2401.09939">ICGNet</a> is accepted at <a href="https://2024.ieee-icra.org">ICRA'24</a> in Yokohama, great work with <a href="https://vas.mpi-inf.mpg.de/rene-zurbrugg/">René Zurbrügg</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jan 2024</b>
+      <td><a href="https://opennerf.github.io">OpenNeRF</a> and <a href="https://ywyue.github.io/AGILE3D/">AGILE3D</a> are accepted to <a href="https://iclr.cc/Conferences/2024">ICLR'24</a> in Vienna.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jan 2024</b>
+      <td>I gave a talk on <a href="https://www.youtube.com/watch?v=diMHj55fSSA">High-Fidelity Open-Vocabulary 3D Scene Understanding</a> at the <a href="https://www.youtube.com/@MontrealRobotics/videos?view=2&amp;sort=dd&amp;live_view=503&amp;shelf_id=0">Mila Robot Learning Seminar</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Dec 2023</b>
+      <td>The second iteration of our <a href="https://opensun3d.github.io">Open-Vocabulary 3D Scene Understanding Workshop</a> will be held in conjunction with <a href="https://cvpr.thecvf.com">CVPR'24</a> in Seattle.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Dec 2023</b>
+      <td>Our <a href="https://neurips.cc/Conferences/2023/ProgramCommittee#top-reivewers">NeurIPS 2023</a> paper on open-vocabulary 3D instance segmentation method <a href="https://openmask3d.github.io">OpenMask3D</a> was featured in the <a href="https://www.rsipvision.com/ComputerVisionNews-2023December/2/">Computer Vision News</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Nov 2023</b>
+      <td>I was recognized as top reviewer for <a href="https://neurips.cc/Conferences/2023/ProgramCommittee#top-reivewers">NeurIPS 2023</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Oct 2023</b>
+      <td>Our work <a href="http://labelmaker3d.github.io">LabelMaker</a> was accepted at <a href="https://3dvconf.github.io/2024/">3DV'24</a> in Davos, Switzerland.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Sep 2023</b>
+      <td>Our open-set 3D instance segmentation <a href="https://openmask3d.github.io/">OpenMask3D</a> was accepted at <a href="https://nips.cc/Conferences/2023">NeuRIPS'23</a> in New Orleans.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Sep 2023</b>
+      <td>I will give a keynote talk at the ICCV'23 <a href="https://cvaad-workshop.github.io/">CVAAD</a> workshop.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Aug 2023</b>
+      <td>I will serve as areas chair (AC) for <a href="https://wacv2024.thecvf.com/">WACV'24</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jul 2023</b>
+      <td>Our work on 3D human segmentation <a href="https://human-3d.github.io/">Human3D</a> was accepted at <a href="https://iccv2023.thecvf.com/">ICCV'23</a> in Paris.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jun 2023</b>
+      <td>Check out our latest work on open-set 3D scene segmentation <a href="https://openmask3d.github.io">OpenMask3D</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jun 2023</b>
+      <td>I will serve as senior program committee (SPC) for <a href="https://aaai.org/Conferences/AAAI-24/">AAAI 2024</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Mar 2023</b>
+      <td>Our workshop <a href="https://opensun3d.github.io/">OpenSun3D</a> on Open-Vocabulary 3D Scene Understanding will be held in conjunction with <a href="https://iccv2023.thecvf.com/">ICCV'23</a> in Paris.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Feb 2023</b>
+      <td>Our paper <a href="https://ywyue.github.io/RoomFormer/">RoomFormer</a> is accepted at <a href="https://cvpr2023.thecvf.com/">CVPR'23</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jan 2023</b>
+      <td>Our paper <a href="https://jonasschult.github.io/Mask3D/">Mask3D</a> was accepted at <a href="https://www.icra2023.org/">ICRA'23</a>. Check out the <a href="http://francisengelmann.github.io/mask3d">online demo</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Dec 2022</b>
+      <td>I received the <a href="https://ethz.ch/en/research/research-promotion/seed-projects/supported-projects.html">ETH Zurich Career Seed Award</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Aug 2022</b>
+      <td>Our <a href="https://jonasschult.github.io/Mask3D/">Mask3D</a> approach ranks 1<sup>st</sup> on <a href="https://kaldir.vc.in.tum.de/scannet_benchmark/semantic_instance_3d">ScanNet</a>, <a href="https://kaldir.vc.in.tum.de/scannet_benchmark/scannet200_semantic_instance_3d">ScanNet200</a> and 2<sup>nd</sup> on <a href="https://codalab.lisn.upsaclay.fr/competitions/4646#results">STPLS3D</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Aug 2022</b>
+      <td>One paper accepted at the ECCV 2022 <a href="https://avvision.xyz/eccv22/">AVVision Workshop</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jul 2022</b>
+      <td>I will serve as senior program committee (SPC) for <a href="https://aaai.org/Conferences/AAAI-23/">AAAI 2023</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jul 2022</b>
+      <td>Our paper <a href="https://virtualhumans.mpi-inf.mpg.de/box2mask/">Box2Mask</a> on weakly supervised 3D instance segmentation using bounding box annotations is accepted as oral (2.7%) to <a href="https://eccv2022.ecva.net/">ECCV 2022</a> in Tel Aviv.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jun 2022</b>
+      <td>I gave an invited talk at the <a href="http://www.scan-net.org/cvpr2022workshop/#speakers">CVPR 2022 ScanNet workshop in New Orleans</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jun 2022</b>
+      <td>Our winning entry on 2D floorplan reconstruction from large-scale point clouds was presented at <a href="https://cv4aec.github.io/">CV4AEC</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">Jun 2022</b>
+      <td>Our model Mix3D won first place on the <a href="http://kaldir.vc.in.tum.de/scannet_benchmark/semantic_label_3d">ScanNet 3D Semantic Segmentaion challenge</a> with <a href="https://nekrasov.dev/">Alexey Nekrasov</a> and <a href="https://jonasschult.github.io/">Jonas Schult</a>.</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top;"><b style="display: inline-block; min-width: 85px; ">May 2022</b>
+      <td>I will co-organize the <a href="https://sites.google.com/view/egocentric-hand-body-activity">HBHA workshop</a> on human body, hands, and activities from egocentric and multi-view cameras at ECCV 2022.</td>
+    </tr>
+    
+        </table>
+      </div>
+    </div>
+  
+      
+    <div class="container mt-5 mb-5">
+      <h3>Publications</h3>
+      <ul class="list-unstyled">
+  
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_supergen.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">SpaceControl: Introducing Test-Time Spatial Control to 3D Generative Modeling</span></br>
+          <span class="p-authors"><a href="https://elisabettafedele.github.io/" target="_blank">Elisabetta Fedele</a><sup>*</sup>, <b>Francis Engelmann</b><sup>*</sup>, <a href="https://ianhuang.ai/" target="_blank">Ian Huang</a>, <a href="https://orlitany.github.io/" target="_blank">Or Litany</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/" target="_blank">Marc Pollefeys</a>, <a href="https://profiles.stanford.edu/leonidas-guibas" target="_blank">Leonidas Guibas</a></span></br>
+        <span class="p-conference">arXiv (Preprint), 2025.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://www.arxiv.org/abs/2512.05343"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Fedele2025SpaceControl" role="button" aria-expanded="false" aria-controls="Fedele2025SpaceControl"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://spacecontrol3d.github.io/"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/spacecontrol3d/spacecontrol"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Fedele2025SpaceControl">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Fedele2025SpaceControl,
+  title={SpaceControl: Introducing Test-Time Spatial Control to 3D Generative Modeling},
+  author={Elisabetta Fedele*, Francis Engelmann*, Ian Huang, Or Litany, Marc Pollefeys, Leonidas Guibas},
+  booktitle={arXiv (Preprint)},
+  year={2025}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_houselayout3d.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">HouseLayout3D: A Benchmark and Training-free Baseline for 3D Layout Estimation in the Wild</span></br>
+          <span class="p-authors"><a href="https://scholar.google.com/citations?user=Xel1HnoAAAAJ&hl=de" target="_blank">Valentin Bieri</a>, <a href="https://scholar.google.com/citations?user=eQ0om98AAAAJ&hl=en" target="_blank">Marie-Julie Rakotosaona</a>, <a href="https://scholar.google.com/citations?user=ml3laqEAAAAJ&hl=ja" target="_blank">Keisuke Tateno</a>, <b>Francis Engelmann</b>, <a href="https://profiles.stanford.edu/leonidas-guibas" target="_blank">Leonidas Guibas</a></span></br>
+        <span class="p-conference">Conference on Neural Information Processing Systems (NeurIPS), 2025.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2512.02450"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Bieri2025HouseLayout3D" role="button" aria-expanded="false" aria-controls="Bieri2025HouseLayout3D"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://houselayout3d.github.io"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/HouseLayout3D/houselayout3d"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Bieri2025HouseLayout3D">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Bieri2025HouseLayout3D,
+  title={HouseLayout3D: A Benchmark and Training-free Baseline for 3D Layout Estimation in the Wild},
+  author={Valentin Bieri, Marie-Julie Rakotosaona, Keisuke Tateno, Francis Engelmann, Leonidas Guibas},
+  booktitle={Conference on Neural Information Processing Systems (NeurIPS)},
+  year={2025}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_vipscene.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">VIPScene: Video Perception Models for 3D Scene Generation</span></br>
+          <span class="p-authors"><a href="https://scholar.google.com/citations?user=ieN4b1QAAAAJ&hl=zh-CN&oi=sra" target="_blank">Rui Huang</a>, <a href="https://ymxlzgy.com/" target="_blank">Guangyao Zhai</a>, <a href="https://zuriabauer.com/" target="_blank">Zuria Bauer</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/" target="_blank">Marc Pollefeys</a>, <a href="https://federicotombari.github.io/" target="_blank">Federico Tombari</a>, <a href="https://profiles.stanford.edu/leonidas-guibas" target="_blank">Leonidas Guibas</a>, <a href="https://gaohuang-net.github.io/" target="_blank">Gao Huang</a>, <b>Francis Engelmann</b></span></br>
+        <span class="p-conference">Conference on Neural Information Processing Systems (NeurIPS), 2025.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2506.20601"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Huang2025VIPScene" role="button" aria-expanded="false" aria-controls="Huang2025VIPScene"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://vipscene.github.io/"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/star9988rr/VIPScene"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Huang2025VIPScene">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Huang2025VIPScene,
+  title={VIPScene: Video Perception Models for 3D Scene Generation},
+  author={Rui Huang, Guangyao Zhai, Zuria Bauer, Marc Pollefeys, Federico Tombari, Leonidas Guibas, Gao Huang, Francis Engelmann},
+  booktitle={Conference on Neural Information Processing Systems (NeurIPS)},
+  year={2025}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="https://super-dec.github.io/static/figures/compressed/teaser/room0_1_bg.jpeg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">SuperDec: 3D Scene Decomposition with Superquadric Primitives</span></br>
+          <span class="p-authors"><a href="https://elisabettafedele.github.io/" target="_blank">Elisabetta Fedele</a>, <a href="https://boysun045.github.io/boysun-website/" target="_blank">Boyang Sun</a>, <a href="https://profiles.stanford.edu/leonidas-guibas" target="_blank">Leonidas Guibas</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/" target="_blank">Marc Pollefeys</a>, <b>Francis Engelmann</b></span></br>
+        <span class="p-conference">IEEE/CVF International Conference on Computer Vision (ICCV), 2025.</span></br>
+          <span class="p-award badge badge-success mb-2">Oral Presentation</span> <span class="mb-2">(top 2.3% of accepted papers)</span><br />
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2504.00992"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Fedele2025SuperDec" role="button" aria-expanded="false" aria-controls="Fedele2025SuperDec"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://super-dec.github.io/"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/elisabettafedele/superdec"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Fedele2025SuperDec">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Fedele2025SuperDec,
+  title={SuperDec: 3D Scene Decomposition with Superquadric Primitives},
+  author={Elisabetta Fedele, Boyang Sun, Leonidas Guibas, Marc Pollefeys, Francis Engelmann},
+  booktitle={IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2025}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_homer.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">HoMeR: Learning In-the-Wild Mobile Manipulation via Hybrid Imitation and WHole-Body Control</span></br>
+          <span class="p-authors"><a href="https://priyasundaresan.github.io/" target="_blank">Priya Sundaresan</a>, <a href="https://rheamalhotra.com/" target="_blank">Rhea Malhotra</a>, <a href="https://www.linkedin.com/in/phillip-xuhui-miao-ab1a50258/" target="_blank">Phillip Miao</a>, <a href="https://yjy0625.github.io/" target="_blank">Jingyun Yang</a>, <a href="https://jimmyyhwu.github.io/" target="_blank">Jimmy Wu</a>, <a href="https://hengyuanhu.com/" target="_blank">Hengyuan Hu</a>, <a href="https://contactrika.github.io/" target="_blank">Rika Antonova</a>, <b>Francis Engelmann</b>, <a href="https://dorsa.fyi/" target="_blank">Dorsa Sadigh</a>, <a href="https://web.stanford.edu/~bohg/" target="_blank">Jeannette Bohg</a></span></br>
+        <span class="p-conference">arXiv (Preprint), 2025.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2506.01185"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Sundaresan2025HoMeR" role="button" aria-expanded="false" aria-controls="Sundaresan2025HoMeR"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://homer-manip.github.io/"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/priyasundaresan/homer"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Sundaresan2025HoMeR">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Sundaresan2025HoMeR,
+  title={HoMeR: Learning In-the-Wild Mobile Manipulation via Hybrid Imitation and WHole-Body Control},
+  author={Priya Sundaresan, Rhea Malhotra, Phillip Miao, Jingyun Yang, Jimmy Wu, Hengyuan Hu, Rika Antonova, Francis Engelmann, Dorsa Sadigh, Jeannette Bohg},
+  booktitle={arXiv (Preprint)},
+  year={2025}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_slag.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">SLAG: Scalable Language-Augmented Gaussian Splatting</span></br>
+          <span class="p-authors"><a href="https://www.linkedin.com/in/laszlolszilagyi/" target="_blank">Laszlo Szilagyi</a>, <b>Francis Engelmann</b>, <a href="https://web.stanford.edu/~bohg/" target="_blank">Jeannette Bohg</a></span></br>
+        <span class="p-conference">IEEE Robotics and Automation Letters (RA-L), 2025.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2505.08124"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Szilagyi2025SLAG" role="button" aria-expanded="false" aria-controls="Szilagyi2025SLAG"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://slag-project.github.io/"><i class="fas fa-cube"></i> Project</a>
+          
+          <div class="collapse" id="Szilagyi2025SLAG">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Szilagyi2025SLAG,
+  title={SLAG: Scalable Language-Augmented Gaussian Splatting},
+  author={Laszlo Szilagyi, Francis Engelmann, Jeannette Bohg},
+  booktitle={IEEE Robotics and Automation Letters (RA-L)},
+  year={2025}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_fungraph3d.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">OpenFunGraph: Open-Vocabulary Functional 3D Scene Graphs for Real-World Indoor Spaces</span></br>
+          <span class="p-authors"><a href="https://zhangcyg.github.io/" target="_blank">Chenyangguang Zhang</a><sup>*</sup>, <a href="https://alexdelitzas.github.io" target="_blank">Alexandros Delitzas</a><sup>*</sup>, <a href="https://fangjinhuawang.github.io/" target="_blank">Fangjinhua Wang</a>, <a href="https://lolrudy.github.io/" target="_blank">Ruida Zhang</a>, <a href="https://www.thuidm.com/" target="_blank">Xiangyang Ji</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/" target="_blank">Marc Pollefeys</a>, <b>Francis Engelmann</b></span></br>
+        <span class="p-conference">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2025.</span></br>
+          <span class="p-award badge badge-success mb-2">Highlight</span> <span class="mb-2">(top 13% of accepted papers)</span><br />
+          <a class="mr-3" target="_blank" href="http://arxiv.org/abs/2503.19199"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Zhang2025OpenFunGraph" role="button" aria-expanded="false" aria-controls="Zhang2025OpenFunGraph"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://openfungraph.github.io/"><i class="fas fa-cube"></i> Project</a>
+          
+          <div class="collapse" id="Zhang2025OpenFunGraph">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Zhang2025OpenFunGraph,
+  title={OpenFunGraph: Open-Vocabulary Functional 3D Scene Graphs for Real-World Indoor Spaces},
+  author={Chenyangguang Zhang*, Alexandros Delitzas*, Fangjinhua Wang, Ruida Zhang, Xiangyang Ji, Marc Pollefeys, Francis Engelmann},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2025}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_arkitlabelmaker.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">ARKit LabelMaker: A New Scale for Indoor 3D Scene Understanding</span></br>
+          <span class="p-authors"><a href="https://quantaji.github.io/" target="_blank">Guangda Ji</a>, <a href="https://www.silvanweder.com/" target="_blank">Silvan Weder</a>, <b>Francis Engelmann</b>, <a href="https://people.inf.ethz.ch/marc.pollefeys/" target="_blank">Marc Pollefeys</a>, <a href="https://hermannblum.net/" target="_blank">Hermann Blum</a></span></br>
+        <span class="p-conference">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2025.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2410.13924"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Ji2025ARKit" role="button" aria-expanded="false" aria-controls="Ji2025ARKit"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://labelmaker.org/"><i class="fas fa-cube"></i> Project</a>
+          
+          <div class="collapse" id="Ji2025ARKit">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Ji2025ARKit,
+  title={ARKit LabelMaker: A New Scale for Indoor 3D Scene Understanding},
+  author={Guangda Ji, Silvan Weder, Francis Engelmann, Marc Pollefeys, Hermann Blum},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2025}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_search3d.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">Search3D: Hierarchical Open-Vocabulary 3D Segmentation</span></br>
+          <span class="p-authors"><a href="https://aycatakmaz.github.io" target="_blank">Ayca Takmaz</a>, <a href="https://alexdelitzas.github.io" target="_blank">Alexandros Delitzas</a>, <a href="https://people.inf.ethz.ch/~sumnerb/" target="_blank">Robert Sumner</a>, <b>Francis Engelmann</b><sup>*</sup>, <a href="https://scholar.google.com/citations?user=dfjN3YAAAAAJ&hl=en" target="_blank">Johanna Wald</a><sup>*</sup>, <a href="https://federicotombari.github.io/" target="_blank">Federico Tombari</a></span></br>
+        <span class="p-conference">IEEE Robotics and Automation Letters (RA-L), 2025.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2409.18431"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Takmaz2025Search3D" role="button" aria-expanded="false" aria-controls="Takmaz2025Search3D"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://search3d-segmentation.github.io/"><i class="fas fa-cube"></i> Project</a>
+          
+          <div class="collapse" id="Takmaz2025Search3D">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Takmaz2025Search3D,
+  title={Search3D: Hierarchical Open-Vocabulary 3D Segmentation},
+  author={Ayca Takmaz, Alexandros Delitzas, Robert Sumner, Francis Engelmann*, Johanna Wald*, Federico Tombari},
+  booktitle={IEEE Robotics and Automation Letters (RA-L)},
+  year={2025}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_opencity3d.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">OpenCity3D: What do Vision-Language Models know about Urban Environments?</span></br>
+          <span class="p-authors"><a href="https://scholar.google.com/citations?user=Xel1HnoAAAAJ&hl=de" target="_blank">Valentin Bieri</a>, <a href="https://www.linkedin.com/in/marco-zamboni" target="_blank">Marco Zamboni</a>, <a href="linkedin.com/in/nicolas-samuel-blumer-7319a7193" target="_blank">Nicolas S. Blumer</a>, <a href="https://scholar.google.com/citations?user=n4Dp2rkAAAAJ&hl=en" target="_blank">Qingxuan Chen</a>, <b>Francis Engelmann</b></span></br>
+        <span class="p-conference">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2025.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2503.16776"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Bieri2025OpenCity3D" role="button" aria-expanded="false" aria-controls="Bieri2025OpenCity3D"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://opencity3d.github.io/"><i class="fas fa-cube"></i> Project</a>
+          
+          <div class="collapse" id="Bieri2025OpenCity3D">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Bieri2025OpenCity3D,
+  title={OpenCity3D: What do Vision-Language Models know about Urban Environments?},
+  author={Valentin Bieri, Marco Zamboni, Nicolas S. Blumer, Qingxuan Chen, Francis Engelmann},
+  booktitle={IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year={2025}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_p2pbridge.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">P2P-Bridge: Diffusion Bridges for 3D Point Cloud Denoising</span></br>
+          <span class="p-authors"><a href="https://www.linkedin.com/in/matvogel/" target="_blank">Mathias Vogel</a>, <a href="https://scholar.google.com/citations?user=ml3laqEAAAAJ&hl=ja" target="_blank">Keisuke Tateno</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/" target="_blank">Marc Pollefeys</a>, <a href="https://federicotombari.github.io/" target="_blank">Federico Tombari</a>, <a href="https://scholar.google.com/citations?user=eQ0om98AAAAJ&hl=en" target="_blank">Marie-Julie Rakotosaona</a>, <b>Francis Engelmann</b></span></br>
+        <span class="p-conference">European Conference on Computer Vision (ECCV), 2024.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2408.16325"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Vogel2024P2P-Bridge" role="button" aria-expanded="false" aria-controls="Vogel2024P2P-Bridge"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://p2p-bridge.github.io"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/matvogel/P2P-Bridge"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Vogel2024P2P-Bridge">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Vogel2024P2P-Bridge,
+  title={P2P-Bridge: Diffusion Bridges for 3D Point Cloud Denoising},
+  author={Mathias Vogel, Keisuke Tateno, Marc Pollefeys, Federico Tombari, Marie-Julie Rakotosaona, Francis Engelmann},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2024}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_segment3d.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">Segment3D: Learning Fine-Grained Class-Agnostic 3D Segmentation without Manual Labels</span></br>
+          <span class="p-authors"><a href="https://scholar.google.com/citations?user=ieN4b1QAAAAJ&hl=zh-CN&oi=sra" target="_blank">Rui Huang</a>, <a href="https://pengsongyou.github.io/" target="_blank">Songyou Peng</a>, <a href="https://aycatakmaz.github.io" target="_blank">Ayca Takmaz</a>, <a href="https://federicotombari.github.io/" target="_blank">Federico Tombari</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/" target="_blank">Marc Pollefeys</a>, <a href="https://scholar.google.com/citations?user=rw6vWdcAAAAJ&hl=en" target="_blank">Shiji Song</a>, <a href="https://gaohuang-net.github.io/" target="_blank">Gao Huang</a>, <b>Francis Engelmann</b></span></br>
+        <span class="p-conference">European Conference on Computer Vision (ECCV), 2024.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2312.17232"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Huang2024Segment3D" role="button" aria-expanded="false" aria-controls="Huang2024Segment3D"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://segment3d.github.io"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/LeapLabTHU/Segment3D"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Huang2024Segment3D">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Huang2024Segment3D,
+  title={Segment3D: Learning Fine-Grained Class-Agnostic 3D Segmentation without Manual Labels},
+  author={Rui Huang, Songyou Peng, Ayca Takmaz, Federico Tombari, Marc Pollefeys, Shiji Song, Gao Huang, Francis Engelmann},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2024}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_scenegraphloc.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">SceneGraphLoc: Cross-Modal Coarse Visual Localization on 3D Scene Graphs</span></br>
+          <span class="p-authors"><a href="https://y9miao.github.io/" target="_blank">Yang Miao</a>, <b>Francis Engelmann</b>, <a href="https://scholar.google.com/citations?user=YwPsGKQAAAAJ&hl=en" target="_blank">Olga Vysotska</a>, <a href="https://federicotombari.github.io/" target="_blank">Federico Tombari</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/" target="_blank">Marc Pollefeys</a>, <a href="https://scholar.google.com/citations?user=U9-D8DYAAAAJ&hl=hu" target="_blank">Dániel Béla Baráth</a></span></br>
+        <span class="p-conference">European Conference on Computer Vision (ECCV), 2024.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2404.00469"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Miao2024SceneGraphLoc" role="button" aria-expanded="false" aria-controls="Miao2024SceneGraphLoc"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://scenegraphloc.github.io"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/y9miao/VLSG"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Miao2024SceneGraphLoc">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Miao2024SceneGraphLoc,
+  title={SceneGraphLoc: Cross-Modal Coarse Visual Localization on 3D Scene Graphs},
+  author={Yang Miao, Francis Engelmann, Olga Vysotska, Federico Tombari, Marc Pollefeys, Dániel Béla Baráth},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2024}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_fit3d.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">FiT3D: Improving 2D Feature Representations by 3D-Aware Fine-Tuning</span></br>
+          <span class="p-authors"><a href="https://ywyue.github.io/RoomFormer/" target="_blank">Yuanwen Yue</a>, <a href="https://anurag-198.github.io/" target="_blank">Anurag Das</a>, <b>Francis Engelmann</b>, <a href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html" target="_blank">Siyu Tang</a>, <a href="https://janericlenssen.github.io/" target="_blank">Jan Eric Lenssen</a></span></br>
+        <span class="p-conference">European Conference on Computer Vision (ECCV), 2024.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2407.20229"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Yue2024FiT3D" role="button" aria-expanded="false" aria-controls="Yue2024FiT3D"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://ywyue.github.io/FiT3D/"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/ywyue/FiT3D"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Yue2024FiT3D">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Yue2024FiT3D,
+  title={FiT3D: Improving 2D Feature Representations by 3D-Aware Fine-Tuning},
+  author={Yuanwen Yue, Anurag Das, Francis Engelmann, Siyu Tang, Jan Eric Lenssen},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2024}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_scenefun3d.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">SceneFun3D: Fine-Grained Functionality and Affordance Understanding in 3D Scenes</span></br>
+          <span class="p-authors"><a href="https://alexdelitzas.github.io" target="_blank">Alexandros Delitzas</a>, <a href="https://aycatakmaz.github.io" target="_blank">Ayca Takmaz</a>, <a href="https://federicotombari.github.io/" target="_blank">Federico Tombari</a>, <a href="https://people.inf.ethz.ch/~sumnerb/" target="_blank">Robert Sumner</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/" target="_blank">Marc Pollefeys</a>, <b>Francis Engelmann</b></span></br>
+        <span class="p-conference">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024.</span></br>
+          <span class="p-award badge badge-success mb-2">Oral Presentation</span> <span class="mb-2">(top 3.3% of accepted papers)</span><br />
+          <a class="mr-3" target="_blank" href="https://openaccess.thecvf.com/content/CVPR2024/html/Delitzas_SceneFun3D_Fine-Grained_Functionality_and_Affordance_Understanding_in_3D_Scenes_CVPR_2024_paper.html"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Delitzas2024SceneFun3D" role="button" aria-expanded="false" aria-controls="Delitzas2024SceneFun3D"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://scenefun3d.github.io"><i class="fas fa-cube"></i> Project</a>
+          
+          <div class="collapse" id="Delitzas2024SceneFun3D">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Delitzas2024SceneFun3D,
+  title={SceneFun3D: Fine-Grained Functionality and Affordance Understanding in 3D Scenes},
+  author={Alexandros Delitzas, Ayca Takmaz, Federico Tombari, Robert Sumner, Marc Pollefeys, Francis Engelmann},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2024}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_spot-compose.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">Spot-Compose: A Framework for Open-Vocabulary Object Retrieval and Drawer Manipulation in Point Clouds</span></br>
+          <span class="p-authors"><a href="https://oliver-lemke.github.io/" target="_blank">Oliver Lemke</a>, <a href="https://zuriabauer.com/" target="_blank">Zuria Bauer</a>, <a href="https://vas.mpi-inf.mpg.de/rene-zurbrugg/" target="_blank">René Zurbrügg</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/" target="_blank">Marc Pollefeys</a>, <b>Francis Engelmann</b><sup>*</sup>, <a href="https://hermannblum.net/" target="_blank">Hermann Blum</a><sup>*</sup></span></br>
+        <span class="p-conference">International Conference on Robotics and Automation Workshops (ICRAW), 2024.</span></br>
+          <span class="p-award badge badge-success mb-2">Best Paper Award</span> <span class="mb-2">(ICRA MOMA.v2 workshop)</span><br />
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2404.12440"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Lemke2024Spot-Compose" role="button" aria-expanded="false" aria-controls="Lemke2024Spot-Compose"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://spot-compose.github.io"><i class="fas fa-cube"></i> Project</a>
+          
+          <div class="collapse" id="Lemke2024Spot-Compose">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Lemke2024Spot-Compose,
+  title={Spot-Compose: A Framework for Open-Vocabulary Object Retrieval and Drawer Manipulation in Point Clouds},
+  author={Oliver Lemke, Zuria Bauer, René Zurbrügg, Marc Pollefeys, Francis Engelmann*, Hermann Blum*},
+  booktitle={International Conference on Robotics and Automation Workshops (ICRAW)},
+  year={2024}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_icgnet.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">ICGNet: A Unified Approach for Instance-Centric Grasping</span></br>
+          <span class="p-authors"><a href="https://vas.mpi-inf.mpg.de/rene-zurbrugg/" target="_blank">René Zurbrügg</a>, <a href="https://vision.ee.ethz.ch/people/in-memoriam/yifan.html" target="_blank">Yifan Liu</a>, <b>Francis Engelmann</b>, <a href="https://suryanshkumar.github.io/" target="_blank">Suryansh Kumar</a>, <a href="https://rsl.ethz.ch/the-lab/people/person-detail.hutter.html" target="_blank">Marco Hutter</a>, <a href="https://scholar.google.com/citations?user=aB04078AAAAJ&hl=en" target="_blank">Vaishakh Patil</a>, <a href="https://www.yf.io/" target="_blank">Fisher Yu</a></span></br>
+        <span class="p-conference">International Conference on Robotics and Automation (ICRA), 2024.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2401.09939"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Zurbrügg2024ICGNet" role="button" aria-expanded="false" aria-controls="Zurbrügg2024ICGNet"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://icgraspnet.github.io"><i class="fas fa-cube"></i> Project</a>
+          
+          <div class="collapse" id="Zurbrügg2024ICGNet">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Zurbrügg2024ICGNet,
+  title={ICGNet: A Unified Approach for Instance-Centric Grasping},
+  author={René Zurbrügg, Yifan Liu, Francis Engelmann, Suryansh Kumar, Marco Hutter, Vaishakh Patil, Fisher Yu},
+  booktitle={International Conference on Robotics and Automation (ICRA)},
+  year={2024}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_openmask3d.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">OpenMask3D: Open-Vocabulary 3D Instance Segmentation</span></br>
+          <span class="p-authors"><a href="https://aycatakmaz.github.io" target="_blank">Ayca Takmaz</a>, <a href="https://elisabettafedele.github.io/" target="_blank">Elisabetta Fedele</a>, <a href="https://people.inf.ethz.ch/~sumnerb/" target="_blank">Robert Sumner</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/" target="_blank">Marc Pollefeys</a>, <a href="https://federicotombari.github.io/" target="_blank">Federico Tombari</a>, <b>Francis Engelmann</b></span></br>
+        <span class="p-conference">Conference on Neural Information Processing Systems (NeurIPS), 2023.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2306.13631"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Takmaz2023OpenMask3D" role="button" aria-expanded="false" aria-controls="Takmaz2023OpenMask3D"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://openmask3d.github.io"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/OpenMask3D/openmask3d"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Takmaz2023OpenMask3D">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Takmaz2023OpenMask3D,
+  title={OpenMask3D: Open-Vocabulary 3D Instance Segmentation},
+  author={Ayca Takmaz, Elisabetta Fedele, Robert Sumner, Marc Pollefeys, Federico Tombari, Francis Engelmann},
+  booktitle={Conference on Neural Information Processing Systems (NeurIPS)},
+  year={2023}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_labelmaker.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">LabelMaker: Automatic Semantic Label Generation from RGB-D Trajectories</span></br>
+          <span class="p-authors"><a href="https://www.silvanweder.com/" target="_blank">Silvan Weder</a>, <a href="https://hermannblum.net/" target="_blank">Hermann Blum</a>, <b>Francis Engelmann</b>, <a href="https://people.inf.ethz.ch/marc.pollefeys/" target="_blank">Marc Pollefeys</a></span></br>
+        <span class="p-conference">International Conference on 3D Vision (3DV), 2024.</span></br>
+          <span class="p-award badge badge-success mb-2">Spotlight Presentation</span><br />
+          <a class="mr-3" target="_blank" href="LabelMaker.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Weder2024LabelMaker" role="button" aria-expanded="false" aria-controls="Weder2024LabelMaker"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://labelmaker3d.github.io"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/cvg/LabelMaker/"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Weder2024LabelMaker">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Weder2024LabelMaker,
+  title={LabelMaker: Automatic Semantic Label Generation from RGB-D Trajectories},
+  author={Silvan Weder, Hermann Blum, Francis Engelmann, Marc Pollefeys},
+  booktitle={International Conference on 3D Vision (3DV)},
+  year={2024}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_openreno.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">OpenNeRF: Open-Set 3D Neural Scene Segmentation with Pixel-Wise Features and Rendered Novel Views</span></br>
+          <span class="p-authors"><b>Francis Engelmann</b>, <a href="https://scholar.google.com/citations?user=bERItx8AAAAJ&hl=de" target="_blank">Fabian Manhardt</a>, <a href="https://m-niemeyer.github.io/" target="_blank">Michael Niemeyer</a>, <a href="https://scholar.google.com/citations?user=ml3laqEAAAAJ&hl=ja" target="_blank">Keisuke Tateno</a>, <a href="https://people.inf.ethz.ch/marc.pollefeys/" target="_blank">Marc Pollefeys</a>, <a href="https://federicotombari.github.io/" target="_blank">Federico Tombari</a></span></br>
+        <span class="p-conference">International Conference on Learning Representations (ICLR), 2024.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://francisengelmann.github.io/OpenSet3DSegmentation.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Engelmann2024OpenNeRF" role="button" aria-expanded="false" aria-controls="Engelmann2024OpenNeRF"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://opennerf.github.io"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/opennerf/opennerf"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Engelmann2024OpenNeRF">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Engelmann2024OpenNeRF,
+  title={OpenNeRF: Open-Set 3D Neural Scene Segmentation with Pixel-Wise Features and Rendered Novel Views},
+  author={Francis Engelmann, Fabian Manhardt, Michael Niemeyer, Keisuke Tateno, Marc Pollefeys, Federico Tombari},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2024}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_agile3d.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">AGILE3D: Attention Guided Interactive Multi-object 3D Segmentation</span></br>
+          <span class="p-authors"><a href="https://ywyue.github.io/RoomFormer/" target="_blank">Yuanwen Yue</a>, <a href="https://scholar.google.com/citations?user=MqI866QAAAAJ&hl=en" target="_blank">Sabarinath Mahadevan</a>, <a href="https://jonasschult.github.io/" target="_blank">Jonas Schult</a>, <b>Francis Engelmann</b>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a>, <a href="https://igp.ethz.ch/personen/person-detail.html?persid=143986" target="_blank">Konrad Schindler</a>, <a href="https://theodorakontogianni.github.io/" target="_blank">Theodora Kontogianni</a></span></br>
+        <span class="p-conference">International Conference on Learning Representations (ICLR), 2024.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2306.00977"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Yue2024AGILE3D" role="button" aria-expanded="false" aria-controls="Yue2024AGILE3D"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://ywyue.github.io/AGILE3D/"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/ywyue/AGILE3D"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Yue2024AGILE3D">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Yue2024AGILE3D,
+  title={AGILE3D: Attention Guided Interactive Multi-object 3D Segmentation},
+  author={Yuanwen Yue, Sabarinath Mahadevan, Jonas Schult, Francis Engelmann, Bastian Leibe, Konrad Schindler, Theodora Kontogianni},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2024}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_human3d.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">3D Segmentation of Humans in Point Clouds with Synthetic Data</span></br>
+          <span class="p-authors"><a href="https://aycatakmaz.github.io" target="_blank">Ayca Takmaz</a>, <a href="https://jonasschult.github.io/" target="_blank">Jonas Schult</a>, <a href="https://ikaftan.github.io/" target="_blank">Irem Kaftan</a>, <a href="https://cmakcay.github.io/" target="_blank">Cafer Mertcan Akcay</a>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a>, <a href="https://people.inf.ethz.ch/~sumnerb/" target="_blank">Robert Sumner</a>, <b>Francis Engelmann</b>, <a href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html" target="_blank">Siyu Tang</a></span></br>
+        <span class="p-conference">IEEE/CVF International Conference on Computer Vision (ICCV), 2023.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2212.00786"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Takmaz20233D" role="button" aria-expanded="false" aria-controls="Takmaz20233D"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://human-3d.github.io/"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/jonasschult/Human3D"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Takmaz20233D">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Takmaz20233D,
+  title={3D Segmentation of Humans in Point Clouds with Synthetic Data},
+  author={Ayca Takmaz, Jonas Schult, Irem Kaftan, Cafer Mertcan Akcay, Bastian Leibe, Robert Sumner, Francis Engelmann, Siyu Tang},
+  booktitle={IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2023}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_floorformer.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">Connecting the Dots: Floorplan Reconstruction Using Two-Level Queries</span></br>
+          <span class="p-authors"><a href="https://ywyue.github.io/RoomFormer/" target="_blank">Yuanwen Yue</a>, <a href="https://theodorakontogianni.github.io/" target="_blank">Theodora Kontogianni</a>, <a href="https://igp.ethz.ch/personen/person-detail.html?persid=143986" target="_blank">Konrad Schindler</a>, <b>Francis Engelmann</b></span></br>
+        <span class="p-conference">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2023.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2211.15658"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Yue2023Connecting" role="button" aria-expanded="false" aria-controls="Yue2023Connecting"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://ywyue.github.io/RoomFormer/"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/ywyue/RoomFormer"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Yue2023Connecting">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Yue2023Connecting,
+  title={Connecting the Dots: Floorplan Reconstruction Using Two-Level Queries},
+  author={Yuanwen Yue, Theodora Kontogianni, Konrad Schindler, Francis Engelmann},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2023}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_mask3d.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">Mask3D: Mask Transformer for 3D Semantic Instance Segmentation</span></br>
+          <span class="p-authors"><a href="https://jonasschult.github.io/" target="_blank">Jonas Schult</a>, <b>Francis Engelmann</b>, <a href="https://www.vision.rwth-aachen.de/person/10/" target="_blank">Alexander Hermans</a>, <a href="https://orlitany.github.io/" target="_blank">Or Litany</a>, <a href="https://vlg.inf.ethz.ch/team/Prof-Dr-Siyu-Tang.html" target="_blank">Siyu Tang</a>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a></span></br>
+        <span class="p-conference">International Conference on Robotics and Automation (ICRA), 2023.</span></br>
+          <span class="p-award badge badge-success mb-2">1st Place</span> <span class="mb-2">(ScanNet Challenge)</span><br />
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2210.03105"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Schult2023Mask3D" role="button" aria-expanded="false" aria-controls="Schult2023Mask3D"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://jonasschult.github.io/Mask3D/"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/JonasSchult/Mask3D"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Schult2023Mask3D">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Schult2023Mask3D,
+  title={Mask3D: Mask Transformer for 3D Semantic Instance Segmentation},
+  author={Jonas Schult, Francis Engelmann, Alexander Hermans, Or Litany, Siyu Tang, Bastian Leibe},
+  booktitle={International Conference on Robotics and Automation (ICRA)},
+  year={2023}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_box2mask.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">Box2Mask: Weakly Supervised 3D Semantic Instance Segmentation Using Bounding Boxes</span></br>
+          <span class="p-authors"><a href="https://virtualhumans.mpi-inf.mpg.de/people/Chibane.html" target="_blank">Julian Chibane</a>, <b>Francis Engelmann</b>, <a href="https://scholar.google.com/citations?user=5-0hLggAAAAJ&hl=en" target="_blank">Tuan Anh Tran</a>, <a href="https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html" target="_blank">Gerard Pons-Moll</a></span></br>
+        <span class="p-conference">European Conference on Computer Vision (ECCV), 2022.</span></br>
+          <span class="p-award badge badge-success mb-2">Oral Presentation</span><br />
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2206.01203"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Chibane2022Box2Mask" role="button" aria-expanded="false" aria-controls="Chibane2022Box2Mask"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://virtualhumans.mpi-inf.mpg.de/box2mask/"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/jchibane/Box2Mask"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Chibane2022Box2Mask">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Chibane2022Box2Mask,
+  title={Box2Mask: Weakly Supervised 3D Semantic Instance Segmentation Using Bounding Boxes},
+  author={Julian Chibane, Francis Engelmann, Tuan Anh Tran, Gerard Pons-Moll},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2022}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_4dStOP.jpg" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">4D-StOP: Panoptic Segmentation of 4D LiDAR using Spatio-temporal Object Proposal Generation and Aggregation</span></br>
+          <span class="p-authors"><a href="https://github.com/LarsKreuzberg" target="_blank">Lars Kreuzberg</a>, <a href="https://scholar.google.com/citations?user=89vcmSoAAAAJ&hl=en" target="_blank">Idil Esen Zulfikar</a>, <a href="https://scholar.google.com/citations?user=MqI866QAAAAJ&hl=en" target="_blank">Sabarinath Mahadevan</a>, <b>Francis Engelmann</b>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a></span></br>
+        <span class="p-conference">European Conference on Computer Vision Workshops (ECCVW), 2022.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2209.14858v1"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Kreuzberg20224D-StOP" role="button" aria-expanded="false" aria-controls="Kreuzberg20224D-StOP"><i class="far fa-file-alt"></i> BibTeX</a>
+          
+          <a class="mr-3" target="_blank" href="https://github.com/larskreuzberg/4d-stop"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Kreuzberg20224D-StOP">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Kreuzberg20224D-StOP,
+  title={4D-StOP: Panoptic Segmentation of 4D LiDAR using Spatio-temporal Object Proposal Generation and Aggregation},
+  author={Lars Kreuzberg, Idil Esen Zulfikar, Sabarinath Mahadevan, Francis Engelmann, Bastian Leibe},
+  booktitle={European Conference on Computer Vision Workshops (ECCVW)},
+  year={2022}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_mix3d.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">Mix3D: Out-of-Context Data Augmentation for 3D Scenes</span></br>
+          <span class="p-authors"><a href="https://nekrasov.dev/" target="_blank">Alexey Nekrasov</a>, <a href="https://jonasschult.github.io/" target="_blank">Jonas Schult</a>, <a href="https://orlitany.github.io/" target="_blank">Or Litany</a>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a>, <b>Francis Engelmann</b></span></br>
+        <span class="p-conference">International Conference on 3D Vision (3DV), 2021.</span></br>
+          <span class="p-award badge badge-success mb-2">Oral Presentation</span> <span class="mb-2">(1st Place ScanNet Challenge)</span><br />
+          <a class="mr-3" target="_blank" href="https://arxiv.org/abs/2110.02210"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Nekrasov2021Mix3D" role="button" aria-expanded="false" aria-controls="Nekrasov2021Mix3D"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://francisengelmann.github.io/mask3d/index.html"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/kumuji/mix3d"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Nekrasov2021Mix3D">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Nekrasov2021Mix3D,
+  title={Mix3D: Out-of-Context Data Augmentation for 3D Scenes},
+  author={Alexey Nekrasov, Jonas Schult, Or Litany, Bastian Leibe, Francis Engelmann},
+  booktitle={International Conference on 3D Vision (3DV)},
+  year={2021}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_points2objects.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">From Points to Multi-Object 3D Reconstruction</span></br>
+          <span class="p-authors"><b>Francis Engelmann</b>, <a href="http://www.krematas.com/" target="_blank">Konstantinos Rematas</a>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a>, <a href="https://sites.google.com/view/vittoferrari" target="_blank">Vittorio Ferrari</a></span></br>
+        <span class="p-conference">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://openaccess.thecvf.com/content/CVPR2021/html/Engelmann_From_Points_to_Multi-Object_3D_Reconstruction_CVPR_2021_paper.html"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Engelmann2021From" role="button" aria-expanded="false" aria-controls="Engelmann2021From"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://francisengelmann.github.io/points2objects/"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/tensorflow/graphics/tree/master/tensorflow_graphics/projects/points_to_3Dobjects"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Engelmann2021From">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Engelmann2021From,
+  title={From Points to Multi-Object 3D Reconstruction},
+  author={Francis Engelmann, Konstantinos Rematas, Bastian Leibe, Vittorio Ferrari},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2021}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_3D-MPA.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">3D-MPA: Multi Proposal Aggregation for 3D Semantic Instance Segmentation</span></br>
+          <span class="p-authors"><b>Francis Engelmann</b>, <a href="https://research.google/people/106293/" target="_blank">Martin Bokeloh</a>, <a href="https://www.alirezafathi.org/" target="_blank">Alireza Fathi</a>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a>, <a href="https://niessnerlab.org/" target="_blank">Matthias Nießner</a></span></br>
+        <span class="p-conference">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/pdf/2003.13867.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Engelmann20203D-MPA" role="button" aria-expanded="false" aria-controls="Engelmann20203D-MPA"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://francisengelmann.github.io/3D-MPA/"><i class="fas fa-cube"></i> Project</a>
+          
+          <div class="collapse" id="Engelmann20203D-MPA">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Engelmann20203D-MPA,
+  title={3D-MPA: Multi Proposal Aggregation for 3D Semantic Instance Segmentation},
+  author={Francis Engelmann, Martin Bokeloh, Alireza Fathi, Bastian Leibe, Matthias Nießner},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2020}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_DCM-Net.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">DualConvMesh-Net: Joint Geodesic and Euclidean Convolutions on 3D Meshes</span></br>
+          <span class="p-authors"><a href="https://jonasschult.github.io/" target="_blank">Jonas Schult</a><sup>*</sup>, <b>Francis Engelmann</b><sup>*</sup>, <a href="https://theodorakontogianni.github.io/" target="_blank">Theodora Kontogianni</a>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a></span></br>
+        <span class="p-conference">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020.</span></br>
+          <span class="p-award badge badge-success mb-2">Oral Presentation</span><br />
+          <a class="mr-3" target="_blank" href="https://arxiv.org/pdf/2004.01002.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Schult2020DualConvMesh-Net" role="button" aria-expanded="false" aria-controls="Schult2020DualConvMesh-Net"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://visualcomputinginstitute.github.io/dcm-net/"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/VisualComputingInstitute/dcm-net"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Schult2020DualConvMesh-Net">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Schult2020DualConvMesh-Net,
+  title={DualConvMesh-Net: Joint Geodesic and Euclidean Convolutions on 3D Meshes},
+  author={Jonas Schult*, Francis Engelmann*, Theodora Kontogianni, Bastian Leibe},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2020}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_DPC.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">Dilated Point Convolutions: On the Receptive Field Size of Point Convolutions on 3D Point Clouds</span></br>
+          <span class="p-authors"><b>Francis Engelmann</b>, <a href="https://theodorakontogianni.github.io/" target="_blank">Theodora Kontogianni</a>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a></span></br>
+        <span class="p-conference">International Conference on Robotics and Automation (ICRA), 2020.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://francisengelmann.github.io/DPC/engelmann_icra2020_dpc.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Engelmann2020Dilated" role="button" aria-expanded="false" aria-controls="Engelmann2020Dilated"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://francisengelmann.github.io/DPC/"><i class="fas fa-cube"></i> Project</a>
+          
+          <div class="collapse" id="Engelmann2020Dilated">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Engelmann2020Dilated,
+  title={Dilated Point Convolutions: On the Receptive Field Size of Point Convolutions on 3D Point Clouds},
+  author={Francis Engelmann, Theodora Kontogianni, Bastian Leibe},
+  booktitle={International Conference on Robotics and Automation (ICRA)},
+  year={2020}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_3D-BEVIS.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">3D-BEVIS: Bird's-Eye-View Instance Segmentation</span></br>
+          <span class="p-authors"><a href="https://scholar.google.com/citations?user=56QNhl4AAAAJ&hl=en" target="_blank">Cathrin Elich</a>, <b>Francis Engelmann</b>, <a href="https://jonasschult.github.io/" target="_blank">Jonas Schult</a>, <a href="https://theodorakontogianni.github.io/" target="_blank">Theodora Kontogianni</a>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a></span></br>
+        <span class="p-conference">German Conference on Pattern Recognition (GCPR), 2019.</span></br>
+          <span class="p-award badge badge-success mb-2">Best Master's Thesis Award</span> <span class="mb-2">(YRF DAGM 2019)</span><br />
+          <a class="mr-3" target="_blank" href="https://arxiv.org/pdf/1904.02199.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Elich20193D-BEVIS" role="button" aria-expanded="false" aria-controls="Elich20193D-BEVIS"><i class="far fa-file-alt"></i> BibTeX</a>
+          
+          
+          <div class="collapse" id="Elich20193D-BEVIS">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Elich20193D-BEVIS,
+  title={3D-BEVIS: Bird's-Eye-View Instance Segmentation},
+  author={Cathrin Elich, Francis Engelmann, Jonas Schult, Theodora Kontogianni, Bastian Leibe},
+  booktitle={German Conference on Pattern Recognition (GCPR)},
+  year={2019}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_KWYND.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">Know What Your Neighbors Do: 3D Semantic Segmentation of Point Clouds</span></br>
+          <span class="p-authors"><b>Francis Engelmann</b>, <a href="https://theodorakontogianni.github.io/" target="_blank">Theodora Kontogianni</a>, <a href="https://jonasschult.github.io/" target="_blank">Jonas Schult</a>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a></span></br>
+        <span class="p-conference">European Conference on Computer Vision Workshops (ECCVW), 2018.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://www.vision.rwth-aachen.de/media/papers/know-what-your-neighbors-do-3d-semantic-segmentation-of-point-clouds/W63P26.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Engelmann2018Know" role="button" aria-expanded="false" aria-controls="Engelmann2018Know"><i class="far fa-file-alt"></i> BibTeX</a>
+          
+          
+          <div class="collapse" id="Engelmann2018Know">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Engelmann2018Know,
+  title={Know What Your Neighbors Do: 3D Semantic Segmentation of Point Clouds},
+  author={Francis Engelmann, Theodora Kontogianni, Jonas Schult, Bastian Leibe},
+  booktitle={European Conference on Computer Vision Workshops (ECCVW)},
+  year={2018}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_Exploring.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">Exploring Spatial Context for 3D Semantic Segmentation of Point Clouds</span></br>
+          <span class="p-authors"><b>Francis Engelmann</b><sup>*</sup>, <a href="https://theodorakontogianni.github.io/" target="_blank">Theodora Kontogianni</a><sup>*</sup>, <a href="https://www.vision.rwth-aachen.de/person/10/" target="_blank">Alexander Hermans</a>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a></span></br>
+        <span class="p-conference">International Conference on Computer Vision Workshops (ICCVW), 2017.</span></br>
+          <span class="p-award badge badge-success mb-2">Oral Presentation</span><br />
+          <a class="mr-3" target="_blank" href="https://www.vision.rwth-aachen.de/media/papers/PID4967025.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Engelmann2017Exploring" role="button" aria-expanded="false" aria-controls="Engelmann2017Exploring"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://www.vision.rwth-aachen.de/page/3dsemseg"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/VisualComputingInstitute/3d-semantic-segmentation"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Engelmann2017Exploring">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Engelmann2017Exploring,
+  title={Exploring Spatial Context for 3D Semantic Segmentation of Point Clouds},
+  author={Francis Engelmann*, Theodora Kontogianni*, Alexander Hermans, Bastian Leibe},
+  booktitle={International Conference on Computer Vision Workshops (ICCVW)},
+  year={2017}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_vislam.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">Keyframe-Based Visual-Inertial Online SLAM with Relocalization</span></br>
+          <span class="p-authors"><a href="https://antonkasyanov.com/" target="_blank">Anton Kasyanov</a>, <b>Francis Engelmann</b>, <a href="https://scholar.google.com/citations?user=xrOzfucAAAAJ&hl=de" target="_blank">Jörg Stückler</a>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a></span></br>
+        <span class="p-conference">International Conference on Intelligent Robots and Systems (IROS), 2017.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://arxiv.org/pdf/1702.02175.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Kasyanov2017Keyframe-Based" role="button" aria-expanded="false" aria-controls="Kasyanov2017Keyframe-Based"><i class="far fa-file-alt"></i> BibTeX</a>
+          
+          
+          <div class="collapse" id="Kasyanov2017Keyframe-Based">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Kasyanov2017Keyframe-Based,
+  title={Keyframe-Based Visual-Inertial Online SLAM with Relocalization},
+  author={Anton Kasyanov, Francis Engelmann, Jörg Stückler, Bastian Leibe},
+  booktitle={International Conference on Intelligent Robots and Systems (IROS)},
+  year={2017}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_SAMP.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">SAMP: Shape and Motion Priors for 4D Vehicle Reconstruction</span></br>
+          <span class="p-authors"><b>Francis Engelmann</b>, <a href="https://scholar.google.com/citations?user=xrOzfucAAAAJ&hl=de" target="_blank">Jörg Stückler</a>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a></span></br>
+        <span class="p-conference">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2017.</span></br>
+          
+          <a class="mr-3" target="_blank" href="https://www.vision.rwth-aachen.de/media/papers/EngelmannWACV17_x8euNDK.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Engelmann2017SAMP" role="button" aria-expanded="false" aria-controls="Engelmann2017SAMP"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://www.vci.rwth-aachen.de/publication/00146/"><i class="fas fa-cube"></i> Project</a>
+          
+          <div class="collapse" id="Engelmann2017SAMP">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Engelmann2017SAMP,
+  title={SAMP: Shape and Motion Priors for 4D Vehicle Reconstruction},
+  author={Francis Engelmann, Jörg Stückler, Bastian Leibe},
+  booktitle={IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year={2017}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <div class="media-body text-center">
+        <img src="teasers/teaser_GCPR.png" class="mr-4 p-teaser float-sm-left mb-sm-1" style="padding-bottom: 35px;" />
+        <p class="text-left">
+          <span class="p-title">Joint Object Pose Estimation and Shape Reconstruction in Urban Street Scenes Using 3D Shape Priors</span></br>
+          <span class="p-authors"><b>Francis Engelmann</b>, <a href="https://scholar.google.com/citations?user=xrOzfucAAAAJ&hl=de" target="_blank">Jörg Stückler</a>, <a href="https://scholar.google.com/citations?user=ZcULDB0AAAAJ" target="_blank">Bastian Leibe</a></span></br>
+        <span class="p-conference">German Conference on Pattern Recognition (GCPR), 2016.</span></br>
+          <span class="p-award badge badge-success mb-2">Oral Presentation</span><br />
+          <a class="mr-3" target="_blank" href="https://www.vision.rwth-aachen.de/media/papers/EngelmannGCPR16_SZa4QgP.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a class="mr-3" data-toggle="collapse" href="#Engelmann2016Joint" role="button" aria-expanded="false" aria-controls="Engelmann2016Joint"><i class="far fa-file-alt"></i> BibTeX</a>
+          <a class="mr-3" target="_blank" href="https://www.vision.rwth-aachen.de/page/shape_priors"><i class="fas fa-cube"></i> Project</a>
+          <a class="mr-3" target="_blank" href="https://github.com/VisualComputingInstitute/ShapePriors_GCPR16"><i class="far fa-file-code"></i> Code</a><br />
+          <div class="collapse" id="Engelmann2016Joint">
+            <div class="card card-body"><pre class="p-bibtex">@inproceedings{Engelmann2016Joint,
+  title={Joint Object Pose Estimation and Shape Reconstruction in Urban Street Scenes Using 3D Shape Priors},
+  author={Francis Engelmann, Jörg Stückler, Bastian Leibe},
+  booktitle={German Conference on Pattern Recognition (GCPR)},
+  year={2016}
+}</pre></div>
+          </div>
+        </p>
+      </div>
+    </li>
+    </ul></div>
+      
+    <footer class="text-muted">
+      <div class="container">
+        <hr />
+        <p align="center"><a href="#">Back to top <i class="fa fa-chevron-up"></i></a></p>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </body>
+  </html>
