@@ -12,7 +12,7 @@
   conference: "ICLR"
   year: 2026
   paper: "https://arxiv.org/abs/2509.11301"
-  teaser: "teasers/teaser_unloc.jpg"
+  teaser: "teasers/teaser_UnLoc.jpg"
 
 - title: "HouseLayout3D: A Benchmark and Training-free Baseline for 3D Layout Estimation in the Wild"
   authors: "Valentin Bieri, Marie-Julie Rakotosaona, Keisuke Tateno, Francis Engelmann, Leonidas Guibas"
