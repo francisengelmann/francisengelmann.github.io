@@ -1,11 +1,18 @@
 - title: "SpaceControl: Introducing Test-Time Spatial Control to 3D Generative Modeling"
   authors: "Elisabetta Fedele*, Francis Engelmann*, Ian Huang, Or Litany, Marc Pollefeys, Leonidas Guibas"
   conference: "ICLR"
-  year: 2025
+  year: 2026
   paper: "https://www.arxiv.org/abs/2512.05343"
   project: "https://spacecontrol3d.github.io/"
   code: "https://github.com/spacecontrol3d/spacecontrol"
   teaser: "teasers/teaser_supergen.png"
+
+- title: "UnLoc: Leveraging Depth Uncertainties for Floorplan Localization"
+  authors: "Matthias Wüest, Francis Engelmann, Ondrej Miksik, Marc Pollefeys, Dániel Béla Baráth"
+  conference: "ICLR"
+  year: 2026
+  paper: "https://arxiv.org/abs/2509.11301"
+  teaser: "teasers/teaser_unloc.jpg"
 
 - title: "HouseLayout3D: A Benchmark and Training-free Baseline for 3D Layout Estimation in the Wild"
   authors: "Valentin Bieri, Marie-Julie Rakotosaona, Keisuke Tateno, Francis Engelmann, Leonidas Guibas"
