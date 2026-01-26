@@ -1,6 +1,6 @@
 - title: "SpaceControl: Introducing Test-Time Spatial Control to 3D Generative Modeling"
   authors: "Elisabetta Fedele*, Francis Engelmann*, Ian Huang, Or Litany, Marc Pollefeys, Leonidas Guibas"
-  conference: "Preprint"
+  conference: "ICLR"
   year: 2025
   paper: "https://www.arxiv.org/abs/2512.05343"
   project: "https://spacecontrol3d.github.io/"
