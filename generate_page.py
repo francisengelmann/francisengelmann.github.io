@@ -74,12 +74,15 @@ def get_publications(yaml_file="data/publications.yaml"):
     first_author_lastname = authors.split(',')[0].strip().split(' ')[-1]
     title_first_word = title.split(' ')[0]
     bibtex_short = f'{first_author_lastname}{year}{title_first_word}'.replace('*', '').replace(':', '')
+    authors_formatted = authors.replace('*', '')
+    authors_formatted = ' and '.join([f'{lastname}, {firstname}' for a in authors_formatted.split(',') for firstname, lastname in [a.strip().rsplit(' ', 1)]])
     bibtex = f"""@inproceedings{{{bibtex_short},
   title={{{title}}},
-  author={{{authors}}},
+  author={{{authors_formatted}}},
   booktitle={{{conference} ({conference_abbrev})}},
   year={{{year}}}
 }}"""
+    print(bibtex)
     return bibtex_short, bibtex
 
   def format_authors(author_list, authors_dict):
