@@ -14,6 +14,15 @@
   paper: "https://arxiv.org/abs/2509.11301"
   teaser: "teasers/teaser_UnLoc.jpg"
 
+- title: "HoMeR: Learning In-the-Wild Mobile Manipulation via Hybrid Imitation and WHole-Body Control"
+  authors: "Priya Sundaresan, Rhea Malhotra, Phillip Miao, Jingyun Yang, Jimmy Wu, Hengyuan Hu, Rika Antonova, Francis Engelmann, Dorsa Sadigh, Jeannette Bohg"
+  conference: "ICRA"
+  year: 2026
+  paper: "https://arxiv.org/abs/2506.01185"
+  project: "https://homer-manip.github.io/"
+  code: "https://github.com/priyasundaresan/homer"
+  teaser: "teasers/teaser_homer.png"
+
 - title: "HouseLayout3D: A Benchmark and Training-free Baseline for 3D Layout Estimation in the Wild"
   authors: "Valentin Bieri, Marie-Julie Rakotosaona, Keisuke Tateno, Francis Engelmann, Leonidas Guibas"
   conference: "NeurIPS"
@@ -42,15 +51,6 @@
   code: "https://github.com/elisabettafedele/superdec"
   award: "Oral Presentation, top 2.3% of accepted papers"
   teaser: "https://super-dec.github.io/static/figures/compressed/teaser/room0_1_bg.jpeg"
-
-- title: "HoMeR: Learning In-the-Wild Mobile Manipulation via Hybrid Imitation and WHole-Body Control"
-  authors: "Priya Sundaresan, Rhea Malhotra, Phillip Miao, Jingyun Yang, Jimmy Wu, Hengyuan Hu, Rika Antonova, Francis Engelmann, Dorsa Sadigh, Jeannette Bohg"
-  conference: "Preprint"
-  year: 2025
-  paper: "https://arxiv.org/abs/2506.01185"
-  project: "https://homer-manip.github.io/"
-  code: "https://github.com/priyasundaresan/homer"
-  teaser: "teasers/teaser_homer.png"
 
 - title: "SLAG: Scalable Language-Augmented Gaussian Splatting"
   authors: "Laszlo Szilagyi, Francis Engelmann, Jeannette Bohg"
