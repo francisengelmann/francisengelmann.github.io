@@ -14,7 +14,7 @@
   paper: "https://arxiv.org/abs/2509.11301"
   teaser: "teasers/teaser_UnLoc.jpg"
 
-- title: "HoMeR: Learning In-the-Wild Mobile Manipulation via Hybrid Imitation and WHole-Body Control"
+- title: "HoMeR: Learning In-the-Wild Mobile Manipulation via Hybrid Imitation and Whole-Body Control"
   authors: "Priya Sundaresan, Rhea Malhotra, Phillip Miao, Jingyun Yang, Jimmy Wu, Hengyuan Hu, Rika Antonova, Francis Engelmann, Dorsa Sadigh, Jeannette Bohg"
   conference: "ICRA"
   year: 2026
