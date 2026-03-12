@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The [Your Lab Name] Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>The [Your Lab Name] Lab</h1>
+            <p>Welcome to our lab's website!</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#people">People</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>
+                    [A brief mission statement about your lab and its research focus. 
+                    Example: "The [Your Lab Name] Lab at [Your University] is dedicated to advancing our understanding of 
+                    [your research field]. We use a combination of [methods/techniques] to investigate..."].
+                </p>
+                
+
+[Image of a lab with researchers]
+
+            </div>
+        </section>
+
+        <section id="research">
+            <div class="container">
+                <h2>Our Research</h2>
+                <div class="research-project">
+                    <h3>Project Title 1</h3>
+                    <p>
+                        [Brief description of the project, its goals, and key findings. 
+                        You can add images or links to relevant papers here.]
+                    </p>
+                </div>
+                <div class="research-project">
+                    <h3>Project Title 2</h3>
+                    <p>
+                        [Another project description. Use this structure for each project.]
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="people">
+            <div class="container">
+                <h2>Our Team</h2>
+                <div class="person">
+                    <img src="path/to/pi-photo.jpg" alt="Photo of PI">
+                    <h3>Dr. [PI's Full Name]</h3>
+                    <p>Principal Investigator</p>
+                </div>
+                <div class="person">
+                    <img src="path/to/student-photo.jpg" alt="Photo of Student">
+                    <h3>[Student Name]</h3>
+                    <p>PhD Candidate</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <div class="container">
+                <h2>Publications</h2>
+                <ul>
+                    <li>
+                        <strong>[Author Names]</strong>, [Year]. "[Publication Title]." 
+                        <em>[Journal Name]</em>, Volume(Issue), pages. <a href="#">[Link to paper]</a>
+                    </li>
+                    </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>
+                    [Your Lab Name] Lab<br>
+                    [Your Address]<br>
+                    [City, State, Zip]<br>
+                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 The [Your Lab Name] Lab. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
