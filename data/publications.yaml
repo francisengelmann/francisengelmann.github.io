@@ -225,7 +225,7 @@
   paper: "https://arxiv.org/abs/2210.03105"
   project: "https://jonasschult.github.io/Mask3D/"
   code: "https://github.com/JonasSchult/Mask3D"
-  demo: "https://francisengelmann.github.io/mask3d/index.html"
+  demo: "https://mask3d.org"
   award: "1st Place, ScanNet Challenge"
   teaser: "teasers/teaser_mask3d.jpg"
 
@@ -252,9 +252,9 @@
   conference: "3DV"
   year: 2021
   paper: "https://arxiv.org/abs/2110.02210"
-  project: "https://francisengelmann.github.io/mask3d/index.html"
+  project: "https://mask3d.org"
   code: "https://github.com/kumuji/mix3d"
-  demo: "https://francisengelmann.github.io/mask3d/"
+  demo: "https://mask3d.org"
   award: "Oral Presentation, 1st Place ScanNet Challenge"
   teaser: "teasers/teaser_mix3d.png"
 
