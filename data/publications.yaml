@@ -2,6 +2,7 @@
   authors: "Alexandros Delitzas, Chenyangguang Zhang, Alexey Gavryushin, Tommaso Di Mario, Boyang Sun, Rishabh Dabral, Leonidas Guibas, Christian Theobalt, Marc Pollefeys, Francis Engelmann*, Dániel Béla Baráth*"
   conference: "CVPR"
   year: 2026
+  project: "https://functionalscenes.github.io"
   teaser: "teasers/teaser_funrec.png"
 
 - title: "SpaceControl: Introducing Test-Time Spatial Control to 3D Generative Modeling"
