@@ -1,3 +1,11 @@
+- title: "SuperFlex: Deformable Superquadrics for Point Cloud Decomposition"
+  authors: "Gabriel Tavernini*, Elisabetta Fedele*, Tiago Novello, Leonidas Guibas, Marc Pollefeys, Francis Engelmann"
+  conference: "ECCV"
+  year: 2026
+  paper: "https://arxiv.org/abs/"
+  project: "https://superflex3d.github.io/"
+  teaser: "https://elisabettafedele.github.io/images/superflex/teaser.jpeg"
+  
 - title: "Reconstructing Functional 3D Scenes from Egocentric Interaction Videos"
   authors: "Alexandros Delitzas, Chenyangguang Zhang, Alexey Gavryushin, Tommaso Di Mario, Boyang Sun, Rishabh Dabral, Leonidas Guibas, Christian Theobalt, Marc Pollefeys, Francis Engelmann, Dániel Béla Baráth"
   conference: "CVPR"
